@@ -28,7 +28,7 @@ Composer packages -- search for them on [Packagist](http://packagist.org/)).
 
 Remove your current `vendor` directory.
 
-Finally, run Composer:
+Finall y, run Composer:
 
     $ composer.phar install
 
