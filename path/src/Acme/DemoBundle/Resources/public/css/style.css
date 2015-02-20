@@ -152,30 +152,31 @@ section {
           position: relative; }
           /* line 161, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
           section .content .lastQuizz li:first-child div {
+            z-index: 10;
             position: absolute;
             bottom: 0;
             height: 70px;
             background: rgba(0, 0, 0, 0.65);
             width: 100%; }
-            /* line 167, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+            /* line 168, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
             section .content .lastQuizz li:first-child div .QuizzName .categorieInfo {
               color: #ffffff; }
-    /* line 174, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+    /* line 175, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
     section .content .topQuizz {
       width: 49%;
       display: inline-block;
       vertical-align: top; }
-      /* line 178, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+      /* line 179, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
       section .content .topQuizz h2 {
         margin-left: 20px; }
-  /* line 183, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  /* line 184, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
   section .sideBar {
     display: inline-block;
     width: 33%;
     vertical-align: top;
     padding-left: 20px;
     padding-right: 20px; }
-    /* line 189, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+    /* line 190, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
     section .sideBar .userBloc {
       padding-left: 20px;
       padding-right: 20px;

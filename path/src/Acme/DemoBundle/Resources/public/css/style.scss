@@ -159,6 +159,7 @@ section{
                     overflow: hidden;
                     position: relative;
                     div{
+                        z-index: 10;
                         position: absolute;
                         bottom: 0;
                         height: 70px;
