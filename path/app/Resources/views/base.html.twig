@@ -22,7 +22,15 @@
                 <li><a href="">High-tech</a></li>
             </ul>        
         </header>
-        {% block body %}{% endblock %}
+        
+        <section class="content">
+            {% block body %}{% endblock %}
+            <div class="sideBar">
+            {% block user %}{% endblock%}
+            </div>
+        </section>
+        
+        
         {% block javascripts %}{% endblock %}
     </body>
 </html>
