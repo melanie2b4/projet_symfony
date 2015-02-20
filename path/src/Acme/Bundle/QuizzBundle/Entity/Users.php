@@ -380,7 +380,7 @@ class Users
      *
      * @return string 
      */
-    public function setScoreGastronomie()
+    public function getScoreGastronomie()
     {
         return $this->scoreGastronomie;
     }
@@ -403,7 +403,7 @@ class Users
      *
      * @return string 
      */
-    public function setScoreSante()
+    public function getScoreSante()
     {
         return $this->scoreSante;
     }
@@ -427,7 +427,7 @@ class Users
      *
      * @return string 
      */
-    public function setScoreGeographie()
+    public function getScoreGeographie()
     {
         return $this->scoreGeographie;
     }
@@ -450,7 +450,7 @@ class Users
      *
      * @return string 
      */
-    public function setScoreCulturegenerale()
+    public function getScoreCulturegenerale()
     {
         return $this->scoreCulturegenerale;
     }

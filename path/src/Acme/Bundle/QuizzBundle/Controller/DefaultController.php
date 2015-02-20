@@ -14,7 +14,12 @@ class DefaultController extends Controller
      */
     public function indexAction()
     {
-        return array('home');
+        $repository = $this->container->get('doctrine')->getRepository('AcmeQuizzBundle:Quizz');
+        $quizz = $repository->findAll();
+
+        return array(
+            'quizz' => $quizz
+        );
     }
     
     /**
