@@ -54,8 +54,13 @@ $clr2: #ff9640;
     font-family : "LatoLight";
     src : url('../font/Lato-Light.ttf');
 }
+@font-face{
+    font-family : "LatoRegular";
+    src : url('../font/Lato-Regular.ttf');
+}
 $Black: "LatoBlack", arial, sans-serif;
 $Light: "LatoLight", arial, sans-serif;
+$Regular: "LatoRegular", arial, sans-serif;
 
 * {
     box-sizing: border-box;
@@ -123,10 +128,53 @@ section{
             h2{
             margin-right: 20px;
             }
+            li{
+            height: 70px;
+            background: #dce0e3;
+            margin-top: 15px;
+            img{
+                height: 100%;
+                display: inline-block;
+            }
+            div{
+            display: inline-block;
+            vertical-align: top;
+                padding-left: 15px;
+                padding-top: 15px;
+            .categorieInfo{
+                font-family: $Black;
+                color: #333333;
+                text-transform: uppercase;
+                font-size: 0.750em;
+            }
+            .QuizzName{
+                margin-top: 2px;
+                font-size: 1.250em;
+                color: #333333;
+                font-family: $Regular;
+            }    
+            }
+            &:first-child{
+                    height: 210px;
+                    overflow: hidden;
+                    position: relative;
+                    div{
+                        position: absolute;
+                        bottom: 0;
+                        height: 70px;
+                        background: rgba(0, 0, 0, 0.65);
+                        width: 100%;
+                        .QuizzName .categorieInfo{
+                        color: #ffffff;
+                        }
+                    }
+                }
+            }
         }
         .topQuizz{
             width: 49%;
             display: inline-block;
+            vertical-align: top;
             h2{
             margin-left: 20px;
             }

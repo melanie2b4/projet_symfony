@@ -12,4 +12,9 @@ use Doctrine\ORM\EntityRepository;
  */
 class CategoryRepository extends EntityRepository
 {
+$quizz = $this->getDoctrine()
+        ->getRepository('AcmeQuizzBundle:Quizz')
+        ->find($id);
+        ->find($titre);
+        ->find($categorie);
 }

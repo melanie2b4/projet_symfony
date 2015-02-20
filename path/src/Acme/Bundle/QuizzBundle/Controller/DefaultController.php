@@ -14,7 +14,7 @@ class DefaultController extends Controller
      */
     public function indexAction()
     {
-        $repository = $this->container->get('doctrine')->getRepository('AcmeQuizzBundle:Quizz');
+        $repository = $this->get('doctrine.orm.entity_manager')->getRepository('AcmeQuizzBundle:Quizz');
         $quizz = $repository->findAll();
 
         return array(
