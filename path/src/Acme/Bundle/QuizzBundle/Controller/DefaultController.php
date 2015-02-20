@@ -39,45 +39,81 @@ class DefaultController extends Controller
      * @Route("/category/divertissement")
      * @Template()
      */
-    public function sportAction()
+    public function divertissementsAction()
     {
-        return array('sport');
+        return array('divertissements');
     }
     
     /**
-     * @Route("/category/sport")
+     * @Route("/category/nature")
      * @Template()
      */
-    public function sportAction()
+    public function natureAction()
     {
-        return array('sport');
+        return array('nature');
     }
     
     /**
-     * @Route("/category/sport")
+     * @Route("/category/politique")
      * @Template()
      */
-    public function sportAction()
+    public function politiqueAction()
     {
-        return array('sport');
+        return array('politique');
     }
     
     /**
-     * @Route("/category/sport")
+     * @Route("/category/histoire")
      * @Template()
      */
-    public function sportAction()
+    public function histoireAction()
     {
-        return array('sport');
+        return array('histoire');
     }
     
     /**
-     * @Route("/category/sport")
+     * @Route("/category/hightech")
      * @Template()
      */
-    public function sportAction()
+    public function hightechAction()
     {
-        return array('sport');
+        return array('hightech');
     }
     
+    /**
+     * @Route("/category/gastronomie")
+     * @Template()
+     */
+    public function gastronomieAction()
+    {
+        return array('gastronomie');
+    }
+    
+    /**
+     * @Route("/category/sante")
+     * @Template()
+     */
+    public function santeAction()
+    {
+        return array('sante');
+    }
+
+    /**
+     * @Route("/category/geographie")
+     * @Template()
+     */
+    public function geographieAction()
+    {
+        return array('geographie');
+    }
+
+    /**
+     * @Route("/category/culturegenerale")
+     * @Template()
+     */
+    public function culturegeneraleAction()
+    {
+        return array('culturegenerale');
+    }
+
 }
