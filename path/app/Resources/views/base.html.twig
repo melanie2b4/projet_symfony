@@ -17,22 +17,25 @@
                 </div>
                 <div class="nav">
             <ul>
-                <li><a href="">Divertissement</a></li>
-                <li><a href="">Sport</a></li>
-                <li><a href="">Politique</a></li>
-                <li><a href="">Histoire</a></li>
-                <li><a href="">Nature</a></li>
-                <li><a href="">Santé</a></li>
-                <li><a href="">Culture Générale</a></li>
-                <li><a href="">Géographie</a></li>
-                <li><a href="">Gastronomie</a></li>
-                <li><a href="">High-tech</a></li>
+                <li><a href="{{ path('divertissement') }}">Divertissement</a></li>
+                <li><a href="{{ path('sport') }}">Sport</a></li>
+                <li><a href="{{ path('politique') }}">Politique</a></li>
+                <li><a href="{{ path('histoire') }}">Histoire</a></li>
+                <li><a href="{{ path('nature') }}">Nature</a></li>
+                <li><a href="{{ path('sante') }}">Santé</a></li>
+                <li><a href="{{ path('culturegenerale') }}">Culture Générale</a></li>
+                <li><a href="{{ path('geographie') }}">Géographie</a></li>
+                <li><a href="{{ path('gastronomie') }}">Gastronomie</a></li>
+                <li><a href="{{ path('hightech') }}">High-tech</a></li>
             </ul>
             </div>     
         </header>
         
-        <section class="content">
-            {% block body %}{% endblock %}
+        <section>
+            <div class="content">
+                {% block body %}{% endblock %}
+            </div>
+            
             <div class="sideBar">
             {% block user %}{% endblock%}
             </div>

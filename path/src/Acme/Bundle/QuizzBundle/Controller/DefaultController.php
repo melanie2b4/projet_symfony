@@ -27,7 +27,7 @@ class DefaultController extends Controller
     }
     
     /**
-     * @Route("/category/sport")
+     * @Route("/category/sport", name="sport")
      * @Template()
      */
     public function sportAction()
@@ -36,7 +36,7 @@ class DefaultController extends Controller
     }
     
     /**
-     * @Route("/category/divertissement")
+     * @Route("/category/divertissement", name="divertissement")
      * @Template()
      */
     public function divertissementsAction()
@@ -45,7 +45,7 @@ class DefaultController extends Controller
     }
     
     /**
-     * @Route("/category/nature")
+     * @Route("/category/nature", name="nature")
      * @Template()
      */
     public function natureAction()
@@ -54,7 +54,7 @@ class DefaultController extends Controller
     }
     
     /**
-     * @Route("/category/politique")
+     * @Route("/category/politique", name="politique")
      * @Template()
      */
     public function politiqueAction()
@@ -63,7 +63,7 @@ class DefaultController extends Controller
     }
     
     /**
-     * @Route("/category/histoire")
+     * @Route("/category/histoire", name="histoire")
      * @Template()
      */
     public function histoireAction()
@@ -72,7 +72,7 @@ class DefaultController extends Controller
     }
     
     /**
-     * @Route("/category/hightech")
+     * @Route("/category/hightech", name="hightech")
      * @Template()
      */
     public function hightechAction()
@@ -81,7 +81,7 @@ class DefaultController extends Controller
     }
     
     /**
-     * @Route("/category/gastronomie")
+     * @Route("/category/gastronomie", name="gastronomie")
      * @Template()
      */
     public function gastronomieAction()
@@ -90,7 +90,7 @@ class DefaultController extends Controller
     }
     
     /**
-     * @Route("/category/sante")
+     * @Route("/category/sante", name="sante")
      * @Template()
      */
     public function santeAction()
@@ -99,7 +99,7 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("/category/geographie")
+     * @Route("/category/geographie", name="geographie")
      * @Template()
      */
     public function geographieAction()
@@ -108,7 +108,7 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("/category/culturegenerale")
+     * @Route("/category/culturegenerale", name="culturegenerale")
      * @Template()
      */
     public function culturegeneraleAction()
