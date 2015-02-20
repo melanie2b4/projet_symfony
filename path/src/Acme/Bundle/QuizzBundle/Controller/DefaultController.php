@@ -9,11 +9,75 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 class DefaultController extends Controller
 {
     /**
-     * @Route("/hello/{name}")
+     * @Route("/index")
      * @Template()
      */
-    public function indexAction($name)
+    public function indexAction()
     {
-        return array('name' => $name);
+        return array('home');
     }
+    
+    /**
+     * @Route("/quizz/{id}", name="show_quizz")
+     * @Template()
+     */
+    public function quizzAction()
+    {
+        return array('quizz');
+    }
+    
+    /**
+     * @Route("/category/sport")
+     * @Template()
+     */
+    public function sportAction()
+    {
+        return array('sport');
+    }
+    
+    /**
+     * @Route("/category/divertissement")
+     * @Template()
+     */
+    public function sportAction()
+    {
+        return array('sport');
+    }
+    
+    /**
+     * @Route("/category/sport")
+     * @Template()
+     */
+    public function sportAction()
+    {
+        return array('sport');
+    }
+    
+    /**
+     * @Route("/category/sport")
+     * @Template()
+     */
+    public function sportAction()
+    {
+        return array('sport');
+    }
+    
+    /**
+     * @Route("/category/sport")
+     * @Template()
+     */
+    public function sportAction()
+    {
+        return array('sport');
+    }
+    
+    /**
+     * @Route("/category/sport")
+     * @Template()
+     */
+    public function sportAction()
+    {
+        return array('sport');
+    }
+    
 }
