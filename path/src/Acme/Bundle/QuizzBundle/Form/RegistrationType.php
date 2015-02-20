@@ -22,7 +22,7 @@ class RegistrationType extends AbstractType
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'Acme\Bundle\QuizzBundle\Form'
+            'data_class' => 'Acme\Bundle\QuizzBundle\Entity\Users'
         ));
     }
 
