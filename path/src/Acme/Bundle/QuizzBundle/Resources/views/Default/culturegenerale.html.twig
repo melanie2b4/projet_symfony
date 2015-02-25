@@ -7,8 +7,8 @@
         <ul>
             {% for Quizz in CultureGeneraleQuizz %}
             <li>
-                <a href="">
-                    <img src="../../bundles/acmedemo/images/test-hockey.jpg" alt="{{ Quizz.titre }}">
+                <a href="{{ path('show_quizz', {id: Quizz.id}) }}">
+                    <img src="../../bundles/acmedemo/images/{{ Quizz.img }}" alt="{{ Quizz.titre }}">
                     <div>
                     <p class="categorieInfo">{{ Quizz.categorie }}</p>
                     <p class="QuizzName">{{ Quizz.titre }}</p></div>

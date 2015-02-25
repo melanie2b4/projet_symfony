@@ -2,6 +2,13 @@
 
 
 {% block body %}
-    <h2>Page quizz</h2>
+    <h2>{{ Quizz.titre }}</h2>
+    <div class="intro">
+        <img src="../../bundles/acmedemo/images/{{ Quizz.img }}" alt="{{ Quizz.titre }}">
+        <p>{{ Quizz.description }}</p>
+    </div>
+    <div class="quizz">
+        
+    </div>
 {% endblock %}
 

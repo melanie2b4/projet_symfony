@@ -128,6 +128,7 @@ section{
         .lastQuizz ul{
             padding-right: 20px;
         }
+        
         .lastQuizz, .topQuizz{
             width: 49%;
             display: inline-block;
@@ -218,6 +219,23 @@ section{
             }
             }
         }
+    .intro{
+        margin-top: 20px;
+        img{
+            width: 49%;
+            padding-right: 20px;
+            display: inline-block;
+        }
+        p{    
+            vertical-align: top;
+            padding-left: 20px;
+            display: inline-block;
+            width: 49%;
+            color: #333;
+            font-family: $Regular;
+            padding-right: 20px;
+        }
+    }    
     }
     .sideBar{
         display: inline-block;

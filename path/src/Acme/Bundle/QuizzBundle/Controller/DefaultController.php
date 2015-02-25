@@ -29,9 +29,14 @@ class DefaultController extends Controller
      * @Route("/quizz/{id}", name="show_quizz")
      * @Template()
      */
-    public function quizzAction()
+    public function quizzAction($id)
     {
-        return array('quizz');
+        $repository = $this->get('doctrine.orm.entity_manager')->getRepository('AcmeQuizzBundle:Quizz');
+        $Quizz = $repository->findOneById($id);
+
+        return array(
+            'Quizz' => $Quizz
+        );
     }
     
     /**
