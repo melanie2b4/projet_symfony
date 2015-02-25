@@ -1,6 +1,9 @@
 {% if app.user %}
-{{ app.user.email }}
-<a href="{{ path('fos_user_security_logout') }}">LOGOUT</a>
+{{ app.user.username }}<br>
+<span>Score Sport : </span>{{ app.user.scoresport }}<br>
+<span>Score Divertissements : </span>{{ app.user.scoredivertissements }}<br>
+<a href="{{ path('fos_user_security_logout') }}">Déconnexion</a><br>
+<a href="#"><h5>Modifier le profil</h5></a>
 {% else %}
 {{ render(controller('FOSUserBundle:Security:login'))}}
 {% endif %}
