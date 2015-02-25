@@ -30,70 +30,70 @@ class Users extends BaseUser
     /**
      * @var string
      *
-     * @ORM\Column(name="scoreSport", type="string", length=500)
+     * @ORM\Column(name="scoreSport", type="string", length=500, nullable=true)
      */
     private $scoreSport;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="scoreDivertissements", type="string", length=500)
+     * @ORM\Column(name="scoreDivertissements", type="string", length=500, nullable=true)
      */
     private $scoreDivertissements;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="scoreNature", type="string", length=500)
+     * @ORM\Column(name="scoreNature", type="string", length=500, nullable=true)
      */
     private $scoreNature;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="scorePolitique", type="string", length=500)
+     * @ORM\Column(name="scorePolitique", type="string", length=500, nullable=true)
      */
     private $scorePolitique;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="scoreHistoire", type="string", length=500)
+     * @ORM\Column(name="scoreHistoire", type="string", length=500, nullable=true)
      */
     private $scoreHistoire;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="scoreHightech", type="string", length=500)
+     * @ORM\Column(name="scoreHightech", type="string", length=500, nullable=true)
      */
     private $scoreHightech;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="scoreGastronomie", type="string", length=500)
+     * @ORM\Column(name="scoreGastronomie", type="string", length=500, nullable=true)
      */
     private $scoreGastronomie;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="scoreSante", type="string", length=500)
+     * @ORM\Column(name="scoreSante", type="string", length=500, nullable=true)
      */
     private $scoreSante;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="scoreGeographie", type="string", length=500)
+     * @ORM\Column(name="scoreGeographie", type="string", length=500, nullable=true)
      */
     private $scoreGeographie;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="scoreCulturegenerale", type="string", length=500)
+     * @ORM\Column(name="scoreCulturegenerale", type="string", length=500, nullable=true)
      */
     private $scoreCulturegenerale;
 
