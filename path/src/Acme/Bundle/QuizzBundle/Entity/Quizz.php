@@ -34,6 +34,13 @@ class Quizz
      * @ORM\Column(name="description", type="string", length=1000)
      */
     private $description;
+    
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="img", type="string", length=1000)
+     */
+    private $img;
 
     /**
      * @var string
@@ -88,6 +95,29 @@ class Quizz
     public function getTitre()
     {
         return $this->titre;
+    }
+    
+    /**
+     * Set img
+     *
+     * @param string $img
+     * @return Quizz
+     */
+    public function setImg($img)
+    {
+        $this->img = $img;
+
+        return $this;
+    }
+
+    /**
+     * Get img
+     *
+     * @return string 
+     */
+    public function getImg()
+    {
+        return $this->img;
     }
     
     /**

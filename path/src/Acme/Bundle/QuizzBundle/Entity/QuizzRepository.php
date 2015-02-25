@@ -42,4 +42,16 @@ class QuizzRepository extends EntityRepository
             ->getQuery()
             ->getResult();
     }
+    
+    public function getQuizzByCategorie($category, $order)
+    {
+        return $this->getEntityManager()->createQueryBuilder()
+            ->add('select', 'q')
+            ->add('from', 'AcmeQuizzBundle:Quizz q')
+            ->add('where', 'q.categorie = :category')
+            ->add('orderBy', 'q.datePublication '.$order)
+            ->setParameter('category', $category)
+            ->getQuery()
+            ->getResult();
+    }
 }

@@ -40,7 +40,11 @@ class DefaultController extends Controller
      */
     public function sportAction()
     {
-        return array('sport');
+        $repository = $this->get('doctrine.orm.entity_manager')->getRepository('AcmeQuizzBundle:Quizz');
+        $SportQuizz = $repository->getQuizzByCategorie('Sport', 'asc');
+        return array(
+            'SportQuizz' => $SportQuizz
+        );
     }
     
     /**
@@ -49,7 +53,11 @@ class DefaultController extends Controller
      */
     public function divertissementsAction()
     {
-        return array('divertissements');
+        $repository = $this->get('doctrine.orm.entity_manager')->getRepository('AcmeQuizzBundle:Quizz');
+        $DivertissementQuizz = $repository->getQuizzByCategorie('Divertissement', 'asc');
+        return array(
+            'DivertissementQuizz' => $DivertissementQuizz
+        );
     }
     
     /**
@@ -58,7 +66,11 @@ class DefaultController extends Controller
      */
     public function natureAction()
     {
-        return array('nature');
+        $repository = $this->get('doctrine.orm.entity_manager')->getRepository('AcmeQuizzBundle:Quizz');
+        $NatureQuizz = $repository->getQuizzByCategorie('Nature', 'asc');
+        return array(
+            'NatureQuizz' => $NatureQuizz
+        );
     }
     
     /**
@@ -67,7 +79,11 @@ class DefaultController extends Controller
      */
     public function politiqueAction()
     {
-        return array('politique');
+        $repository = $this->get('doctrine.orm.entity_manager')->getRepository('AcmeQuizzBundle:Quizz');
+        $PolitiqueQuizz = $repository->getQuizzByCategorie('Politique', 'asc');
+        return array(
+            'PolitiqueQuizz' => $PolitiqueQuizz
+        );
     }
     
     /**
@@ -76,7 +92,11 @@ class DefaultController extends Controller
      */
     public function histoireAction()
     {
-        return array('histoire');
+        $repository = $this->get('doctrine.orm.entity_manager')->getRepository('AcmeQuizzBundle:Quizz');
+        $HistoireQuizz = $repository->getQuizzByCategorie('Histoire', 'asc');
+        return array(
+            'HistoireQuizz' => $HistoireQuizz
+        );
     }
     
     /**
@@ -85,7 +105,11 @@ class DefaultController extends Controller
      */
     public function hightechAction()
     {
-        return array('hightech');
+        $repository = $this->get('doctrine.orm.entity_manager')->getRepository('AcmeQuizzBundle:Quizz');
+        $HightechQuizz = $repository->getQuizzByCategorie('Hightech', 'asc');
+        return array(
+            'HightechQuizz' => $HightechQuizz
+        );
     }
     
     /**
@@ -94,7 +118,11 @@ class DefaultController extends Controller
      */
     public function gastronomieAction()
     {
-        return array('gastronomie');
+        $repository = $this->get('doctrine.orm.entity_manager')->getRepository('AcmeQuizzBundle:Quizz');
+        $GastronomieQuizz = $repository->getQuizzByCategorie('Gastronomie', 'asc');
+        return array(
+            'GastronomieQuizz' => $GastronomieQuizz
+        );
     }
     
     /**
@@ -103,7 +131,11 @@ class DefaultController extends Controller
      */
     public function santeAction()
     {
-        return array('sante');
+        $repository = $this->get('doctrine.orm.entity_manager')->getRepository('AcmeQuizzBundle:Quizz');
+        $SanteQuizz = $repository->getQuizzByCategorie('Sante', 'asc');
+        return array(
+            'SanteQuizz' => $SanteQuizz
+        );
     }
 
     /**
@@ -112,7 +144,11 @@ class DefaultController extends Controller
      */
     public function geographieAction()
     {
-        return array('geographie');
+        $repository = $this->get('doctrine.orm.entity_manager')->getRepository('AcmeQuizzBundle:Quizz');
+        $GeographieQuizz = $repository->getQuizzByCategorie('Geographie', 'asc');
+        return array(
+            'GeographieQuizz' => $GeographieQuizz
+        );
     }
 
     /**
@@ -121,7 +157,11 @@ class DefaultController extends Controller
      */
     public function culturegeneraleAction()
     {
-        return array('culturegenerale');
+        $repository = $this->get('doctrine.orm.entity_manager')->getRepository('AcmeQuizzBundle:Quizz');
+        $CultureGeneraleQuizz = $repository->getQuizzByCategorie('CultureGenerale', 'asc');
+        return array(
+            'CultureGenerale' => $CultureGeneraleQuizz
+        );
     }
 
 }

@@ -186,6 +186,38 @@ section{
             margin-left: 20px;
             }
         }
+         
+        .listCategory{
+            li{
+                a{
+                    text-decoration: none;
+                }
+                div{
+                    display: inline-block;
+                    padding-left: 15px;
+                    padding-top: 15px;
+                    vertical-align: top;
+                }
+                img{
+                    height: 100%;
+                }
+                height: 70px;
+                background: #dce0e3;
+                margin-top: 15px;
+                .categorieInfo{
+                    font-family: $Black;
+                    color: #333333;
+                    text-transform: uppercase;
+                    font-size: 0.750em;
+                }
+                .QuizzName{
+                    margin-top: 2px;
+                    font-size: 1.250em;
+                    color: #333333;
+                    font-family: $Regular;
+            }
+            }
+        }
     }
     .sideBar{
         display: inline-block;
