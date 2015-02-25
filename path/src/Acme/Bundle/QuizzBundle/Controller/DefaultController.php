@@ -15,10 +15,12 @@ class DefaultController extends Controller
     public function indexAction()
     {
         $repository = $this->get('doctrine.orm.entity_manager')->getRepository('AcmeQuizzBundle:Quizz');
-        $quizz = $repository->findAll();
+        $TopQuizz = $repository->getQuizzByOrderTop('asc');
+        $RecentQuizz = $repository->getQuizzByOrderDate('asc');
 
         return array(
-            'quizz' => $quizz
+            'RecentQuizz' => $RecentQuizz,
+            'TopQuizz' => $TopQuizz
         );
     }
     

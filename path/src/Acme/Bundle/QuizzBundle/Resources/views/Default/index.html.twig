@@ -5,7 +5,7 @@
     <div class="lastQuizz">
         <h2>Les Derniers quizz</h2>
         <ul>
-            {% for Quizz in quizz %}
+            {% for Quizz in RecentQuizz %}
             <li>
                 <a href="">
                     <img src="../bundles/acmedemo/images/test-hockey.jpg" alt="{{ Quizz.titre }}">
@@ -20,6 +20,19 @@
     </div>
     <div class="topQuizz">
         <h2>Les meilleurs quizz</h2>
+        <ul>
+            {% for Quizz in TopQuizz %}
+            <li>
+                <a href="">
+                    <img src="../bundles/acmedemo/images/test-hockey.jpg" alt="{{ Quizz.titre }}">
+                    <div>
+                    <p class="categorieInfo">{{ Quizz.categorie }}</p>
+                    <p class="QuizzName">{{ Quizz.titre }}</p></div>
+                </a>
+            </li>
+        {% endfor %}
+        
+        </ul>
     </div>
 {% endblock %}
 

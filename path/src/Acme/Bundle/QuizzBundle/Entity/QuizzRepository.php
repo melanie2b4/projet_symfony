@@ -12,12 +12,34 @@ use Doctrine\ORM\EntityRepository;
  */
 class QuizzRepository extends EntityRepository
 {
-
-public function getAllQuizz(){
-$quizz = $this->getDoctrine()
-        ->getRepository('AcmeQuizzBundle:Quizz')
-        ->find($id)
-        ->find($titre)
-        ->find($categorie);
+    public function getAllQuizz()
+    {
+        $quizz = $this->getDoctrine()
+                ->getRepository('AcmeQuizzBundle:Quizz')
+                ->find($id)
+                ->find($titre)
+                ->find($categorie)
+                ->find($datePublication)
+        ;
+    }
+    
+    public function getQuizzByOrderDate($order)
+    {
+        return $this->getEntityManager()->createQueryBuilder()
+            ->add('select', 'q')
+            ->add('from', 'AcmeQuizzBundle:Quizz q')
+            ->add('orderBy', 'q.datePublication '.$order)
+            ->getQuery()
+            ->getResult();
+    }
+    
+    public function getQuizzByOrderTop($order)
+    {
+        return $this->getEntityManager()->createQueryBuilder()
+            ->add('select', 'q')
+            ->add('from', 'AcmeQuizzBundle:Quizz q')
+            ->add('orderBy', 'q.top '.$order)
+            ->getQuery()
+            ->getResult();
     }
 }

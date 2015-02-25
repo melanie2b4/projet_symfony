@@ -122,7 +122,13 @@ section{
             font-family: $Light;
             font-size: 2em;
         }
-        .lastQuizz{
+        .topQuizz ul{
+            margin-left: 20px;
+        }
+        .lastQuizz ul{
+            padding-right: 20px;
+        }
+        .lastQuizz, .topQuizz{
             width: 49%;
             display: inline-block;
             h2{
@@ -165,7 +171,7 @@ section{
                         height: 70px;
                         background: rgba(0, 0, 0, 0.65);
                         width: 100%;
-                        .QuizzName .categorieInfo{
+                        .QuizzName, .categorieInfo{
                         color: #ffffff;
                         }
                     }
