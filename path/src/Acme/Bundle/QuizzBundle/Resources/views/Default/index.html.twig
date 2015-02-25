@@ -3,12 +3,12 @@
 
 {% block body %}
     <div class="lastQuizz">
-        <h2>Les derniers quizz</h2>
+        <h2>Les Derniers quizz</h2>
         <ul>
             {% for Quizz in RecentQuizz %}
             <li>
                 <a href="{{ path('show_quizz', {id: Quizz.id}) }}">
-                    <img src="../bundles/acmedemo/images/{{ Quizz.img }}" alt="{{ Quizz.titre }}">
+                    <img src="../../bundles/acmedemo/images/{{ Quizz.img }}" alt="{{ Quizz.titre }}">
                     <div>
                     <p class="categorieInfo">{{ Quizz.categorie }}</p>
                     <p class="QuizzName">{{ Quizz.titre }}</p></div>
@@ -24,7 +24,7 @@
             {% for Quizz in TopQuizz %}
             <li>
                 <a href="{{ path('show_quizz', {id: Quizz.id}) }}">
-                    <img src="../bundles/acmedemo/images/{{ Quizz.img }}" alt="{{ Quizz.titre }}">
+                    <img src="../../bundles/acmedemo/images/{{ Quizz.img }}" alt="{{ Quizz.titre }}">
                     <div>
                     <p class="categorieInfo">{{ Quizz.categorie }}</p>
                     <p class="QuizzName">{{ Quizz.titre }}</p></div>
