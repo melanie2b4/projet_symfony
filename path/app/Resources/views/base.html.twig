@@ -38,7 +38,7 @@
             
             <div class="sideBar">
             <!--{% block user %}{% endblock%}-->
-            {{ render(controller('FOSUserBundle:Security:login'))}}
+            {% include "::userBloc.html.twig" %}
             </div>
         </section>
         

@@ -1,6 +1,6 @@
-{% for users in users %}
-  <a href="/users/{{ users.slug }}">
-      {{ users.last_username }}
-  </a>
-{% endfor %}
-
+{% if app.user %}
+{{ app.user.email }}
+<a href="{{ path('fos_user_security_logout') }}">LOGOUT</a>
+{% else %}
+{{ render(controller('FOSUserBundle:Security:login'))}}
+{% endif %}
