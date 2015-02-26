@@ -56,6 +56,7 @@ class QuizzRepository extends EntityRepository
         ->getQuery()
         ->getResult();
     }
+
     public function findPost()
     {
         $qb = $this->getEntityManager()->createQueryBuilder();
