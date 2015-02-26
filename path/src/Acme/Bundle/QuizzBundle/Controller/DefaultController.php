@@ -10,7 +10,7 @@ class DefaultController extends Controller
 {
     
     /**
-     * @Route("/")
+     * @Route("/", name="index")
      * @Template()
      */
     public function indexAction()
@@ -64,7 +64,7 @@ class DefaultController extends Controller
     public function divertissementsAction()
     {
         $repository = $this->get('doctrine.orm.entity_manager')->getRepository('AcmeQuizzBundle:Quizz');
-        $DivertissementQuizz = $repository->getQuizzByCategorie('Divertissement', 'asc');
+        $DivertissementQuizz = $repository->getQuizzByCategorie('Divertissement', 'desc');
         return array(
             'DivertissementQuizz' => $DivertissementQuizz
         );

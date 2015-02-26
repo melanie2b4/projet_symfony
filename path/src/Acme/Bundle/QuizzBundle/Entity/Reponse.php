@@ -28,6 +28,13 @@ class Reponse
      * @ORM\Column(name="libelle_reponse", type="string", length=500)
      */
     private $libelleReponse;
+    
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="question_id", type="string", length=500)
+     */
+    private $question_id;
 
     /**
      * @var string
@@ -35,6 +42,13 @@ class Reponse
      * @ORM\Column(name="categorie", type="string", length=500)
      */
     private $categorie;
+    
+    /**
+     * @var boolean $isTrue
+     *
+     * @ORM\Column(name="isTrue", type="boolean")
+     */
+    private $isTrue;
 
 
     /**
@@ -71,6 +85,29 @@ class Reponse
     }
 
     /**
+     * Set question_id
+     *
+     * @param string $libelleReponse
+     * @return Reponse
+     */
+    public function setQuestion_id($question_id)
+    {
+        $this->question_id = $question_id;
+
+        return $this;
+    }
+
+    /**
+     * Get question_id
+     *
+     * @return string 
+     */
+    public function getQuestion_id()
+    {
+        return $this->question_id;
+    }
+    
+    /**
      * Set categorie
      *
      * @param string $categorie
@@ -91,5 +128,29 @@ class Reponse
     public function getCategorie()
     {
         return $this->categorie;
+    }
+    
+    /**
+     * Set isTrue
+     *
+     * @param boolean $isTrue
+     */
+    
+    public function setIsTrue($isTrue)
+    {
+        $this->isTrue = $isTrue;
+        
+    }
+
+    /**
+     * Get isTrue
+     *
+     * @return boolean
+     */
+     
+    public function getIsTrue()
+    {
+        return $this->isTrue;
+        
     }
 }

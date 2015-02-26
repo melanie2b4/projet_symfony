@@ -1,11 +1,41 @@
 {% extends 'base.html.twig' %}
-
+{% block title %}Gastronomie{% endblock %}
 
 {% block body %}
     <h2>Gastronomie</h2>
     <div class="listCategory">
+        <div class="headlines">
+            <div class="first">
+                {% for Quizz in GastronomieQuizz|slice(0, 1) %}
+                <div>
+                <a href="{{ path('show_quizz', {id: Quizz.id}) }}">
+                    <img src="../../bundles/acmedemo/images/{{ Quizz.img }}" alt="{{ Quizz.titre }}">
+                    <div>
+                    <p class="categorieInfo">{{ Quizz.categorie }}</p>
+                    <p class="QuizzName">{{ Quizz.titre }}</p></div>
+                </a>
+            </div>
+            {% endfor %}
+            
+            </div>
+            <div class="side">
+                {% for Quizz in GastronomieQuizz|slice(1, 2) %}
+                <div>
+                    <div>
+                <a href="{{ path('show_quizz', {id: Quizz.id}) }}">
+                    <img src="../../bundles/acmedemo/images/{{ Quizz.img }}" alt="{{ Quizz.titre }}">
+                    <div>
+                    <p class="categorieInfo">{{ Quizz.categorie }}</p>
+                    <p class="QuizzName">{{ Quizz.titre[:16] }}</p></div>
+                </a>
+            </div>
+                </div>
+                
+            {% endfor %}
+            </div>
+        </div>
         <ul>
-            {% for Quizz in GastronomieQuizz %}
+            {% for Quizz in GastronomieQuizz[3:] %}
             <li>
                 <a href="{{ path('show_quizz', {id: Quizz.id}) }}">
                     <img src="../../bundles/acmedemo/images/{{ Quizz.img }}" alt="{{ Quizz.titre }}">

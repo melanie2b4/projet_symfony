@@ -1,5 +1,5 @@
 {% extends 'base.html.twig' %}
-
+{% block title %}{{ Quizz.titre }}{% endblock %}
 
 {% block body %}
     <h2>{{ Quizz.titre }}</h2>
@@ -10,9 +10,15 @@
     
     <div class="quizz">
         <ul>
+            {% set number = 0 %}
+
             {% for Question in Questions %}
             <li>
-               <p>{{ Question.libelleQuestion }}</p>
+               <p class="libelleQuestion">{{ Question.libelleQuestion }}</p>
+               <div>
+                   <p class="questionNumber">{% set number = number + 1 %}{{ number }}</p>
+                   
+               </div>
             </li>
         {% endfor %}
         
