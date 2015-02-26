@@ -5,6 +5,7 @@ namespace Acme\Bundle\QuizzBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
+use Symfony\Component\HttpFoundation\Request;
 
 class DefaultController extends Controller
 {
@@ -190,6 +191,23 @@ class DefaultController extends Controller
     {
     return array();
     }
+
+     /**
+     * @Route("/search", name="search_quizz")
+     * @Template()
+     */
+    public function searchAction(Request $request)
+    {
+        $search = $request->query->get('search');
+        $query = $this->get('AcmeQuizzBundle.search_service')->findQuizzWithSearchTermQuery($search);
+        $quizz = $query->getResult();
+        return array(
+            'quizz' => $quizz,
+            'search' => $search
+        );
+    }
+
 }
+
 
 

@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+   
+    <div class="row">
+        {% for q in quizz %}
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <div class="caption">
+                        <h3>{{ q.titre }}</h3>
+                        <p>Catégorie > {{ q.categorie }}</p>
+                        <p><a href="{{ path('show_quizz', {id: q.id}) }}" class="btn btn-primary" role="button">Lire</a></p>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+  
+{% endblock %}
+{##}

@@ -12,5 +12,18 @@
             <argument>%parameter_name%</argument>
         </service>
     </services>
-    -->
+-->
+
+<services>
+    <service id="AcmeQuizzBundle.search_service" class="Acme\Bundle\QuizzBundle\Service\Search">
+        <argument type="service" id="AcmeQuizzBundle.repository.quizz" />
+    </service>
+    <service id="AcmeQuizzBundle.repository.quizz"
+        class="Acme\Bundle\QuizzBundle\Entity\QuizzRepository"
+        factory-method="getRepository"
+        factory-service="doctrine.orm.entity_manager">
+        <argument>AcmeQuizzBundle:Quizz</argument>
+    </service>
+</services>
+
 </container>
