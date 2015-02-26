@@ -77,6 +77,9 @@ class QuizzRepository extends EntityRepository
         ->from('AcmeQuizzBundle:Quizz', 'q')
         ->where(
             $qb->expr()->like('q.titre', $qb->expr()->literal('%' . $searchTerm . '%'))
+            )
+        ->orWhere(
+            $qb->expr()->like('q.description', $qb->expr()->literal('%' . $searchTerm . '%'))
             );
 
         return $qb->getQuery();
