@@ -34,8 +34,12 @@ class DefaultController extends Controller
         $repository = $this->get('doctrine.orm.entity_manager')->getRepository('AcmeQuizzBundle:Quizz');
         $Quizz = $repository->findOneById($id);
 
+        $repository = $this->get('doctrine.orm.entity_manager')->getRepository('AcmeQuizzBundle:Question');
+        $Questions = $repository->findBy(array ('quizz_id' => $id));
+        
         return array(
-            'Quizz' => $Quizz
+            'Quizz' => $Quizz,
+            'Questions' => $Questions
         );
     }
     
