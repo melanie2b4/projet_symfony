@@ -34,14 +34,9 @@ class DefaultController extends Controller
         $repository = $this->get('doctrine.orm.entity_manager')->getRepository('AcmeQuizzBundle:Quizz');
         $Quizz = $repository->findOneById($id);
 
-        $repository = $this->get('doctrine.orm.entity_manager')->getRepository('AcmeQuizzBundle:Question');
-        $Questions = $repository->findBy(array ('quizz_id' => $id));
-        
         return array(
-            'Quizz' => $Quizz,
-            'Questions' => $Questions
+            'Quizz' => $Quizz
         );
-
     }
     
     /**
@@ -174,6 +169,23 @@ class DefaultController extends Controller
         );
     }
 
+    /**
+     * @Route("/category/modificationProfil", name="modificationProfil")
+     * @Template()
+     */
+    public function modificationProfilAction()
+    {
+    return array();
+    }
+
+    /**
+     * @Route("/category/inscription", name="inscription")
+     * @Template()
+     */
+    public function inscriptionAction()
+    {
+    return array();
+    }
 }
 
 

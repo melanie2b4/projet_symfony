@@ -1,9 +1,11 @@
 {% if app.user %}
-{{ app.user.username }}<br>
+	{{ app.user.username }}<br>
+
 <span>Score Sport : </span>{{ app.user.scoresport }}<br>
 <span>Score Divertissements : </span>{{ app.user.scoredivertissements }}<br>
 <a href="{{ path('fos_user_security_logout') }}">Déconnexion</a><br>
-<a href="#"><h5>Modifier le profil</h5></a>
+<a href="{{ path('modificationProfil') }}"><h5>Modifier le profil</h5></a>
+
 {% else %}
-{{ render(controller('FOSUserBundle:Security:login'))}}
+	{{ render(controller('FOSUserBundle:Security:login'))}}
 {% endif %}
