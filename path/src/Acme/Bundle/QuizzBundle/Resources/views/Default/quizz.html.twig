@@ -7,8 +7,16 @@
         <img src="../../bundles/acmedemo/images/{{ Quizz.img }}" alt="{{ Quizz.titre }}">
         <p>{{ Quizz.description }}</p>
     </div>
+    
     <div class="quizz">
+        <ul>
+            {% for Question in Questions %}
+            <li>
+               <p>{{ Question.libelleQuestion }}</p>
+            </li>
+        {% endfor %}
         
+        </ul>
     </div>
 {% endblock %}
 

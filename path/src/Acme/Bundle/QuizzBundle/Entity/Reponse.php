@@ -8,7 +8,8 @@ use Doctrine\ORM\Mapping as ORM;
  * Reponse
  *
  * @ORM\Table()
- * @ORM\Entity
+ *
+@ORM\Entity(repositoryClass="Acme\Bundle\QuizzBundle\Entity\QuestionRepository")
  */
 class Reponse
 {
@@ -20,15 +21,6 @@ class Reponse
      * @ORM\GeneratedValue(strategy="AUTO")
      */
     private $id;
-    
-    /**
-     * @var integer
-     *
-     * @ORM\Column(name="QuizzId", type="integer")
-     * @ORM\QuizzId
-     * @ORM\GeneratedValue(strategy="AUTO")
-     */
-    private $QuizzId;
 
     /**
      * @var string

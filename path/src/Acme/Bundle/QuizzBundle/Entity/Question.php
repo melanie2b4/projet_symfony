@@ -20,6 +20,13 @@ class Question
      * @ORM\GeneratedValue(strategy="AUTO")
      */
     private $id;
+    
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="quizz_id", type="string", length=255)
+     */
+    private $quizz_id;
 
     /**
      * @var string
@@ -46,6 +53,29 @@ class Question
         return $this->id;
     }
 
+    /**
+     * Set quizz_id
+     *
+     * @param string $quizz_id
+     * @return Quizz
+     */
+    public function setQuizz_id($quizz_id)
+    {
+        $this->quizz_id = $quizz_id;
+
+        return $this;
+    }
+
+    /**
+     * Get quizz_id
+     *
+     * @return string 
+     */
+    public function getquizz_id()
+    {
+        return $this->quizz_id;
+    }
+    
     /**
      * Set libelleQuestion
      *
