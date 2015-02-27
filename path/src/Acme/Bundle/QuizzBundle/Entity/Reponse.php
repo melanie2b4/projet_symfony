@@ -9,10 +9,18 @@ use Doctrine\ORM\Mapping as ORM;
  *
  * @ORM\Table()
  *
-@ORM\Entity(repositoryClass="Acme\Bundle\QuizzBundle\Entity\QuestionRepository")
+ *@ORM\Entity(repositoryClass="Acme\Bundle\QuizzBundle\Entity\QuestionRepository")
  */
 class Reponse
 {
+
+    /** 
+    * @ORM\ManytoOne(targetEntity="Acme\Bundle\QuizzBundle\Entity\Question", inversedBy="reponses")
+    * @ORM\JoinColumn ( nullable=false)
+    *
+    */
+    private $question;
+
     /**
      * @var integer
      *
@@ -29,12 +37,6 @@ class Reponse
      */
     private $libelleReponse;
     
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="question_id", type="string", length=500)
-     */
-    private $question_id;
 
     /**
      * @var string
@@ -85,29 +87,6 @@ class Reponse
     }
 
     /**
-     * Set question_id
-     *
-     * @param string $libelleReponse
-     * @return Reponse
-     */
-    public function setQuestion_id($question_id)
-    {
-        $this->question_id = $question_id;
-
-        return $this;
-    }
-
-    /**
-     * Get question_id
-     *
-     * @return string 
-     */
-    public function getQuestion_id()
-    {
-        return $this->question_id;
-    }
-    
-    /**
      * Set categorie
      *
      * @param string $categorie
@@ -152,5 +131,28 @@ class Reponse
     {
         return $this->isTrue;
         
+    }
+
+    /**
+     * Set question
+     *
+     * @param \Acme\Bundle\QuizzBundle\Entity\Question $question
+     * @return Reponse
+     */
+    public function setQuestion(\Acme\Bundle\QuizzBundle\Entity\Question $question)
+    {
+        $this->question = $question;
+
+        return $this;
+    }
+
+    /**
+     * Get question
+     *
+     * @return \Acme\Bundle\QuizzBundle\Entity\Question 
+     */
+    public function getQuestion()
+    {
+        return $this->question;
     }
 }

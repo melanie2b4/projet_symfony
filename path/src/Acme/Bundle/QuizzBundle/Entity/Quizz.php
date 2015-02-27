@@ -3,6 +3,7 @@
 namespace Acme\Bundle\QuizzBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\Common\Collections\ArrayCollection;
 
 /**
  * Quizz
@@ -12,6 +13,7 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Quizz
 {
+
     /**
      * @var integer
      *
@@ -20,6 +22,7 @@ class Quizz
      * @ORM\GeneratedValue(strategy="AUTO")
      */
     private $id;
+
 
     /**
      * @var string
@@ -63,6 +66,17 @@ class Quizz
      */
     private $datePublication;
 
+    /**
+     * @var \Question[]
+     *
+     * @ORM\OneToMany(targetEntity="Question", mappedBy="quizz") 
+     * relation inversée 
+     */
+    private $questions;
+
+    public function __construct() {
+        $this->questions = new ArrayCollection();
+    }
 
     /**
      * Get id
@@ -210,5 +224,41 @@ class Quizz
     public function getDatePublication()
     {
         return $this->datePublication;
+    }
+
+
+
+
+    /**
+     * Add questions
+     *
+     * @param \Acme\Bundle\QuizzBundle\Entity\Question $questions
+     * @return Quizz
+     */
+    public function addQuestion(\Acme\Bundle\QuizzBundle\Entity\Question $questions)
+    {
+        $this->questions[] = $questions;
+
+        return $this;
+    }
+
+    /**
+     * Remove questions
+     *
+     * @param \Acme\Bundle\QuizzBundle\Entity\Question $questions
+     */
+    public function removeQuestion(\Acme\Bundle\QuizzBundle\Entity\Question $questions)
+    {
+        $this->questions->removeElement($questions);
+    }
+
+    /**
+     * Get questions
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getQuestions()
+    {
+        return $this->questions;
     }
 }

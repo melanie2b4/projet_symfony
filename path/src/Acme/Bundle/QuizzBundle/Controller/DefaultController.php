@@ -6,8 +6,10 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Acme\Bundle\QuizzBundle\Form\AddQuizzType;
+use Acme\Bundle\QuizzBundle\Form\QuizzType;
 use Acme\Bundle\QuizzBundle\Entity\Quizz;
 use Symfony\Component\HttpFoundation\Request;
+use Acme\Bundle\QuizzBundle\Entity\Question;
 
 class DefaultController extends Controller
 {
@@ -32,17 +34,33 @@ class DefaultController extends Controller
      * @Route("/quizz/{id}", name="show_quizz")
      * @Template()
      */
-    public function quizzAction($id)
+    public function quizzAction($id, Request $request)
     {
         $repository = $this->get('doctrine.orm.entity_manager')->getRepository('AcmeQuizzBundle:Quizz');
         $Quizz = $repository->findOneById($id);
 
         $repository = $this->get('doctrine.orm.entity_manager')->getRepository('AcmeQuizzBundle:Question');
-        $Questions = $repository->findBy(array ('quizz_id' => $id));
-        
+        $Questions = $repository->findAll();
+
+        $form = $this->createForm(new QuizzType());
+
+        if ($request->getMethod() == 'POST') {
+            $form->handleRequest($request);
+            if ($form->isValid()) {
+                // Save the proposition
+
+                $em = $this->getDoctrine()->getManager();
+                $em->flush();
+
+                return $this->redirect($this->generateUrl('index'));
+            }
+        }
+
+       
         return array(
             'Quizz' => $Quizz,
-            'Questions' => $Questions
+            'Questions' => $Questions,
+            'form' => $form->createView()
         );
     }
     

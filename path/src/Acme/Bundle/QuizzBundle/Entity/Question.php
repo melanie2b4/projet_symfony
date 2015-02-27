@@ -11,7 +11,15 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\Entity
  */
 class Question
-{
+{  
+
+    /** 
+    * @ORM\ManytoOne(targetEntity="Acme\Bundle\QuizzBundle\Entity\Quizz", inversedBy="questions")
+    * @ORM\JoinColumn ( nullable=false)
+    *
+    */
+    private $quizz;
+
     /**
      * @var integer
      *
@@ -20,13 +28,7 @@ class Question
      * @ORM\GeneratedValue(strategy="AUTO")
      */
     private $id;
-    
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="quizz_id", type="string", length=255)
-     */
-    private $quizz_id;
+
 
     /**
      * @var string
@@ -42,6 +44,18 @@ class Question
      */
     private $categorie;
 
+    /**
+     * @var \Reponses[]
+     *
+     * @ORM\OneToMany(targetEntity="Reponse", mappedBy="question") 
+     * relation inversée 
+     */
+    private $reponses;
+
+
+      public function __construct() {
+        $this->reponses = new ArrayCollection();
+    }
 
     /**
      * Get id
@@ -51,29 +65,6 @@ class Question
     public function getId()
     {
         return $this->id;
-    }
-
-    /**
-     * Set quizz_id
-     *
-     * @param string $quizz_id
-     * @return Quizz
-     */
-    public function setQuizz_id($quizz_id)
-    {
-        $this->quizz_id = $quizz_id;
-
-        return $this;
-    }
-
-    /**
-     * Get quizz_id
-     *
-     * @return string 
-     */
-    public function getquizz_id()
-    {
-        return $this->quizz_id;
     }
     
     /**
@@ -120,5 +111,58 @@ class Question
     public function getCategorie()
     {
         return $this->categorie;
+    }
+
+    /**
+    * Set quizz
+    *
+    * @param Acme\Bundle\QuizzBundle\Entity\Quizz $quizz
+    */
+    public function setQuizz (Quizz $quizz)
+    {
+        $this->quizz = $quizz;
+    }
+
+    /**
+    * Get quizz
+    *
+    * @return Acme\Bundle\QuizzBundle\Entity\Quizz
+    */
+    public function getQuizz()
+    {
+        return $this -> article;
+    }
+
+    /**
+     * Add reponses
+     *
+     * @param \Acme\Bundle\QuizzBundle\Entity\Reponse $reponses
+     * @return Question
+     */
+    public function addReponse(\Acme\Bundle\QuizzBundle\Entity\Reponse $reponses)
+    {
+        $this->reponses[] = $reponses;
+
+        return $this;
+    }
+
+    /**
+     * Remove reponses
+     *
+     * @param \Acme\Bundle\QuizzBundle\Entity\Reponse $reponses
+     */
+    public function removeReponse(\Acme\Bundle\QuizzBundle\Entity\Reponse $reponses)
+    {
+        $this->reponses->removeElement($reponses);
+    }
+
+    /**
+     * Get reponses
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getReponses()
+    {
+        return $this->reponses;
     }
 }

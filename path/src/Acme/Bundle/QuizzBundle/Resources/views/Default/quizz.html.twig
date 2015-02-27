@@ -3,6 +3,7 @@
 
 {% block body %}
     <h2>{{ Quizz.titre }}</h2>
+
     <div class="intro">
         <img src="../../bundles/acmedemo/images/{{ Quizz.img }}" alt="{{ Quizz.titre }}">
         <p>{{ Quizz.description }}</p>
@@ -11,10 +12,16 @@
     <div class="quizz">
         <ul>
             {% set number = 0 %}
+          
 
-            {% for Question in Questions %}
+            {% for Question in Quizz.questions %}
             <li>
                <p class="libelleQuestion">{{ Question.libelleQuestion }}</p>
+
+               {% for Reponse in Question.reponses %}
+                <p class="rep">{{ Reponse.libelleReponse }}</p>
+                {% endfor %}
+                 
                <div>
                    <p class="questionNumber">{% set number = number + 1 %}{{ number }}</p>
                    
