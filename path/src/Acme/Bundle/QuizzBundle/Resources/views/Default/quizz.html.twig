@@ -1,37 +1,33 @@
 {% extends 'base.html.twig' %}
 {% block title %}{{ Quizz.titre }}{% endblock %}
 
-{% block body %}
+  {% block body %}
     <h2>{{ Quizz.titre }}</h2>
 
     <div class="intro">
-        <img src="../../bundles/acmedemo/images/{{ Quizz.img }}" alt="{{ Quizz.titre }}">
-        <p>{{ Quizz.description }}</p>
+      <img src="../../bundles/acmedemo/images/{{ Quizz.img }}" alt="{{ Quizz.titre }}">
+      <p>{{ Quizz.description }}</p>
     </div>
     
     <div class="quizz">
-      <form action="" method="">
-        <ul>
-            {% set number = 0 %}
-          
+      <form class="quizzForm" action="" method="">
 
-            {% for Question in Quizz.questions %}
-           <label class="libelleQuestion">{{ Question.libelleQuestion }}</label>
+        {% set number = 0 %}
 
-               {% for Reponse in Question.reponses %}
-                <label>{{ Reponse.libelleReponse }}</label>
-               <input type="radio" name="rep" value="ok"/>
-                {% endfor %}
-                 
-               <div>
-                   <p class="questionNumber">{% set number = number + 1 %}{{ number }}</p>
-                   
-               </div>
-            </li>
-        {% endfor %}
-        
-        </ul>
-      </form>
-    </div>
-{% endblock %}
+          <div class="questionNumber">{% set number = number + 1 %}{{ number }}</div>
+
+          {% for Question in Quizz.questions %}
+            <label class="libelleQuestion">{{ Question.libelleQuestion }}</label>
+
+            {% for Reponse in Question.reponses %}
+              <label class="libelleReponse">{{ Reponse.libelleReponse }}</label>
+              <input class="reponse" type="radio" name="reponse" value="ok"/>
+            {% endfor %}
+
+          {% endfor %}
+
+
+        </form>
+      </div>
+    {% endblock %}
 

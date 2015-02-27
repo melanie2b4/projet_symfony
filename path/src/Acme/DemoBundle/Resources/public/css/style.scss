@@ -85,12 +85,13 @@ header{
     .topBar{
         height: 75px;
         width: 100%;
-        background: $clr1;
+
         .head{
-            max-width: 820px;
-            margin: 20px 153px 0;
-        
-            float: left;  
+            padding-left: 40px;
+            padding-right: 40px;
+            float: left;
+            max-width: 700px;
+            margin: 20px 0 0;
 
             h1{
                 float: left;
@@ -108,7 +109,7 @@ header{
 
         .search{
             max-width: 1200px;
-            margin: 20px -170px 0;
+            margin: 20px 0 0;
             padding-left: 40px;
             padding-right: 40px;  
             float: left;  
