@@ -10,16 +10,17 @@
     </div>
     
     <div class="quizz">
+      <form action="" method="">
         <ul>
             {% set number = 0 %}
           
 
             {% for Question in Quizz.questions %}
-            <li>
-               <p class="libelleQuestion">{{ Question.libelleQuestion }}</p>
+           <label class="libelleQuestion">{{ Question.libelleQuestion }}</label>
 
                {% for Reponse in Question.reponses %}
-                <p class="rep">{{ Reponse.libelleReponse }}</p>
+                <label>{{ Reponse.libelleReponse }}</label>
+               <input type="radio" name="rep" value="ok"/>
                 {% endfor %}
                  
                <div>
@@ -30,6 +31,7 @@
         {% endfor %}
         
         </ul>
+      </form>
     </div>
 {% endblock %}
 

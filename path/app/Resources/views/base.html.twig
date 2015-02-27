@@ -11,7 +11,7 @@
 <body>
     <header>
         <div class="topBar">
-            <div>
+            <div class="head">
                 <a href="{{ path('index') }}"><h1><img src="{{ asset('bundles/acmedemo/images/logo.png') }}" alt="Quizz"/></h1></a>
                 <p>Baseline lorem ipsum dolor sit amet</p>         
 
@@ -19,9 +19,9 @@
               <div class="search">
                 <form method="get" action="{{ path('search_quizz') }}" class="navbar-form navbar-left" role="search">
                     <div class="form-group">
-                        <input type="text" name="search" id="search" class="form-control">
+                        <input type="text" name="search" placeholder="rechercher" id="search" class="form-control">
                     </div>
-                    <button type="submit" class="btn btn-default">Rechercher</button>
+                    <button type="submit" class="btn btn-default">OK</button>
                 </form>
             </div> 
             </div>
