@@ -1,8 +1,46 @@
 {% if app.user %}
 	{{ app.user.username }}<br>
 
-<span>Score Sport : </span>{{ app.user.scoresport }}<br>
-<span>Score Divertissements : </span>{{ app.user.scoredivertissements }}<br>
+{% if app.user.scoredivertissements is not empty %}
+    <span>Score Divertissement : </span>{{ app.user.scoredivertissements }}<br />
+{% endif %}
+
+{% if app.user.scoresport is not empty %}
+    <span>Score Sport : </span>{{ app.user.scoresport }}<br />
+{% endif %}
+
+{% if app.user.scorepolitique is not empty %}
+    <span>Score Politique : </span>{{ app.user.scorepolitique }}<br />
+{% endif %}
+
+{% if app.user.scorehistoire is not empty %}
+    <span>Score Histoire : </span>{{ app.user.scorehistoire }}<br />
+{% endif %}
+
+{% if app.user.scorenature is not empty %}
+    <span>Score Nature : </span>{{ app.user.scorenature }}<br />
+{% endif %}
+
+{% if app.user.scoresante is not empty %}
+    <span>Score Santé : </span>{{ app.user.scoresante }}<br />
+{% endif %}
+
+{% if app.user.scoreculturegenerale is not empty %}
+    <span>Score Culture Générale : </span>{{ app.user.scoreculturegenerale }}<br />
+{% endif %}
+
+{% if app.user.scoregeographie is not empty %}
+    <span>Score Culture Géographie : </span>{{ app.user.scoregéographie }}<br />
+{% endif %}
+
+{% if app.user.scoregastronomie is not empty %}
+    <span>Score Gastronomie : </span>{{ app.user.scoregastronomie }}<br />
+{% endif %}
+
+{% if app.user.scorehightech is not empty %}
+    <span>Score High-Tech : </span>{{ app.user.scorehightech }}<br />
+{% endif %}
+
 <a href="{{ path('fos_user_security_logout') }}">Déconnexion</a><br>
 <a href="{{ path('modificationProfil') }}"><h5>Modifier le profil</h5></a>
 
