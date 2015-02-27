@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <h2>Ajouter un quizz !</h2>
+    <div>
+        <form action="{{ path('addQuizz') }}" method="post" {{ form_enctype(form) }}>
+            {{ form_widget(form) }}
+            <input type="submit" value="Ajouter le quizz">
+        </form>
+    </div>
+{% endblock %}

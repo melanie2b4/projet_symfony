@@ -5,6 +5,8 @@ namespace Acme\Bundle\QuizzBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
+use Acme\Bundle\QuizzBundle\Form\AddQuizzType;
+use Acme\Bundle\QuizzBundle\Entity\Quizz;
 use Symfony\Component\HttpFoundation\Request;
 
 class DefaultController extends Controller
@@ -192,6 +194,7 @@ class DefaultController extends Controller
     return array();
     }
 
+
      /**
      * @Route("/search", name="search_quizz")
      * @Template()
@@ -205,6 +208,38 @@ class DefaultController extends Controller
             'quizz' => $quizz,
             'search' => $search
         );
+    }
+
+        
+    /**
+     * @Route("/add", name="addQuizz")
+     * @Template()
+     */
+    public function addQuizzAction(Request $request)
+    {
+    
+    $quizz = new Quizz();
+    $quizz->setTop('0');
+    $quizz->setImg('football.jpg');
+    $quizz->setDatePublication(new \DateTime());
+
+        $form = $this->createForm(new AddQuizzType(), $quizz);
+
+        if ($request->getMethod() == 'POST') {
+            $form->handleRequest($request);
+            if ($form->isValid()) {
+                // Save the proposition
+
+                $em = $this->getDoctrine()->getManager();
+                $em->persist($quizz);
+                $em->flush();
+
+                return $this->redirect($this->generateUrl('index'));
+            }
+        }
+
+        return array('form' => $form->createView());
+    
     }
 
 }
