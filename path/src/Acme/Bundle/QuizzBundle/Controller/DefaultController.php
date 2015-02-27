@@ -186,7 +186,7 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("/inscription", name="inscription")
+     * @Route("/inscription", name="Inscription")
      * @Template()
      */
     public function inscriptionAction()
