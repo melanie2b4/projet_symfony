@@ -82,15 +82,17 @@ body{
     background: #f5f5f5;
 }
 header{
+     background: $clr1;
     .topBar{
         height: 75px;
-        width: 100%;
+        max-width: 1200px;
+        margin:0px auto;
 
         .head{
             padding-left: 40px;
             padding-right: 40px;
             float: left;
-            max-width: 700px;
+            max-width: 780px;
             margin: 20px 0 0;
 
             h1{
