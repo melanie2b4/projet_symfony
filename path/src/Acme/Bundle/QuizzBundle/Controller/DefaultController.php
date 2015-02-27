@@ -177,7 +177,7 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("/category/modificationProfil", name="modificationProfil")
+     * @Route("/modificationProfil", name="modificationProfil")
      * @Template()
      */
     public function modificationProfilAction()
@@ -186,7 +186,7 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("/category/inscription", name="inscription")
+     * @Route("/inscription", name="inscription")
      * @Template()
      */
     public function inscriptionAction()

@@ -4,9 +4,10 @@
 <span>Score Sport : </span>{{ app.user.scoresport }}<br>
 <span>Score Divertissements : </span>{{ app.user.scoredivertissements }}<br>
 <a href="{{ path('fos_user_security_logout') }}">Déconnexion</a><br>
-<a href="{{ path('fos_user_profile_edit') }}"><h5>Modifier le profil</h5></a>
+<a href="{{ path('modificationProfil') }}"><h5>Modifier le profil</h5></a>
 
 {% else %}
 	{{ render(controller('FOSUserBundle:Security:login'))}}
-	<a href="{{ path('fos_user_registration_register') }}">Inscription</a><br>
+	<a href="{{ path('inscription') }}">Inscription</a><br>
 {% endif %}
+ 
