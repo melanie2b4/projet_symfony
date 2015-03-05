@@ -8,26 +8,24 @@
       <img src="../../bundles/acmedemo/images/{{ Quizz.img }}" alt="{{ Quizz.titre }}">
       <p>{{ Quizz.description }}</p>
     </div>
-    
-    <div class="quizz">
-      <form class="quizzForm" action="" method="">
-
-        {% set number = 0 %}
-
-          <div class="questionNumber">{% set number = number + 1 %}{{ number }}</div>
-
+  
+  <div class="wrapper">
+      <form method="POST">
+            {% set number = 0 %}<!-- On le met à zéro -->
+       
           {% for Question in Quizz.questions %}
-            <label class="libelleQuestion">{{ Question.libelleQuestion }}</label>
 
+              <div class="questionNumber">{% set number = number + 1 %}{{ number }}</div><!-- On incrémente -->
+            <label class="libelleQuestion">{{ Question.libelleQuestion }}</label>
+            <br><br>
             {% for Reponse in Question.reponses %}
-              <label class="libelleReponse">{{ Reponse.libelleReponse }}</label>
-              <input class="reponse" type="radio" name="reponse" value="ok"/>
+              <label class="libelleReponse"><input type="radio" name="choix-{{Question.id}}" value="{{Reponse.id}}" class="inputRadio"><span class="customRadio"></span> {{ Reponse.libelleReponse }}</label><br>
+              <br>
             {% endfor %}
 
           {% endfor %}
 
-
+         <input type="submit" value="VALIDER">
         </form>
       </div>
     {% endblock %}
-

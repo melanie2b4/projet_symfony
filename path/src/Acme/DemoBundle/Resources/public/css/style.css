@@ -366,6 +366,72 @@ section {
           color: #d8D8D8;
           font-family: "LatoBoldItalic", arial, sans-serif;
           font-size: 4.688em; }
+
+.wrapper {
+  width: 100%;
+  padding: 6%;
+  margin: 6% auto;
+  background: #fff;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+form .questionNumber{
+   font-size: 45px;
+   font-family: "LatoBold", arial, sans-serif;
+   font-style: italic;
+   float: left;
+   color: #d7d7d7;
+   margin-top:60px;
+}
+
+form label.libelleQuestion{
+    font-size: 18px;
+    font-family: "LatoBold", arial, sans-serif;
+    margin:10px 10px ;
+}
+form label.libelleReponse{
+     font-family: "LatoRegular", arial, sans-serif;
+    font-size: 14px;
+    margin-left: 50px;
+    
+}
+
+label input + .customRadio {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+  background: #FF9640;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px #FF7400;
+  font-family: "LatoBlack", arial, sans-serif;
+}
+
+label input:checked + .customRadio {
+  background: #33CCCC;
+  box-shadow: 0 0 0 2px #009999;
+}
+
+input[type="submit"] {
+  padding: 5px 4%;
+  margin-top: 8%;
+  font-family: "LatoBold", arial, sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+  color: #fff;
+  background: #FF7400;
+  border: 0;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background: #333;
+}
+
   /* line 403, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
   section .sideBar {
     display: inline-block;

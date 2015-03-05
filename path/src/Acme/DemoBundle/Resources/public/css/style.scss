@@ -382,24 +382,58 @@ section{
             padding-right: 20px;
         }
     }
-    .quizz{
-        margin-top: 10px;
-        .libelleQuestion{
-            font-family: $Bold;
-            color: #333;
-            font-size: 1.250em;
-            margin-top: 60px;
-        }
-        div{
-            margin-top: 30px;
-            .questionNumber{
-                color: #d8D8D8;
-                font-family: $BoldItalic;
-                font-size: 4.688em;
-            }
-        }
-    }    
-    }
+   
+ /** TEST CSS **/
+
+
+.wrapper {
+  width: 60%;
+  padding: 6%;
+  margin: 6% auto;
+  background: #fff;
+}
+
+input[type="radio"] {
+  display: none;
+}
+label .libelleQuestion{
+    font-size: 25px;
+}
+label input + .customRadio {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+  background: #FF9640;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px #FF7400;
+}
+
+label input:checked + .customRadio {
+  background: #33CCCC;
+  box-shadow: 0 0 0 2px #009999;
+}
+
+input[type="submit"] {
+  padding: 5px 4%;
+  margin-top: 4%;
+  font-family: 'Arial', sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+  color: #fff;
+  background: #FF7400;
+  border: 0;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background: #333;
+}
+
+ /** FIN TEST CSS **/
+
+
     .sideBar{
         display: inline-block;
         width: 33%;
