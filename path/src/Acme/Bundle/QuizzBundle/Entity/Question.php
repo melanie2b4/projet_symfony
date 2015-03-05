@@ -3,6 +3,7 @@
 namespace Acme\Bundle\QuizzBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\Common\Collections\ArrayCollection;
 
 /**
  * Question
@@ -38,16 +39,9 @@ class Question
     private $libelleQuestion;
 
     /**
-     * @var string
-     *
-     * @ORM\Column(name="categorie", type="string", length=500)
-     */
-    private $categorie;
-
-    /**
      * @var \Reponses[]
      *
-     * @ORM\OneToMany(targetEntity="Reponse", mappedBy="question") 
+     * @ORM\OneToMany(targetEntity="Reponse", mappedBy="question", cascade={"persist"}) 
      * relation inversée 
      */
     private $reponses;
@@ -90,28 +84,7 @@ class Question
         return $this->libelleQuestion;
     }
 
-    /**
-     * Set categorie
-     *
-     * @param string $categorie
-     * @return Question
-     */
-    public function setCategorie($categorie)
-    {
-        $this->categorie = $categorie;
 
-        return $this;
-    }
-
-    /**
-     * Get categorie
-     *
-     * @return string 
-     */
-    public function getCategorie()
-    {
-        return $this->categorie;
-    }
 
     /**
     * Set quizz

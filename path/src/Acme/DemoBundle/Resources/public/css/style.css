@@ -1,4 +1,4 @@
-/* line 13, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+/* line 13, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -8,28 +8,28 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
-/* line 23, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+/* line 23, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block; }
 
-/* line 26, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+/* line 26, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
 body {
   line-height: 1; }
 
-/* line 29, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+/* line 29, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
 ol, ul {
   list-style: none; }
 
-/* line 32, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+/* line 32, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
 blockquote, q {
   quotes: none; }
 
-/* line 36, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+/* line 36, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
 blockquote:before, blockquote:after, q:before, q:after {
   content: '';
   content: none; }
 
-/* line 40, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+/* line 40, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
@@ -56,157 +56,115 @@ table {
   font-family: "LatoBoldItalic";
   src: url('../font/Lato-BoldItalic.ttf'); }
 
-/* line 78, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+/* line 75, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
 * {
   box-sizing: border-box; }
 
-/* line 81, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+/* line 78, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
 body {
   background: #f5f5f5; }
 
-/* line 84, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
-header {
+/* line 82, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+header .topBar {
+  height: 75px;
+  width: 100%;
   background: #0f80cf; }
-  /* line 86, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
-  header .topBar {
-    height: 75px;
+  /* line 86, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  header .topBar div {
     max-width: 1200px;
-    margin: 0px auto; }
-    /* line 91, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
-    header .topBar .head {
-      padding-left: 40px;
-      padding-right: 40px;
-      float: left;
-      max-width: 780px;
-      margin: 20px 0 0; }
-      /* line 98, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
-      header .topBar .head h1 {
-        float: left; }
-      /* line 102, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
-      header .topBar .head p {
-        width: 800px;
-        margin-top: 10px;
-        padding-left: 110px;
-        font-size: 0.9em;
-        color: white; }
-    /* line 112, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
-    header .topBar .search {
-      max-width: 1200px;
-      margin: 20px 0 0;
-      padding-left: 40px;
-      padding-right: 40px;
-      float: left; }
-      /* line 119, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
-      header .topBar .search .form-group {
-        display: inline-block; }
-        /* line 123, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
-        header .topBar .search .form-group input {
-          background-color: #57a6de;
-          padding: 7px 10px;
-          border: none; }
-        /* line 129, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
-        header .topBar .search .form-group input::-webkit-input-placeholder {
-          color: #6e7275; }
-        /* line 133, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
-        header .topBar .search .form-group input:-moz-placeholder {
-          color: #6e7275; }
-      /* line 138, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
-      header .topBar .search button {
-        background-color: #ff9640;
-        color: #fff;
-        border: none;
-        padding: 7px 10px;
-        font-weight: bold; }
-  /* line 147, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
-  header .nav {
-    height: 65px;
-    background: #cbd2d7; }
-    /* line 150, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
-    header .nav ul {
-      max-width: 1200px;
-      margin: auto;
-      padding-left: 40px;
-      padding-right: 40px; }
-      /* line 155, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
-      header .nav ul li {
+    margin: auto;
+    padding-left: 40px;
+    padding-right: 40px; }
+/* line 94, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+header .nav {
+  height: 65px;
+  background: #cbd2d7; }
+  /* line 97, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  header .nav ul {
+    max-width: 1200px;
+    margin: auto;
+    padding-left: 40px;
+    padding-right: 40px; }
+    /* line 102, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+    header .nav ul li {
+      display: inline-block;
+      margin-right: 25px; }
+      /* line 105, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+      header .nav ul li a {
         display: inline-block;
-        margin-right: 25px; }
-        /* line 158, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
-        header .nav ul li a {
-          display: inline-block;
-          font-family: "LatoBlack", arial, sans-serif;
-          color: #6f7376;
-          font-size: 1em;
-          text-decoration: none;
-          height: 65px;
-          line-height: 65px; }
-          /* line 166, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
-          header .nav ul li a:hover {
-            text-decoration: underline; }
+        font-family: "LatoBlack", arial, sans-serif;
+        color: #6f7376;
+        font-size: 1em;
+        text-decoration: none;
+        height: 65px;
+        line-height: 65px; }
+        /* line 113, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+        header .nav ul li a:hover {
+          text-decoration: underline; }
 
-/* line 174, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+/* line 121, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
 section {
   max-width: 1200px;
   margin: auto;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 40px; }
-  /* line 180, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  /* line 127, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
   section .content {
     display: inline-block;
     width: 66%;
     padding-left: 20px;
     padding-left: 20px; }
-    /* line 185, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+    /* line 132, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
     section .content h2 {
       font-family: "LatoLight", arial, sans-serif;
       font-size: 2em; }
-    /* line 189, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+    /* line 136, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
     section .content .topQuizz ul {
       margin-left: 20px; }
-    /* line 192, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+    /* line 139, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
     section .content .lastQuizz ul {
       padding-right: 20px; }
-    /* line 196, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+    /* line 143, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
     section .content .lastQuizz, section .content .topQuizz {
       width: 49%;
       display: inline-block; }
-      /* line 199, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+      /* line 146, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
       section .content .lastQuizz h2, section .content .topQuizz h2 {
         margin-right: 20px; }
-      /* line 202, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+      /* line 149, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
       section .content .lastQuizz li, section .content .topQuizz li {
         height: 70px;
         background: #dce0e3;
         margin-top: 15px; }
-        /* line 206, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+        /* line 153, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
         section .content .lastQuizz li img, section .content .topQuizz li img {
           height: 100%;
           display: inline-block; }
-        /* line 210, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+        /* line 157, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
         section .content .lastQuizz li div, section .content .topQuizz li div {
           display: inline-block;
           vertical-align: top;
           padding-left: 15px;
           padding-top: 15px; }
-          /* line 215, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+          /* line 162, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
           section .content .lastQuizz li div .categorieInfo, section .content .topQuizz li div .categorieInfo {
             font-family: "LatoBlack", arial, sans-serif;
             color: #333333;
             text-transform: uppercase;
             font-size: 0.75em; }
-          /* line 221, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+          /* line 168, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
           section .content .lastQuizz li div .QuizzName, section .content .topQuizz li div .QuizzName {
             margin-top: 2px;
             font-size: 1.25em;
             color: #333333;
             font-family: "LatoRegular", arial, sans-serif; }
-        /* line 228, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+        /* line 175, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
         section .content .lastQuizz li:first-child, section .content .topQuizz li:first-child {
           height: 210px;
           overflow: hidden;
           position: relative; }
-          /* line 232, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+          /* line 179, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
           section .content .lastQuizz li:first-child div, section .content .topQuizz li:first-child div {
             z-index: 10;
             position: absolute;
@@ -214,65 +172,65 @@ section {
             height: 70px;
             background: rgba(0, 0, 0, 0.65);
             width: 100%; }
-            /* line 239, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+            /* line 186, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
             section .content .lastQuizz li:first-child div .QuizzName, section .content .lastQuizz li:first-child div .categorieInfo, section .content .topQuizz li:first-child div .QuizzName, section .content .topQuizz li:first-child div .categorieInfo {
               color: #ffffff; }
-    /* line 246, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+    /* line 193, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
     section .content .topQuizz {
       width: 49%;
       display: inline-block;
       vertical-align: top; }
-      /* line 250, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+      /* line 197, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
       section .content .topQuizz h2 {
         margin-left: 20px; }
-    /* line 256, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+    /* line 203, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
     section .content .listCategory li {
       height: 70px;
       background: #dce0e3;
       margin-top: 15px; }
-      /* line 257, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+      /* line 204, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
       section .content .listCategory li a {
         text-decoration: none; }
-      /* line 260, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+      /* line 207, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
       section .content .listCategory li div {
         display: inline-block;
         padding-left: 15px;
         padding-top: 15px;
         vertical-align: top; }
-      /* line 266, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+      /* line 213, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
       section .content .listCategory li img {
         height: 100%; }
-      /* line 272, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+      /* line 219, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
       section .content .listCategory li .categorieInfo {
         font-family: "LatoBlack", arial, sans-serif;
         color: #333333;
         text-transform: uppercase;
         font-size: 0.75em; }
-      /* line 278, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+      /* line 225, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
       section .content .listCategory li .QuizzName {
         margin-top: 2px;
         font-size: 1.25em;
         color: #333333;
         font-family: "LatoRegular", arial, sans-serif; }
-    /* line 285, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+    /* line 232, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
     section .content .listCategory .headlines {
       margin-top: 20px; }
-      /* line 287, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+      /* line 234, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
       section .content .listCategory .headlines .first {
         width: 67.4%;
         padding-right: 5px;
         display: inline-block; }
-        /* line 291, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+        /* line 238, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
         section .content .listCategory .headlines .first div {
           width: 100%;
           height: auto;
           position: relative;
           display: inline-block; }
-          /* line 296, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+          /* line 243, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
           section .content .listCategory .headlines .first div img {
             width: 100%;
             height: auto; }
-          /* line 300, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+          /* line 247, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
           section .content .listCategory .headlines .first div div {
             position: absolute;
             bottom: 4px;
@@ -281,22 +239,22 @@ section {
             padding-left: 15px;
             width: 100%;
             z-index: 4; }
-      /* line 311, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+      /* line 258, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
       section .content .listCategory .headlines .side {
         width: 31.6%;
         padding-left: 5px;
         display: inline-block;
         vertical-align: top; }
-        /* line 317, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+        /* line 264, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
         section .content .listCategory .headlines .side div div {
           width: 100%;
           height: auto;
           position: relative; }
-          /* line 321, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+          /* line 268, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
           section .content .listCategory .headlines .side div div img {
             width: 100%;
             height: auto; }
-          /* line 325, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+          /* line 272, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
           section .content .listCategory .headlines .side div div div {
             position: absolute;
             bottom: 4px;
@@ -305,42 +263,42 @@ section {
             padding-left: 15px;
             width: 100%;
             z-index: 4; }
-        /* line 335, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+        /* line 282, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
         section .content .listCategory .headlines .side div:first-child {
           padding-bottom: 7px; }
-          /* line 337, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+          /* line 284, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
           section .content .listCategory .headlines .side div:first-child div {
             padding-bottom: 0;
             padding-top: 0; }
-        /* line 342, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+        /* line 289, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
         section .content .listCategory .headlines .side div:nth-child(2) {
           padding-top: 7px; }
-          /* line 344, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+          /* line 291, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
           section .content .listCategory .headlines .side div:nth-child(2) div {
             padding-top: 0;
             padding-bottom: 0; }
-      /* line 352, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+      /* line 299, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
       section .content .listCategory .headlines .categorieInfo {
         font-family: "LatoBlack", arial, sans-serif;
         color: #fff;
         text-transform: uppercase;
         font-size: 0.75em;
         margin-top: 15px; }
-      /* line 359, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+      /* line 306, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
       section .content .listCategory .headlines .QuizzName {
         margin-top: 2px;
         font-size: 1.25em;
         color: #fff;
         font-family: "LatoRegular", arial, sans-serif; }
-    /* line 368, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+    /* line 315, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
     section .content .intro {
       margin-top: 20px; }
-      /* line 370, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+      /* line 317, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
       section .content .intro img {
         width: 49%;
         padding-right: 20px;
         display: inline-block; }
-      /* line 375, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+      /* line 322, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
       section .content .intro p {
         vertical-align: top;
         padding-left: 20px;
@@ -349,98 +307,73 @@ section {
         color: #333;
         font-family: "LatoRegular", arial, sans-serif;
         padding-right: 20px; }
-    /* line 385, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+    /* line 332, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
     section .content .quizz {
       margin-top: 10px; }
-      /* line 387, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+      /* line 334, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
       section .content .quizz .libelleQuestion {
         font-family: "LatoBold", arial, sans-serif;
         color: #333;
         font-size: 1.25em;
         margin-top: 60px; }
-      /* line 393, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+      /* line 340, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
       section .content .quizz div {
         margin-top: 30px; }
-        /* line 395, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+        /* line 342, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
         section .content .quizz div .questionNumber {
           color: #d8D8D8;
           font-family: "LatoBoldItalic", arial, sans-serif;
           font-size: 4.688em; }
-
-.wrapper {
-  width: 100%;
-  padding: 6%;
-  margin: 6% auto;
-  background: #fff;
-}
-
-input[type="radio"] {
-  display: none;
-}
-
-form .questionNumber{
-   font-size: 45px;
-   font-family: "LatoBold", arial, sans-serif;
-   font-style: italic;
-   float: left;
-   color: #d7d7d7;
-   margin-top:60px;
-}
-
-form label.libelleQuestion{
-    font-size: 18px;
-    font-family: "LatoBold", arial, sans-serif;
-    margin:10px 10px ;
-}
-form label.libelleReponse{
-     font-family: "LatoRegular", arial, sans-serif;
-    font-size: 14px;
-    margin-left: 50px;
-    
-}
-
-label input + .customRadio {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  margin-right: 10px;
-  background: #FF9640;
-  border-radius: 50%;
-  box-shadow: 0 0 0 2px #FF7400;
-  font-family: "LatoBlack", arial, sans-serif;
-}
-
-label input:checked + .customRadio {
-  background: #33CCCC;
-  box-shadow: 0 0 0 2px #009999;
-}
-
-input[type="submit"] {
-  padding: 5px 4%;
-  margin-top: 8%;
-  font-family: "LatoBold", arial, sans-serif;
-  font-size: 20px;
-  font-weight: 100;
-  color: #fff;
-  background: #FF7400;
-  border: 0;
-  border-radius: 3px;
-  cursor: pointer;
-}
-
-input[type="submit"]:hover {
-  background: #333;
-}
-
-  /* line 403, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  /* line 350, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
   section .sideBar {
     display: inline-block;
     width: 33%;
     vertical-align: top;
     padding-left: 20px;
     padding-right: 20px; }
-    /* line 409, /Applications/MAMP/htdocs/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+    /* line 356, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
     section .sideBar .userBloc {
       padding-left: 20px;
       padding-right: 20px;
       background: #0f80cf; }
+
+/* line 363, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+.addQuizz {
+  margin-top: 40px; }
+  /* line 365, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  .addQuizz input[type="text"] {
+    min-height: 45px;
+    background: #fff;
+    border: 2px solid #e3e3e3;
+    color: #333333;
+    font-size: 1.25em;
+    font-family: "LatoRegular", arial, sans-serif;
+    padding-left: 20px;
+    width: 100%; }
+  /* line 375, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  .addQuizz input[type="text"]::-webkit-input-placeholder {
+    font-family: "LatoLight", arial, sans-serif;
+    color: #b7b7b7; }
+  /* line 379, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  .addQuizz textarea {
+    background: #fff;
+    border: 2px solid #e3e3e3;
+    min-height: 120px;
+    width: 100%;
+    margin-top: 20px;
+    color: #333333;
+    font-size: 1.25em;
+    font-family: "LatoRegular", arial, sans-serif;
+    padding-left: 20px; }
+  /* line 390, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  .addQuizz textarea::-webkit-input-placeholder {
+    font-family: "LatoLight", arial, sans-serif;
+    color: #b7b7b7; }
+  /* line 394, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  .addQuizz input[type="checkbox"] {
+    display: inline-block;
+    width: 10%; }
+  /* line 398, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  .addQuizz input[class="addReponse"] {
+    display: inline-block;
+    width: 89%; }

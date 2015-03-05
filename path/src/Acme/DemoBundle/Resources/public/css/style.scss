@@ -42,11 +42,8 @@ table {
 	border-spacing: 0;
 }
 /* ---- COLOR ------ */
-$clr1: #0f80cf; //bleu header
-$clr2: #ff9640; // orange
-$clr3: #57a6de; // bleu barre de recherche
-$clr4: #fff; // blanc
-$clr5: #6e7275;
+$clr1: #0f80cf;
+$clr2: #ff9640;
 
 /* ----- FONT ------ */
 @font-face{
@@ -82,68 +79,18 @@ body{
     background: #f5f5f5;
 }
 header{
-     background: $clr1;
     .topBar{
         height: 75px;
-        max-width: 1200px;
-        margin:0px auto;
-
-        .head{
-            padding-left: 40px;
-            padding-right: 40px;
-            float: left;
-            max-width: 780px;
-            margin: 20px 0 0;
-
-            h1{
-                float: left;
-            }
-
-            p{
-                width: 800px;
-                margin-top: 10px;
-                padding-left: 110px;
-                font-size: 0.9em;
-                color: white;
-            }
-
-        }
-
-        .search{
+        width: 100%;
+        background: $clr1;
+        div{
             max-width: 1200px;
-            margin: 20px 0 0;
+            margin: auto;
             padding-left: 40px;
-            padding-right: 40px;  
-            float: left;  
-
-            .form-group{
-                display: inline-block;
-
-
-                input{
-                    background-color: $clr3;
-                    padding: 7px 10px;
-                    border: none;
-                }
-
-                input::-webkit-input-placeholder {
-                    color: $clr5;
-                }
-                     
-                input:-moz-placeholder {
-                    color: $clr5;
-                }
-            }
-
-            button{
-                background-color: $clr2;
-                color: $clr4;
-                border: none;
-                padding: 7px 10px; 
-                font-weight: bold;  
-            }
+            padding-right: 40px;    
         }
     }
+
     .nav{
         height: 65px;
         background: #cbd2d7;
@@ -382,58 +329,24 @@ section{
             padding-right: 20px;
         }
     }
-   
- /** TEST CSS **/
-
-
-.wrapper {
-  width: 60%;
-  padding: 6%;
-  margin: 6% auto;
-  background: #fff;
-}
-
-input[type="radio"] {
-  display: none;
-}
-label .libelleQuestion{
-    font-size: 25px;
-}
-label input + .customRadio {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  margin-right: 10px;
-  background: #FF9640;
-  border-radius: 50%;
-  box-shadow: 0 0 0 2px #FF7400;
-}
-
-label input:checked + .customRadio {
-  background: #33CCCC;
-  box-shadow: 0 0 0 2px #009999;
-}
-
-input[type="submit"] {
-  padding: 5px 4%;
-  margin-top: 4%;
-  font-family: 'Arial', sans-serif;
-  font-size: 20px;
-  font-weight: 100;
-  color: #fff;
-  background: #FF7400;
-  border: 0;
-  border-radius: 3px;
-  cursor: pointer;
-}
-
-input[type="submit"]:hover {
-  background: #333;
-}
-
- /** FIN TEST CSS **/
-
-
+    .quizz{
+        margin-top: 10px;
+        .libelleQuestion{
+            font-family: $Bold;
+            color: #333;
+            font-size: 1.250em;
+            margin-top: 60px;
+        }
+        div{
+            margin-top: 30px;
+            .questionNumber{
+                color: #d8D8D8;
+                font-family: $BoldItalic;
+                font-size: 4.688em;
+            }
+        }
+    }    
+    }
     .sideBar{
         display: inline-block;
         width: 33%;
@@ -445,5 +358,45 @@ input[type="submit"]:hover {
             padding-right: 20px;
             background: $clr1;
         }
+    }
+}
+.addQuizz{
+    margin-top: 40px;
+    input[type="text"]{
+        min-height: 45px;
+        background: #fff;
+        border: 2px solid #e3e3e3;
+        color: #333333;
+        font-size: 1.250em;
+        font-family: $Regular;
+        padding-left: 20px;
+        width: 100%;
+    }
+    input[type="text"]::-webkit-input-placeholder{
+        font-family: $Light;
+        color: #b7b7b7;
+    }
+    textarea{
+        background: #fff;
+        border: 2px solid #e3e3e3;
+        min-height: 120px;
+        width: 100%;
+        margin-top: 20px;
+        color: #333333;
+        font-size: 1.250em;
+        font-family: $Regular;
+        padding-left: 20px;
+    }
+    textarea::-webkit-input-placeholder{
+        font-family: $Light;
+        color: #b7b7b7;
+    }
+    input[type="checkbox"]{
+        display: inline-block;
+        width: 10%;
+    }
+    input[class="addReponse"]{
+        display: inline-block;
+        width: 89%;
     }
 }
