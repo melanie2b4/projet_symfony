@@ -6,35 +6,34 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 
-class QuestionType extends AbstractType
+class ReponseType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-
         $builder
-            ->add('libelleQuestion', 'text', array(
+            ->add('libelleReponse', 'text', array(
     'label'  => ' ',
     'attr' => array(
-        'placeholder' => 'Intitulé de la question'
-    ),
-));
-            $builder
-            ->add('reponses', 'collection', array(
-            'type' => new ReponseType(),
-            'label' => ' ',
-            ));
+        'placeholder' => 'Reponse',
+        'class' => 'addReponse'
+    )
+))
+            ->add('isTrue', 'checkbox', array(
+    'label'     => ' ',
+    'required'  => false,
+))
         ;
     }
 
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'Acme\Bundle\QuizzBundle\Entity\Question'
+            'data_class' => 'Acme\Bundle\QuizzBundle\Entity\Reponse'
         ));
     }
 
     public function getName()
     {
-        return 'Question';
+        return 'Reponse';
     }
 }

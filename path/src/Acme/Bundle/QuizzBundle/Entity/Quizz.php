@@ -4,6 +4,8 @@ namespace Acme\Bundle\QuizzBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Doctrine\Common\Collections\ArrayCollection;
+use Symfony\Component\Validator\Constraints as Assert;
+use Symfony\Component\HttpFoundation\File\UploadedFile;
 
 /**
  * Quizz
@@ -69,7 +71,7 @@ class Quizz
     /**
      * @var \Question[]
      *
-     * @ORM\OneToMany(targetEntity="Question", mappedBy="quizz") 
+     * @ORM\OneToMany(targetEntity="Question", mappedBy="quizz", cascade={"persist"}) 
      * relation inversée 
      */
     private $questions;
@@ -261,4 +263,93 @@ class Quizz
     {
         return $this->questions;
     }
+
+///////////// UPLOAD IMG ////////////////    
+    
+    /**
+     * @Assert\File(maxSize="6000000")
+     */
+    public $file;
+
+    // ...
+    
+    public $path;
+    
+    // propriété utilisé temporairement pour la suppression
+    private $filenameForRemove;
+
+    /**
+     * @ORM\PrePersist()
+     * @ORM\PreUpdate()
+     */
+    public function preUpload()
+    {
+        if (null !== $this->file) {
+            $this->path = $this->file->guessExtension();
+        }
+    }
+    
+
+
+    /**
+     * @ORM\PostPersist()
+     * @ORM\PostUpdate()
+     */
+     
+    public function upload()
+    {
+        
+        if (null === $this->file) {
+            return;
+        }
+
+        // vous devez lancer une exception ici si le fichier ne peut pas
+        // être déplacé afin que l'entité ne soit pas persistée dans la
+        // base de données comme le fait la méthode move() de UploadedFile
+        
+        $newFileName = uniqid();
+        $ext = $this->file->guessExtension();
+        $this->file->move($this->getUploadRootDir(), $newFileName.'.'.$ext);
+
+        $this->img = $newFileName.'.'.$ext;
+        unset($this->file);
+
+    }
+
+    /**
+     * @ORM\PreRemove()
+     */
+    public function storeFilenameForRemove()
+    {
+        $this->filenameForRemove = $this->getAbsolutePath();
+    }
+
+    /**
+     * @ORM\PostRemove()
+     */
+    public function removeUpload()
+    {
+        if ($this->filenameForRemove) {
+            unlink($this->filenameForRemove);
+        }
+    }
+
+    public function getAbsolutePath()
+    {
+      return $this->path ? null : $this->getUploadRootDir().'/'.$this->img;
+    }
+
+    protected function getUploadRootDir()
+    {
+        // le chemin absolu du répertoire où les documents uploadés doivent être sauvegardés
+        return __DIR__.'/../../../demoBundle/Resources/public/images/'.$this->getUploadDir();
+    }
+
+    protected function getUploadDir()
+    {
+        // on se débarrasse de « __DIR__ » afin de ne pas avoir de problème lorsqu'on affiche
+        // le document/image dans la vue.
+        return '';
+    }
+    
 }

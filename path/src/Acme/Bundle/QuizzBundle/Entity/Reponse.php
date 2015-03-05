@@ -3,6 +3,7 @@
 namespace Acme\Bundle\QuizzBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\Common\Collections\ArrayCollection;
 
 /**
  * Reponse
@@ -37,13 +38,6 @@ class Reponse
      */
     private $libelleReponse;
     
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="categorie", type="string", length=500)
-     */
-    private $categorie;
     
     /**
      * @var boolean $isTrue
@@ -84,29 +78,6 @@ class Reponse
     public function getLibelleReponse()
     {
         return $this->libelleReponse;
-    }
-
-    /**
-     * Set categorie
-     *
-     * @param string $categorie
-     * @return Reponse
-     */
-    public function setCategorie($categorie)
-    {
-        $this->categorie = $categorie;
-
-        return $this;
-    }
-
-    /**
-     * Get categorie
-     *
-     * @return string 
-     */
-    public function getCategorie()
-    {
-        return $this->categorie;
     }
     
     /**
