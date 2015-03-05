@@ -7,18 +7,10 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Acme\Bundle\QuizzBundle\Form\AddQuizzType;
 use Acme\Bundle\QuizzBundle\Form\QuizzType;
-use Acme\Bundle\QuizzBundle\Form\ReponseType;
-use Acme\Bundle\QuizzBundle\Form\AddQuestionType;
-use Acme\Bundle\QuizzBundle\Form\AddReponseType;
-use Acme\Bundle\QuizzBundle\Entity\Question;
-use Acme\Bundle\QuizzBundle\Entity\Reponse;
 use Acme\Bundle\QuizzBundle\Entity\Quizz;
 use Symfony\Component\HttpFoundation\Request;
-<<<<<<< HEAD
 use Acme\Bundle\QuizzBundle\Entity\Question;
 use Acme\Bundle\QuizzBundle\Form\AddPictureType;
-=======
->>>>>>> origin/master
 
 class DefaultController extends Controller
 {
@@ -247,21 +239,9 @@ class DefaultController extends Controller
     
     $quizz = new Quizz();
     $quizz->setTop('0');
-    //$quizz->setImg($quizz->getAbsolutePath());
+    $quizz->setImg('football.jpg');
     $quizz->setDatePublication(new \DateTime());
-    
-    for ($i=0; $i<10; $i++) {
-    $question= new Question();
-    $quizz->addQuestion($question);
-    $question->setQuizz($quizz);
-    for ($b=0; $b<3; $b++){
-    $reponse= new Reponse();
-    $question->addReponse($reponse);
-    $reponse->setQuestion($question);
-    }
-    
-}
-    
+
         $form = $this->createForm(new AddQuizzType(), $quizz);
 
         if ($request->getMethod() == 'POST') {
@@ -270,12 +250,7 @@ class DefaultController extends Controller
                 // Save the proposition
 
                 $em = $this->getDoctrine()->getManager();
-                
-                $quizz->upload();
-                
                 $em->persist($quizz);
-                $em->persist($question);
-                $em->persist($reponse);
                 $em->flush();
 
                 return $this->redirect($this->generateUrl('index'));
