@@ -10,6 +10,7 @@ use Acme\Bundle\QuizzBundle\Form\QuizzType;
 use Acme\Bundle\QuizzBundle\Entity\Quizz;
 use Symfony\Component\HttpFoundation\Request;
 use Acme\Bundle\QuizzBundle\Entity\Question;
+use Acme\Bundle\QuizzBundle\Form\AddPictureType;
 
 class DefaultController extends Controller
 {
@@ -259,7 +260,33 @@ class DefaultController extends Controller
         return array('form' => $form->createView());
     
     }
+    /**
+     * @Route("/addPicture", name="addPicture")
+     * @Template()
+     */
+    public function addPictureAction (){
+        $usr = $this->getUser();
+            
+        $form = $this->createForm(new AddPictureType(), $usr);
+            $form->handleRequest($this->getRequest());
+            if ($form->isValid()) {
+                $em = $this->getDoctrine()->getEntityManager();
+                
+                $usr->uploadProfilePicture();
+                
+                $em->persist($usr);
+                $em->flush();
 
+                $this->redirect($this->generateUrl('QuizzBundle_profile'));
+        }
+            
+        return $this->render('FOSUserBundle:Profile:edit.html.twig', 
+                array (
+                    'users' => $usr, 
+                    'form' => $form->createView()
+                    )
+                );
+    }
 }
 
 

@@ -1,0 +1,23 @@
+{% if app.user.picture %}
+    <img src="/../../../../..{{ asset(app.user.getWebPath()) }}" width="100" height="100" />
+{% else %}
+    Vous n'avez pas encore de photo de profil<br /><br />
+{% endif %}
+
+<form action="{{ path('addPicture') }}" {{ form_enctype(form) }} method="POST" class="fos_user_profile_edit">
+    {{ form_widget(form) }}
+    <div>
+        <input type="submit" value="{{ 'profile.edit.submit'|trans({}, 'FOSUserBundle') }}" />
+    </div>
+</form>
+<br /><br />
+
+
+{# <h1>Charger une image de profil:</h1><br /> #}
+
+{# <form action="{{ path('addPicture') }}"  method="post" {{ form_enctype(form) }}>
+    {{ form_widget(form) }} 
+    <input type="file" name="uploadFichier" />
+    <input type="submit" value="Uploader" />        
+</form> #}
+	

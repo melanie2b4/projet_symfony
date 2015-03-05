@@ -28,7 +28,7 @@ class Users extends BaseUser
      */
     private $picture;
     /**
-     * @Assert\File(maxSize="50000k")
+     * @Assert\File(maxSize="500k")
      */
     public $file;
     
@@ -38,7 +38,7 @@ class Users extends BaseUser
     }
     protected function getUploadRootDir()
     {
-        return __DIR__.'/../../../../../web/'.$this->getUploadDir();
+        return __DIR__.'/../../../../web/'.$this->getUploadDir();
     }
 
     protected function getUploadDir()

@@ -1,5 +1,10 @@
 {% if app.user %}
+    <img src="{{ asset(app.user.getWebPath()) }}" width="100" height="100"/><br />
 	{{ app.user.username }}<br>
+
+{# {% if app.user.picture is not empty %}
+	<img src="../bundles/acmedemo/images/{{ picture.img }}" alt="{{ picture.titre }}" />
+{% endif %} #}
 
 {% if app.user.scoredivertissements is not empty %}
     <span>Score Divertissement : </span>{{ app.user.scoredivertissements }}<br />
