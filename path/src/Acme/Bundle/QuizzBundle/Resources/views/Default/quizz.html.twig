@@ -10,7 +10,7 @@
     </div>
   
   <div class="wrapper">
-      <form method="POST">
+      <form method="POST" action="{{ path('recupReponse', {id:Quizz.id})}}">
             {% set number = 0 %}<!-- On le met à zéro -->
        
           {% for Question in Quizz.questions %}
