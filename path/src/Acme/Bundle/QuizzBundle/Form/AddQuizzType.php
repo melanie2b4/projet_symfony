@@ -38,14 +38,14 @@ class AddQuizzType extends AbstractType
                 'High-tech'   => 'Hightech',
                     ),
                 'multiple'  => false,
-                'label' => 'Categorie du Quizz*',
+                'label' => 'Categorie du Quizz* : ',
                 'attr' => array(
                 'placeholder' => 'Nom du quizz',
     )
  
                     ))
             ->add('file', 'file', array(
-                'label' => 'Ajouter une image',
+                'label' => 'Ajouter une image (502x294) : ',
                 'attr' => array(
                 'placeholder' => 'Ajouter une image',
             )
