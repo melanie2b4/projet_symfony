@@ -1,3 +1,5 @@
+<section class="profil">
+    <h1>Connexion</h1>
 {% if app.user %}
     <img src="{{ asset(app.user.getWebPath()) }}" width="100" height="100"/><br />
 	{{ app.user.username }}<br>
@@ -33,7 +35,7 @@
 {% if app.user.scoreculturegenerale is not empty %}
     <span>Score Culture Générale : </span>{{ app.user.scoreculturegenerale }}<br />
 {% endif %}
-
+</section>
 {% if app.user.scoregeographie is not empty %}
     <span>Score Culture Géographie : </span>{{ app.user.scoregéographie }}<br />
 {% endif %}
@@ -46,11 +48,11 @@
     <span>Score High-Tech : </span>{{ app.user.scorehightech }}<br />
 {% endif %}
 
-<a href="{{ path('fos_user_security_logout') }}">Déconnexion</a><br>
+<a class="log" href="{{ path('fos_user_security_logout') }}">Déconnexion</a><br>
 <a href="{{ path('modificationProfil') }}"><h5>Modifier le profil</h5></a>
 
 {% else %}
 	{{ render(controller('FOSUserBundle:Security:login'))}}
-	<a href="{{ path('Inscription') }}">Inscription</a><br>
+	<a class="log" href="{{ path('Inscription') }}">Inscription</a><br>
 {% endif %}
  
