@@ -1,8 +1,11 @@
 <section class="profil">
     <h1>Connexion</h1>
 {% if app.user %}
-    <img src="{{ asset(app.user.getWebPath()) }}" width="150" /><br />
-	{{ app.user.username }}<br>
+    {% if app.user.picture is not null %}
+    <img src="{{ asset(app.user.getWebPath()) }}" width="150" height="100" /><br />
+    {% endif %}
+
+{{ app.user.username }}<br>
 
 {# {% if app.user.picture is not empty %}
 	<img src="../bundles/acmedemo/images/{{ picture.img }}" alt="{{ picture.titre }}" />
@@ -35,7 +38,7 @@
 {% if app.user.scoreculturegenerale is not empty %}
     <span>Score Culture Générale : </span>{{ app.user.scoreculturegenerale }}<br />
 {% endif %}
-</section>
+
 {% if app.user.scoregeographie is not empty %}
     <span>Score Culture Géographie : </span>{{ app.user.scoregéographie }}<br />
 {% endif %}
@@ -55,4 +58,4 @@
 	{{ render(controller('FOSUserBundle:Security:login'))}}
 	<a class="log" href="{{ path('Inscription') }}">Inscription</a><br>
 {% endif %}
- 
+</section>
