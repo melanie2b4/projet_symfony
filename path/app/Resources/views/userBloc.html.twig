@@ -1,11 +1,11 @@
 <section class="profil">
-    <h1>Connexion</h1>
+
 {% if app.user %}
     {% if app.user.picture is not null %}
-    <img src="{{ asset(app.user.getWebPath()) }}" width="150" height="100" /><br />
+    <img id="picture" src="{{ asset(app.user.getWebPath()) }}" width="150" height="100" /><br />
     {% endif %}
 
-{{ app.user.username }}<br>
+<p>{{ app.user.username }}</p><br>
 
 {# {% if app.user.picture is not empty %}
 	<img src="../bundles/acmedemo/images/{{ picture.img }}" alt="{{ picture.titre }}" />
@@ -51,12 +51,12 @@
     <span>Score High-Tech : </span>{{ app.user.scorehightech }}<br />
 {% endif %}
 
-<a class="log" href="{{ path('fos_user_security_logout') }}">Déconnexion</a><br>
-<a href="{{ path('modificationProfil') }}"><h5>Modifier le profil</h5></a>
+<a class="log deconnexion" href="{{ path('fos_user_security_logout') }}">Déconnexion</a><br/><br/><br/><br/><br/>
+<a class="edit" href="{{ path('modificationProfil') }}"><h5>Modifier le profil</h5></a>
 
 {% else %}
+<h1>Connexion</h1>
 	{{ render(controller('FOSUserBundle:Security:login'))}}
 	<a class="log" href="{{ path('Inscription') }}">Inscription</a><br>
 {% endif %}
 </section>
-
