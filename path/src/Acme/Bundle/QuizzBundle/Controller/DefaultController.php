@@ -242,26 +242,25 @@ class DefaultController extends Controller
     public function addQuizzAction(Request $request)
     {
     
-    $quizz = new Quizz();
-    $quizz->setTop('0');
-    //$quizz->setImg($quizz->getAbsolutePath());
-    $quizz->setDatePublication(new \DateTime());
-    
-    for ($i=0; $i<10; $i++) {
-    $question= new Question();
-    $quizz->addQuestion($question);
-    $question->setQuizz($quizz);
-    for ($b=0; $b<3; $b++){
-    $reponse= new Reponse();
-    $question->addReponse($reponse);
-    $reponse->setQuestion($question);
-    }
-    
-}
+        $quizz = new Quizz();
+        $quizz->setTop('0');
+        //$quizz->setImg($quizz->getAbsolutePath());
+        $quizz->setDatePublication(new \DateTime());
+        
+        for ($i=0; $i<10; $i++) {
+            $question= new Question();
+            $quizz->addQuestion($question);
+            $question->setQuizz($quizz);
+            for ($b=0; $b<3; $b++){
+                $reponse= new Reponse();
+                $question->addReponse($reponse);
+                $reponse->setQuestion($question);
+            }
+        }
     
         $form = $this->createForm(new AddQuizzType(), $quizz);
 
-        if ($request->getMethod() == 'POST') {
+        if ($request->getMethod() === 'POST') {
             $form->handleRequest($request);
             if ($form->isValid()) {
                 // Save the proposition

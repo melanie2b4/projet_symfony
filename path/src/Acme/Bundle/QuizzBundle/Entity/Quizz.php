@@ -329,9 +329,16 @@ class Quizz
      */
     public function removeUpload()
     {
-        if ($this->filenameForRemove) {
-            unlink($this->filenameForRemove);
+        $toReturn = true;
+        if( $this->filenameForRemove !== NULL && !empty( $this->filenameForRemove ) === true )
+        {
+            if( file_exists( $this->filenameForRemove ) === true )
+            {
+                $toReturn = unlink($this->filenameForRemove);
+                $this->filenameForRemove = NULL;
+            }
         }
+        return $toReturn;
     }
 
     public function getAbsolutePath()
