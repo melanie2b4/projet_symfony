@@ -15,7 +15,7 @@ use Acme\Bundle\QuizzBundle\Entity\Users;
 class QuizzController extends Controller
 {
 
-    
+
     /**
      * @Route("/validate-quizz/{id}", name="recupReponse")
      * @Template()
@@ -27,6 +27,8 @@ class QuizzController extends Controller
             ->getRepository('AcmeQuizzBundle:Quizz')
             ->find($id);
         $score = 0;
+        
+        $quizz->setTop($quizz->getTop() + 1);
 
         foreach ($responseId as $responseId) {
             $reponse = $this->getDoctrine()
