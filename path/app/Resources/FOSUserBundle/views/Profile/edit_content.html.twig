@@ -1,7 +1,8 @@
+<section class="edit_profil">
 {% if app.user.picture %}
     <img src="/../../../../..{{ asset(app.user.getWebPath()) }}" width="100" height="100" />
 {% else %}
-    Vous n'avez pas encore de photo de profil<br /><br />
+    <p>Vous n'avez pas encore de photo de profil</p><br /><br />
 {% endif %}
 
 <form action="{{ path('addPicture') }}" {{ form_enctype(form) }} method="POST" class="fos_user_profile_edit">
@@ -19,4 +20,4 @@
     <input type="file" name="uploadFichier" />
     <input type="submit" value="Uploader" />        
 </form> #}
-	
+</section>
