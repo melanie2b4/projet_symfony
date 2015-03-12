@@ -109,7 +109,7 @@ class QuizzController extends Controller
 
         return array(
             'score' => $score,
-
+            'Quizz' => $quizz,
             
         );
 

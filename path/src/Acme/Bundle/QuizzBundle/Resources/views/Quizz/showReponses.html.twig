@@ -4,9 +4,12 @@
 	<p>Découvrez les bonnes réponses de votre quizz : </p>
 	{% set number = 0 %}
 	{% for Question in Quizz.questions %}
+
+
         <div class="questionNumber">{% set number = number + 1 %}{{ number }}</div><!-- On incrémente -->
         <label class="libelleQuestion">{{ Question.libelleQuestion }}</label>
         <br><br>
+
         {% for Reponse in Question.reponses %}
 		
 		    {% if Reponse.isTrue == true  %}
@@ -19,3 +22,4 @@
         {% endfor %}
       {% endfor %}
 {% endblock %}
+
