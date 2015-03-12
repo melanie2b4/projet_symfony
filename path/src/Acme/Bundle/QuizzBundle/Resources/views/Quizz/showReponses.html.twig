@@ -1,7 +1,21 @@
 {% extends 'base.html.twig' %}
-
-
 {% block body %}
 	<h2>Vous avez obtenu un score de {{ score }}/10</h2>
+	<p>Découvrez les bonnes réponses de votre quizz : </p>
+	{% set number = 0 %}
+	{% for Question in Quizz.questions %}
+        <div class="questionNumber">{% set number = number + 1 %}{{ number }}</div><!-- On incrémente -->
+        <label class="libelleQuestion">{{ Question.libelleQuestion }}</label>
+        <br><br>
+        {% for Reponse in Question.reponses %}
+		
+		    {% if Reponse.isTrue == true  %}
+   				<label style="color:green;" class="libelleReponse">{{ Reponse.libelleReponse }}</label><br><br>
+    		
+    		{% elseif Reponse.isTrue == false %}
+				<label style="color:red;" class="libelleReponse">{{ Reponse.libelleReponse }}</label><br><br>
+			{% endif %}
+	
+        {% endfor %}
+      {% endfor %}
 {% endblock %}
-
