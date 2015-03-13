@@ -2,13 +2,16 @@
 
 {% if app.user %}
     {% if app.user.picture is not null %}
-    <img id="picture" src="{{ asset(app.user.getWebPath()) }}" width="150" height="100" /><br />
+    
+    <div class="roundedImage">
+     <img id="picture" src="{{ asset(app.user.getWebPath()) }}" width="100" height="100" />
+    </div>
     {% endif %}
 
-<p>{{ app.user.username }}</p><br>
+<h2>{{ app.user.username }}</h2>
 {# ---------------------DIVERTISSEMENTS------------------------- #}
 {% if app.user.scoredivertissements is not empty %}
-    <span>Score Divertissement : {{ app.user.scoredivertissements }} points</span><br />
+    <p><span class="bold">> Score Divertissement :</span> {{ app.user.scoredivertissements }} points</p>
 {% endif %}
 
 {% if app.user.scoredivertissements > "25" and app.user.scoredivertissements < "50" %}
@@ -22,7 +25,7 @@
 {% endif %}
 {# ---------------------SPORT------------------------- #}
 {% if app.user.scoresport is not empty %}
-    <span>Score Sport : {{ app.user.scoresport }} points</span><br />
+    <p><span class="bold">> Score Sport :</span> {{ app.user.scoresport }} points</p>
 {% endif %}
 
 {% if app.user.scoresport > "25" and app.user.scoresport < "50" %}
@@ -36,7 +39,7 @@
 {% endif %}
 {# ---------------------POLITIQUE------------------------- #}
 {% if app.user.scorepolitique is not empty %}
-    <span>Score Politique : {{ app.user.scorepolitique }} points </span><br />
+    <p><span class="bold">> Score Politique :</span> {{ app.user.scorepolitique }} points </p>
 
 {% endif %}
 
@@ -51,7 +54,7 @@
 {% endif %}
 {# ---------------------HISTOIRE------------------------- #}
 {% if app.user.scorehistoire is not empty %}
-    <span>Score Histoire : {{ app.user.scorehistoire }} points</span><br />
+    <p><span class="bold">> Score Histoire :</span> {{ app.user.scorehistoire }} points</p>
 {% endif %}
 
 {% if app.user.scorehistoire > "25" and app.user.scorehistoire < "50" %}
@@ -66,7 +69,7 @@
 {# ---------------------NATURE------------------------- #}
 
 {% if app.user.scorenature is not empty %}
-    <span>Score Nature : {{ app.user.scorenature }} points</span><br />
+    <p><span class="bold">> Score Nature :</span> {{ app.user.scorenature }} points</p>
 {% endif %}
 
 {% if app.user.scorenature > "25" and app.user.scorenature < "50" %}
@@ -81,7 +84,7 @@
 
 {# ---------------------SANTE------------------------- #}
 {% if app.user.scoresante is not empty %}
-    <span>Score Santé : {{ app.user.scoresante }} points</span><br />
+    <p><span class="bold">> Score Santé :</span> {{ app.user.scoresante }} points</p>
 {% endif %}
 
 {% if app.user.scoresante > "25" and app.user.scoresante < "50" %}
@@ -95,7 +98,7 @@
 {% endif %}
 {# ---------------------CULTURE GENERALE------------------------- #}
 {% if app.user.scoreculturegenerale is not empty %}
-    <span>Score Culture Générale : {{ app.user.scoreculturegenerale }} points</span><br />
+    <p><span class="bold">> Score Culture Générale :</span> {{ app.user.scoreculturegenerale }} points</p>
 {% endif %}
 
 {% if app.user.scoreculturegenerale > "25" and app.user.scoreculturegenerale < "50" %}
@@ -110,7 +113,7 @@
 
 {# ---------------------GEOGRAPHIE------------------------- #}
 {% if app.user.scoregeographie is not empty %}
-    <span>Score Géographie :{{ app.user.scoregeographie }} points</span><br />
+    <p><span class="bold">> Score Géographie :</span>{{ app.user.scoregeographie }} points</p>
 {% endif %}
 
 {% if app.user.scoregeographie > "25" and app.user.scoregeographie < "50" %}
@@ -125,7 +128,7 @@
 
 {# ---------------------GASTRONOMIE------------------------- #}
 {% if app.user.scoregastronomie is not empty %}
-    <span>Score Gastronomie : {{ app.user.scoregastronomie }} points</span><br />
+    <p><span class="bold">> Score Gastronomie :</span> {{ app.user.scoregastronomie }} points</p>
 {% endif %}
 
 {% if app.user.scoregastronomie > "25" and app.user.scoregastronomie < "50" %}
@@ -143,7 +146,7 @@
 
 {# ---------------------HIGH TECH------------------------- #}
 {% if app.user.scorehightech is not empty %}
-    <span>Score High-Tech : {{ app.user.scorehightech }} points</span><br />
+    <p><span class="bold">> Score High-Tech : </span>{{ app.user.scorehightech }} points</p>
 {% endif %}
 
 {% if app.user.scorehightech > "25" and app.user.scorehightech < "50" %}
@@ -161,7 +164,7 @@
 <a class="edit" href="{{ path('modificationProfil') }}"><h5>Modifier le profil</h5></a>
 
 {% else %}
-<h1>Connexion</h1>
+<h3>Connexion</h3>
 	{{ render(controller('FOSUserBundle:Security:login'))}}
 	<a class="log" href="{{ path('Inscription') }}">Inscription</a><br>
 {% endif %}

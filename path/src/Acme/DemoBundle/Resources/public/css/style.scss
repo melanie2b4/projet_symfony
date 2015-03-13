@@ -148,29 +148,25 @@ header{
         }
     }
 
-    .nav{
-        height: 65px;
+   .nav{
         background: #cbd2d7;
-        ul{
+        .liens_menu{
             max-width: 1200px;
             margin: auto;
             padding-left: 40px;
             padding-right: 40px;
-            li{
-                display: inline-block;
-                margin-right: 25px;
-                a{
-                    display: inline-block;
-                    font-family: $Black;
-                    color: #6f7376;
-                    font-size: 1em;
-                    text-decoration: none;
-                    height: 65px;
-                    line-height: 65px;
-                    &:hover{
-                        text-decoration: underline;
-                    }
-                }
+        }
+        a{
+            display: inline-block;
+            font-family: $Black;
+            color: #6f7376;
+            font-size: 1em;
+            text-decoration: none;
+            height: 65px;
+            line-height: 65px;
+            margin-right: 25px;
+            &:hover{
+                text-decoration: underline;
             }
         }
     }
@@ -179,22 +175,46 @@ header{
 .profil{
     background-color: $clr1;
     padding-top: 0;
-    #picture{
-        margin: 0 auto;
+
+    .roundedImage{
+    overflow:hidden;
+    -webkit-border-radius:50px;
+    -moz-border-radius:50px;
+    border-radius:50px;
+    width:100px;
+    height:100px;
+    margin:10px auto;
     }
-    p{
-        text-align: center;
-        margin-top: 20px;
-        color: #fff;
-        font-size: 1.3em;
-        font-family: $Regular;
-    }
-    h1{
+    h3{
         text-align: center;
         padding: 15px;
         color: white;
         font-size: 1.4em;
+        font-family: $Light;
+    }
+
+    h2{
+        text-align: center;
+        margin-top: 20px;
+        color: #fff;
+        font-size: 1.3em;
         font-family: $Black;
+        text-transform: uppercase;
+        border-bottom: 1px solid #FFFFFF;
+        padding: 5px;
+
+
+    }
+    p{
+        font-family:$Regular;
+        font-size: 16px;
+        color: #FFFFFF;
+        padding-top: 15px ;
+
+    }
+    p .bold{
+        font-family:$Bold;
+        color: #ff9640;
     }
     .log{
         float: left;

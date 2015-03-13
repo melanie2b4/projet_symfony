@@ -26,21 +26,21 @@
             </div> 
             </div>
 
+            <a href="#" class="burger_menu"></a>
             <div class="nav">
-                <ul>
-                    <li><a class="{% if app.request.attributes.get('_route') == 'divertissement' %}active{% endif %}"href="{{ path('divertissement') }}">Divertissement</a></li>
-                    <li><a class="{% if app.request.attributes.get('_route') == 'sport' %}active{% endif %}"href="{{ path('sport') }}">Sport</a></li>
-                    <li><a class="{% if app.request.attributes.get('_route') == 'politique' %}active{% endif %}"href="{{ path('politique') }}">Politique</a></li>
-                    <li><a class="{% if app.request.attributes.get('_route') == 'histoire' %}active{% endif %}"href="{{ path('histoire') }}">Histoire</a></li>
-                    <li><a class="{% if app.request.attributes.get('_route') == 'nature' %}active{% endif %}"href="{{ path('nature') }}">Nature</a></li>
-                    <li><a class="{% if app.request.attributes.get('_route') == 'sante' %}active{% endif %}"href="{{ path('sante') }}">Santé</a></li>
-                    <li><a class="{% if app.request.attributes.get('_route') == 'culturegenerale' %}active{% endif %}"href="{{ path('culturegenerale') }}">Culture Générale</a></li>
-                    <li><a class="{% if app.request.attributes.get('_route') == 'geographie' %}active{% endif %}"href="{{ path('geographie') }}">Géographie</a></li>
-                    <li><a class="{% if app.request.attributes.get('_route') == 'gastronomie' %}active{% endif %}"href="{{ path('gastronomie') }}">Gastronomie</a></li>
-                    <li><a class="{% if app.request.attributes.get('_route') == 'hightech' %}active{% endif %}"href="{{ path('hightech') }}">High-tech</a></li>
-                </ul>
-            </div>   
-
+                <div class="liens_menu">
+                    <a class="{% if app.request.attributes.get('_route') == 'divertissement' %}active{% endif %}"href="{{ path('divertissement') }}">Divertissement</a>
+                    <a class="{% if app.request.attributes.get('_route') == 'sport' %}active{% endif %}"href="{{ path('sport') }}">Sport</a>
+                    <a class="{% if app.request.attributes.get('_route') == 'politique' %}active{% endif %}"href="{{ path('politique') }}">Politique</a>
+                    <a class="{% if app.request.attributes.get('_route') == 'histoire' %}active{% endif %}"href="{{ path('histoire') }}">Histoire</a>
+                    <a class="{% if app.request.attributes.get('_route') == 'nature' %}active{% endif %}"href="{{ path('nature') }}">Nature</a>
+                    <a class="{% if app.request.attributes.get('_route') == 'sante' %}active{% endif %}"href="{{ path('sante') }}">Santé</a>
+                    <a class="{% if app.request.attributes.get('_route') == 'culturegenerale' %}active{% endif %}"href="{{ path('culturegenerale') }}">Culture Générale</a>
+                    <a class="{% if app.request.attributes.get('_route') == 'geographie' %}active{% endif %}"href="{{ path('geographie') }}">Géographie</a>
+                    <a class="{% if app.request.attributes.get('_route') == 'gastronomie' %}active{% endif %}"href="{{ path('gastronomie') }}">Gastronomie</a>
+                    <a class="{% if app.request.attributes.get('_route') == 'hightech' %}active{% endif %}"href="{{ path('hightech') }}">High-tech</a>
+               </div>
+            </div>
         </header>
         
         <section>
