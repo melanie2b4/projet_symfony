@@ -41,7 +41,7 @@ class Question
     /**
      * @var \Reponses[]
      *
-     * @ORM\OneToMany(targetEntity="Reponse", mappedBy="question", cascade={"persist"}) 
+     * @ORM\OneToMany(targetEntity="Reponse", mappedBy="question", cascade={"persist","remove"}) 
      * relation inversée 
      */
     private $reponses;

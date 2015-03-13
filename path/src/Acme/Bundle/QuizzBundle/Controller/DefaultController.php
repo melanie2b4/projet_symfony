@@ -309,6 +309,29 @@ class DefaultController extends Controller
                     )
                 );
     }
+
+    /**
+     * @Route("/quizzliste", name="listeQuizz")
+     * @Template()
+     */
+    public function listeQuizzAction()
+    {
+        $quizz = $this->get('doctrine.orm.entity_manager')->getRepository('AcmeQuizzBundle:Quizz')->findAll();
+       
+        return array("quizz"=>$quizz);
+    }
+
+    /**
+     * @Route("/delete/{id}", name="deleteQuizz")
+     */
+    public function deleteQuizzIdAction($id)
+    {
+        $quizz = $this->get('doctrine.orm.entity_manager')->getRepository('AcmeQuizzBundle:Quizz')->find($id);
+        $this->get('doctrine.orm.entity_manager')->remove($quizz);
+        $this->get('doctrine.orm.entity_manager')->flush();
+
+        return $this->redirect($this->generateUrl('listeQuizz'));
+    }
 }
 
 

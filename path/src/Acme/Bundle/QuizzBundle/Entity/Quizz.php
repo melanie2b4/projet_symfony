@@ -71,7 +71,7 @@ class Quizz
     /**
      * @var \Question[]
      *
-     * @ORM\OneToMany(targetEntity="Question", mappedBy="quizz", cascade={"persist"}) 
+     * @ORM\OneToMany(targetEntity="Question", mappedBy="quizz", cascade={"persist","remove"}) 
      * relation inversée 
      */
     private $questions;

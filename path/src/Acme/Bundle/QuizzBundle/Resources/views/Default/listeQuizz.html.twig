@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+
+<h1>Supprimer un Quizz</h1>
+{% for q in quizz %}
+    <span>Quizz n°{{ q.id }} / Titre du quizz: {{ q.titre }} <a href="{{ path("deleteQuizz", {id: q.id}) }}">Supprimer ce Quizz</a><br />
+    </span><br />
+{% endfor %}
+
+{% endblock %}
