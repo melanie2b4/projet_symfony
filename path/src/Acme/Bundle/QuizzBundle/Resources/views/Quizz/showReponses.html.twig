@@ -21,5 +21,9 @@
 	
         {% endfor %}
       {% endfor %}
+
+    {% if app.user is empty %}
+		<h3>Attention vos points sont enregistrés une fois connecté.</h3>
+  	{% endif %}
 {% endblock %}
 
