@@ -6,51 +6,157 @@
     {% endif %}
 
 <p>{{ app.user.username }}</p><br>
-
-{# {% if app.user.picture is not empty %}
-	<img src="../bundles/acmedemo/images/{{ picture.img }}" alt="{{ picture.titre }}" />
-{% endif %} #}
-
+{# ---------------------DIVERTISSEMENTS------------------------- #}
 {% if app.user.scoredivertissements is not empty %}
-    <span>Score Divertissement : </span>{{ app.user.scoredivertissements }}<br />
+    <span>Score Divertissement : {{ app.user.scoredivertissements }} points</span><br />
 {% endif %}
 
+{% if app.user.scoredivertissements > "25" and app.user.scoredivertissements < "50" %}
+        <img src="{{ asset('bundles/acmedemo/badges/divertissement/debutant.png') }} "/>
+{% elseif app.user.scoredivertissements > "50" and app.user.scoredivertissements < "100" %}
+        <img src="{{ asset('bundles/acmedemo/badges/divertissement/amateur.png') }} "/>
+{% elseif app.user.scoredivertissements > "100" and app.user.scoredivertissements < "200" %}
+        <img src="{{ asset('bundles/acmedemo/badges/divertissement/confirme.png') }} "/>
+{% elseif app.user.scoredivertissements > "200" %}
+        <img src="{{ asset('bundles/acmedemo/badges/divertissement/expert.png') }} "/><br />
+{% endif %}
+{# ---------------------SPORT------------------------- #}
 {% if app.user.scoresport is not empty %}
-    <span>Score Sport : </span>{{ app.user.scoresport }}<br />
+    <span>Score Sport : {{ app.user.scoresport }} points</span><br />
 {% endif %}
 
+{% if app.user.scoresport > "25" and app.user.scoresport < "50" %}
+        <img src="{{ asset('bundles/acmedemo/badges/sport/debutant.png') }} "/>
+{% elseif app.user.scoresport > "50" and app.user.scoresport < "100" %}
+        <img src="{{ asset('bundles/acmedemo/badges/sport/amateur.png') }} "/>
+{% elseif app.user.scoresport > "100" and app.user.scoresport < "200" %}
+        <img src="{{ asset('bundles/acmedemo/badges/sport/confirme.png') }} "/>
+{% elseif app.user.scoresport > "200" %}
+        <img src="{{ asset('bundles/acmedemo/badges/sport/expert.png') }} "/><br />
+{% endif %}
+{# ---------------------POLITIQUE------------------------- #}
 {% if app.user.scorepolitique is not empty %}
-    <span>Score Politique : </span>{{ app.user.scorepolitique }}<br />
+    <span>Score Politique : {{ app.user.scorepolitique }} points </span><br />
+
 {% endif %}
 
-{% if app.user.scorehistoire is not empty %}
-    <span>Score Histoire : </span>{{ app.user.scorehistoire }}<br />
+{% if app.user.scorepolitique > "25" and app.user.scorepolitique < "50" %}
+        <img src="{{ asset('bundles/acmedemo/badges/politique/debutant.png') }} "/>
+{% elseif app.user.scorepolitique > "50" and app.user.scorepolitique < "100" %}
+        <img src="{{ asset('bundles/acmedemo/badges/politique/amateur.png') }} "/>
+{% elseif app.user.scorepolitique > "100" and app.user.scorepolitique < "200" %}
+        <img src="{{ asset('bundles/acmedemo/badges/politique/confirme.png') }} "/>
+{% elseif app.user.scorepolitique > "200" %}
+        <img src="{{ asset('bundles/acmedemo/badges/politique/expert.png') }} "/><br />
 {% endif %}
+{# ---------------------HISTOIRE------------------------- #}
+{% if app.user.scorehistoire is not empty %}
+    <span>Score Histoire : {{ app.user.scorehistoire }} points</span><br />
+{% endif %}
+
+{% if app.user.scorehistoire > "25" and app.user.scorehistoire < "50" %}
+        <img src="{{ asset('bundles/acmedemo/badges/histoire/debutant.png') }} "/>
+{% elseif app.user.scorehistoire > "50" and app.user.scorehistoire < "100" %}
+        <img src="{{ asset('bundles/acmedemo/badges/histoire/amateur.png') }} "/>
+{% elseif app.user.scorehistoire > "100" and app.user.scorehistoire < "200" %}
+        <img src="{{ asset('bundles/acmedemo/badges/histoire/confirme.png') }} "/>
+{% elseif app.user.scorehistoire > "200" %}
+        <img src="{{ asset('bundles/acmedemo/badges/histoire/expert.png') }} "/><br />
+{% endif %}
+{# ---------------------NATURE------------------------- #}
 
 {% if app.user.scorenature is not empty %}
-    <span>Score Nature : </span>{{ app.user.scorenature }}<br />
+    <span>Score Nature : {{ app.user.scorenature }} points</span><br />
 {% endif %}
 
+{% if app.user.scorenature > "25" and app.user.scorenature < "50" %}
+        <img src="{{ asset('bundles/acmedemo/badges/nature/debutant.png') }} "/>
+{% elseif app.user.scorenature > "50" and app.user.scorenature < "100" %}
+        <img src="{{ asset('bundles/acmedemo/badges/nature/amateur.png') }} "/>
+{% elseif app.user.scorenature > "100" and app.user.scorenature < "200" %}
+        <img src="{{ asset('bundles/acmedemo/badges/nature/confirme.png') }} "/>
+{% elseif app.user.scorenature > "200" %}
+        <img src="{{ asset('bundles/acmedemo/badges/nature/expert.png') }} "/><br />
+{% endif %}
+
+{# ---------------------SANTE------------------------- #}
 {% if app.user.scoresante is not empty %}
-    <span>Score Santé : </span>{{ app.user.scoresante }}<br />
+    <span>Score Santé : {{ app.user.scoresante }} points</span><br />
 {% endif %}
 
+{% if app.user.scoresante > "25" and app.user.scoresante < "50" %}
+        <img src="{{ asset('bundles/acmedemo/badges/sante/debutant.png') }} "/>
+{% elseif app.user.scoresante > "50" and app.user.scoresante < "100" %}
+        <img src="{{ asset('bundles/acmedemo/badges/sante/amateur.png') }} "/>
+{% elseif app.user.scoresante > "100" and app.user.scoresante < "200" %}
+        <img src="{{ asset('bundles/acmedemo/badges/sante/confirme.png') }} "/>
+{% elseif app.user.scoresante > "200" %}
+        <img src="{{ asset('bundles/acmedemo/badges/sante/expert.png') }} "/><br />
+{% endif %}
+{# ---------------------CULTURE GENERALE------------------------- #}
 {% if app.user.scoreculturegenerale is not empty %}
-    <span>Score Culture Générale : </span>{{ app.user.scoreculturegenerale }}<br />
+    <span>Score Culture Générale : {{ app.user.scoreculturegenerale }} points</span><br />
 {% endif %}
 
+{% if app.user.scoreculturegenerale > "25" and app.user.scoreculturegenerale < "50" %}
+        <img src="{{ asset('bundles/acmedemo/badges/culture-generale/debutant.png') }} "/>
+{% elseif app.user.scoreculturegenerale > "50" and app.user.scoreculturegenerale < "100" %}
+        <img src="{{ asset('bundles/acmedemo/badges/culture-generale/amateur.png') }} "/>
+{% elseif app.user.scoreculturegenerale > "100" and app.user.scoreculturegenerale < "200" %}
+        <img src="{{ asset('bundles/acmedemo/badges/culture-generale/confirme.png') }} "/>
+{% elseif app.user.scoreculturegenerale > "200" %}
+        <img src="{{ asset('bundles/acmedemo/badges/culture-generale/expert.png') }} "/><br />
+{% endif %}
+
+{# ---------------------GEOGRAPHIE------------------------- #}
 {% if app.user.scoregeographie is not empty %}
-    <span>Score Culture Géographie : </span>{{ app.user.scoregéographie }}<br />
+    <span>Score Géographie :{{ app.user.scoregeographie }} points</span><br />
 {% endif %}
 
+{% if app.user.scoregeographie > "25" and app.user.scoregeographie < "50" %}
+        <img src="{{ asset('bundles/acmedemo/badges/geographie/debutant.png') }} "/>
+{% elseif app.user.scoregeographie > "50" and app.user.scoregeographie < "100" %}
+        <img src="{{ asset('bundles/acmedemo/badges/geographie/amateur.png') }} "/>
+{% elseif app.user.scoregeographie > "100" and app.user.scoregeographie < "200"%}
+        <img src="{{ asset('bundles/acmedemo/badges/geographie/confirme.png') }} "/>
+{% elseif app.user.scoregeographie > "200" %}
+        <img src="{{ asset('bundles/acmedemo/badges/geographie/expert.png') }} "/><br />
+{% endif %}
+
+{# ---------------------GASTRONOMIE------------------------- #}
 {% if app.user.scoregastronomie is not empty %}
-    <span>Score Gastronomie : </span>{{ app.user.scoregastronomie }}<br />
+    <span>Score Gastronomie : {{ app.user.scoregastronomie }} points</span><br />
 {% endif %}
 
+{% if app.user.scoregastronomie > "25" and app.user.scoregastronomie < "50" %}
+        <img src="{{ asset('bundles/acmedemo/badges/gastronomie/debutant.png') }} "/>
+
+{% elseif app.user.scoregastronomie > "50" and app.user.scoregastronomie < "100" %}
+        <img src="{{ asset('bundles/acmedemo/badges/gastronomie/amateur.png') }} "/>
+
+{% elseif app.user.scoregastronomie > "100" and app.user.scoregastronomie < "200" %}
+        <img src="{{ asset('bundles/acmedemo/badges/gastronomie/confirme.png') }} "/>
+
+{% elseif app.user.scoregastronomie > "200" %}
+        <img src="{{ asset('bundles/acmedemo/badges/gastronomie/expert.png') }} "/><br />
+{% endif %}
+
+{# ---------------------HIGH TECH------------------------- #}
 {% if app.user.scorehightech is not empty %}
-    <span>Score High-Tech : </span>{{ app.user.scorehightech }}<br />
+    <span>Score High-Tech : {{ app.user.scorehightech }} points</span><br />
 {% endif %}
 
+{% if app.user.scorehightech > "25" and app.user.scorehightech < "50" %}
+        <img src="{{ asset('bundles/acmedemo/badges/high-tech/debutant.png') }} "/>
+{% elseif app.user.scorehightech > "50" and app.user.scorehightech < "100" %}
+        <img src="{{ asset('bundles/acmedemo/badges/high-tech/amateur.png') }} "/>
+{% elseif app.user.scorehightech > "100" and app.user.scorehightech < "200" %}
+        <img src="{{ asset('bundles/acmedemo/badges/high-tech/confirme.png') }} "/>
+{% elseif app.user.scorehightech > "200" %}
+        <img src="{{ asset('bundles/acmedemo/badges/high-tech/expert.png') }} "/><br />
+{% endif %}
+
+{# ----------------------------------------------------------------- #}
 <a class="log deconnexion" href="{{ path('fos_user_security_logout') }}">Déconnexion</a><br/><br/><br/><br/><br/>
 <a class="edit" href="{{ path('modificationProfil') }}"><h5>Modifier le profil</h5></a>
 
