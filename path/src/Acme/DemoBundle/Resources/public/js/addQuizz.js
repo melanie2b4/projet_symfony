@@ -27,10 +27,38 @@ $(function(){
     $('<p class="numberAddQuestion" >10</p>').insertAfter('#add_quizz_type_questions > div > #add_quizz_type_questions_9 > div:first-child()');
     
     $('#add_quizz_type_questions > div > div > div:nth-child(3) input').click(function(){
-
-        
         $(this).parent().parent().parent().parent().find('input[type="checkbox"]').not(this).attr('checked', false);
 
+    })
+
+    $('.addQuizz').submit(function(){
+    
+        var doreturn = 0;
+        
+        $('section .addQuizz #add_quizz_type_questions > div').each(function(){
+            var input = $(this).find('input[type="checkbox"]');
+            
+            if (input.prop('checked')==false){
+            
+            console.log('ok');
+            doreturn = 1;
+                
+            }else{
+            doreturn = 0;
+            console.log('no');    
+            
+            }
+        
+        })
+      
+        console.log(doreturn);
+        if(doreturn == 1){
+            
+            alert("Au moins une question n'a pas de bonne reponse validé ! Merci de lui choisir une bonne reponse")
+            return false;}else{
+        return true;
+        };
+        
     })
     
 })
