@@ -14,21 +14,24 @@
     <form method="POST" action="{{ path('recupReponse', {id:Quizz.id})}}">
 
       {% set number = 0 %}<!-- On le met à zéro -->
+    
       {% for Question in Quizz.questions %}
 
         <div class="questionNumber">{% set number = number + 1 %}{{ number }}</div><!-- On incrémente -->
+        
         <label class="libelleQuestion">{{ Question.libelleQuestion }}</label>
         <br><br>
 
-        {% for Reponse in Question.reponses %}
-        <label class="libelleReponse"><input type="radio" name="choix-{{Question.id}}" value="{{Reponse.id}}" class="inputRadio"><span class="customRadio"></span> {{ Reponse.libelleReponse }}
-        </label><br><br>
-
+          {% for Reponse in Question.reponses %}
+          <label class="libelleReponse"><input type="radio" name="choix-{{Question.id}}" value="{{Reponse.id}}" class="inputRadio"><span class="customRadio"></span> {{ Reponse.libelleReponse }}
+          </label><br><br>
+   
         {% endfor %}
 
       {% endfor %}
 
       <input type="submit" value="VALIDER">
+
     </form>
   </div>
 {% endblock %}

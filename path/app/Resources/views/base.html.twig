@@ -4,26 +4,26 @@
     <meta charset="UTF-8" />
     <title>{% block title %}Welcome!{% endblock %}</title>
     {% block stylesheets %}{% endblock %}
-    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
-    <link rel="stylesheet" href="{{ asset('bundles/acmedemo/css/style.css') }}">
-    <script type="text/javascript" src="{{ asset('bundles/acmedemo/js/jquery-2.1.3.min.js') }}"></script>
-</head>
-<body>
-    <header>
-        <div class="topBar">
-            <div class="head">
-                <a href="{{ path('index') }}"><h1><img src="{{ asset('bundles/acmedemo/images/logo.png') }}" alt="Quizz"/></h1></a>
-                <p>Baseline lorem ipsum dolor sit amet</p>         
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <link rel="stylesheet" href="{{ asset('bundles/acmedemo/css/style.css') }}">
+        <script type="text/javascript" src="{{ asset('bundles/acmedemo/js/jquery-2.1.3.min.js') }}"></script>
+    </head>
+    <body>
+        <header>
+            <div class="topBar">
+                <div class="head">
+                    <a href="{{ path('index') }}"><h1><img src="{{ asset('bundles/acmedemo/images/logo.png') }}" alt="Quizz"/></h1></a>
+                    <p>Un site qui déchire.</p>         
 
-            </div>
-              <div class="search">
-                <form method="get" action="{{ path('search_quizz') }}" class="navbar-form navbar-left" role="search">
-                    <div class="form-group">
-                        <input type="text" name="search" placeholder="rechercher" id="search" class="form-control">
-                    </div>
-                    <button type="submit" class="btn btn-default">OK</button>
-                </form>
-            </div> 
+                </div>
+                <div class="search">
+                    <form method="get" action="{{ path('search_quizz') }}" class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                            <input type="text" name="search" placeholder="rechercher" id="search" class="form-control">
+                        </div>
+                        <button type="submit" class="btn btn-default">OK</button>
+                    </form>
+                </div> 
             </div>
 
             <a href="#" class="burger_menu"></a>
@@ -39,22 +39,33 @@
                     <a class="{% if app.request.attributes.get('_route') == 'geographie' %}active{% endif %}"href="{{ path('geographie') }}">Géographie</a>
                     <a class="{% if app.request.attributes.get('_route') == 'gastronomie' %}active{% endif %}"href="{{ path('gastronomie') }}">Gastronomie</a>
                     <a class="{% if app.request.attributes.get('_route') == 'hightech' %}active{% endif %}"href="{{ path('hightech') }}">High-tech</a>
-               </div>
+                </div>
             </div>
         </header>
         
         <section>
             <div class="content">
                 {% block body %}{% endblock %}
-            </div>
-            
-            <div class="sideBar">
-                <!--{% block user %}{% endblock%}-->
-                {% include "::userBloc.html.twig" %}
-            </div>
-        </section>
-        
-        
-        {% block javascripts %}{% endblock %}
-    </body>
-    </html>
+                </div>
+
+                <div class="sideBar">
+                    <!--{% block user %}{% endblock%}-->
+                    {% include "::userBloc.html.twig" %}
+                </div>
+            </section>
+
+            <footer>
+                <div id="footer">
+                    <nav class="reseaux_sociaux" role="navigation">
+                        <ul>
+                            <li class="facebook"><a href="#" role="link"></a></li>
+                            <li class="twitter"><a href="#" role="link"></a></li>
+                            <li class="pinterest"><a href="#" role="link"></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </footer>
+
+            {% block javascripts %}{% endblock %}
+            </body>
+            </html>

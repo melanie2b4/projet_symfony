@@ -1,0 +1,223 @@
+@media screen and (min-width: 1161px) {
+	.topBar{
+    max-width: 1200px;
+    .head{
+      max-width: 700px;
+      margin: 20px 0 0;
+      padding-left: 40px;
+      padding-right: 40px;
+      }
+      .search{
+      	max-width: 1200px;
+          margin: 23px 0 0;
+      }
+  }
+	.main-nav{
+		background: none;
+        display: block;
+        max-width: 1200px;
+        li{
+            display: inline-block;
+        }
+	}
+	#btn-nav{
+        display: none;
+    }  
+}
+
+@media screen and (min-width: 961px) and (max-width: 1160px){
+  .topBar{
+    max-width: 950px;
+    .head{
+        width: 500px;
+        float: left;
+        margin: 20px 0 0 110px;
+      }
+      .search{
+          margin: 23px 0 0;
+      }
+  }
+    .main-nav{
+      background: none;
+        display: block;
+        max-width: 950px;
+        li{
+            display: inline-block;
+          a{
+          font-size: 0.8em;
+          font-family: $Black;
+          color: $clr5;
+          text-decoration: none;
+          }
+        }
+    }
+    #btn-nav{
+        display: none;
+    } 
+}
+
+@media screen and (max-width: 960px) {
+  .head{
+        float: left;
+        margin: 20px 0 0;
+        width: 280px;
+        padding-left: 67px;
+      }
+      .search{
+        margin: 23px 0 0;
+      }
+	.main-nav{
+		padding-left: 0;
+        a{
+            font-family: $Black;
+            color: $clr5;
+            font-size: 1em;
+            text-decoration: none;
+        }
+	}   
+}
+
+
+
+
+
+@media screen and (max-width: 780px){
+	.sideBar{
+		float: none;
+    width: 80%;
+    margin: auto auto 25px;
+    vertical-align: top;
+    background: $clr1;
+    padding:0px 20px 20px;
+	    .userBloc{
+	        padding-left: 20px;
+	        padding-right: 20px;
+	        background: $clr1;
+	    }
+    form{
+      text-align: center;
+      .envoi{
+        float: left;
+        border: none;
+        font-size: 1.05em;
+        padding: 14px 20px;
+        background-color: #ff9640;
+        color: white;
+        text-decoration: none;
+        width: 140px;
+        margin-right: 10px;
+        text-align: center;
+        font-family: $Regular;
+        cursor: pointer;
+      }
+    }
+      .log{
+        float: left;
+        border: none;
+        background-color: $clr2;
+        color: white;
+        text-decoration: none;
+        font-size: 1.05em;
+        padding: 16px 20px;
+        width: 140px;
+        margin-left: 10px;
+        text-align: center;
+        font-family: $Regular;
+    }
+	}
+  section{
+    .content{
+    width: 100%;
+  }
+  }
+}
+@media screen and (min-width: 781px){
+	.sideBar{
+    float: right;
+    width: 33%;
+    vertical-align: top;
+    background: $clr1;
+    padding:0px 20px 20px;
+	    .userBloc{
+	        padding-left: 20px;
+	        padding-right: 20px;
+	        background: $clr1;
+	    }
+      form{
+      text-align: center;
+    }
+    .log{
+        display: block;
+        border: none;
+        background-color: $clr2;
+        color: white;
+        text-decoration: none;
+        font-size: 1.05em;
+        padding: 16px 20px;
+        margin: 3px auto 10px;
+        width: 140px;
+        text-align: center;
+        font-family: $Regular;
+    }
+	}
+}
+
+@media screen and (min-width: 781px) and (max-width: 1209px){
+  .profil{
+      .envoi{
+      float: none;
+      margin: 0 auto 10px;
+      border: none;
+      font-size: 1.05em;
+      padding: 14px 20px;
+      background-color: #ff9640;
+      color: white;
+      text-decoration: none;
+      width: 140px;
+      text-align: center;
+      font-family: $Regular;
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (min-width: 1210px){
+  .profil{
+      .envoi{
+        float: left;
+        border: none;
+        font-size: 1.05em;
+        padding: 14px 20px;
+        background-color: #ff9640;
+        color: white;
+        text-decoration: none;
+        width: 140px;
+        margin: 2px 0 0 10px;
+        text-align: center;
+        font-family: $Regular;
+        cursor: pointer;
+      }
+      .log{
+        float: left;
+        border: none;
+        background-color: $clr2;
+        color: white;
+        text-decoration: none;
+        font-size: 1.05em;
+        padding: 16px 20px;
+        width: 140px;
+        margin-left: 10px;
+        text-align: center;
+        font-family: $Regular;
+    }
+  }
+}
+
+@media screen and (max-width: 530px){
+  .head{
+   padding-left: 67px;
+  }
+  .search{
+    margin: 0 0 0 70px;
+  }
+}
