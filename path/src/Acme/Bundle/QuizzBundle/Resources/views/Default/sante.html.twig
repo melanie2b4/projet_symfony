@@ -35,7 +35,7 @@
             </div>
         </div>
         <ul>
-            {% for Quizz in SanteQuizz[3:] %}
+            {% for Quizz in SanteQuizz[3:]|slice(0, 20) %}
             <li>
                 <a href="{{ path('show_quizz', {id: Quizz.id}) }}">
                     <img src="../../bundles/acmedemo/images/{{ Quizz.img }}" alt="{{ Quizz.titre }}">
