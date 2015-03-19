@@ -15,6 +15,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Acme\Bundle\QuizzBundle\Entity\Reponse;
 use Acme\Bundle\QuizzBundle\Entity\Question;
 use Acme\Bundle\QuizzBundle\Form\AddPictureType;
+use Symfony\Component\HttpFoundation\Response;
 
 
 class DefaultController extends Controller
@@ -30,10 +31,17 @@ class DefaultController extends Controller
         $TopQuizz = $repository->getQuizzByOrderTop('desc');
         $RecentQuizz = $repository->getQuizzByOrderDate('desc');
 
-        return array(
+       return array(
+        'RecentQuizz' => $RecentQuizz,
+        'TopQuizz' => $TopQuizz
+        );
+        
+        $return = array(
             'RecentQuizz' => $RecentQuizz,
             'TopQuizz' => $TopQuizz
         );
+        $return = json_encode($return);
+        return new Response($return,200,array('Content-Type'=>'application/json'));
     }
     
     /**
