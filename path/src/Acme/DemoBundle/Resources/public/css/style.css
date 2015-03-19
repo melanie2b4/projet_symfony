@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}@font-face{font-family:"LatoBlack";src:url('../font/Lato-Black.ttf');}@font-face{font-family:"LatoLight";src:url('../font/Lato-Light.ttf');}@font-face{font-family:"LatoRegular";src:url('../font/Lato-Regular.ttf');}@font-face{font-family:"LatoBold";src:url('../font/Lato-Bold.ttf');}@font-face{font-family:"LatoBoldItalic";src:url('../font/Lato-BoldItalic.ttf');}*{box-sizing:border-box}body{background:#f5f5f5}header{background:#0f80cf}header .topBar{height:105px;margin:0 auto}header .topBar .head{float:left;max-width:975px;margin:20px 0 0;padding-left:155px;padding-right:40px}header .topBar .head h1{float:left}header .topBar .head p{width:800px;margin-top:30px;padding-left:110px;font-size:0.9em;color:white;font-family:"LatoRegular",arial,sans-serif}header .topBar .search{margin:20px 0 0;margin-left:15px;float:left}header .topBar .search .form-group{display:inline-block}header .topBar .search .form-group input{background-color:#57a6de;padding:7px 10px;border:none;width:100%}header .topBar .search .form-group input::-webkit-input-placeholder{color:#6e7275}header .topBar .search .form-group input:-moz-placeholder{color:#6e7275}header .topBar .search button{background-color:#ff9640;color:#fff;border:none;padding:7px 10px;font-weight:bold}header .topBar .search button:hover{background-color:#333;cursor:pointer}header .row h3{font-family:"LatoBlack",arial,sans-serif;color:#6f7376;font-size:1em}header .nav{background:#E5E5E5}header .nav .liens_menu{max-width:1200px;margin:auto;padding-left:40px;padding-right:40px}header .nav a{display:inline-block;font-family:"LatoBlack",arial,sans-serif;color:#454545;font-size:1em;text-decoration:none;height:65px;line-height:65px;margin-right:25px}header .nav a:hover{color:#ff9640}.caption h3{font-family:"LatoBlack",arial,sans-serif}.profil{background-color:#0f80cf;padding-top:0}.profil img{width:90px;height:90px}.profil .roundedImage{overflow:hidden;-webkit-border-radius:50px;-moz-border-radius:50px;border-radius:50px;width:100px;height:100px;margin:10px auto}.profil .roundedImage img{width:100px;height:100px}.profil h3{text-align:center;padding:15px;color:white;font-size:1.4em;font-family:"LatoLight",arial,sans-serif}.profil h2{text-align:center;margin-top:20px;color:#fff;font-size:1.3em;font-family:"LatoBlack",arial,sans-serif;text-transform:uppercase;border-bottom:1px solid #FFFFFF;padding:5px}.profil p{font-family:"LatoRegular",arial,sans-serif;font-size:16px;color:#FFFFFF;padding:10px}.profil p .bold{font-family:"LatoBold",arial,sans-serif;color:#ff9640}.profil .log{float:left;border:none;background-color:#ff9640;color:white;text-decoration:none;font-size:1.05em;padding:16px 20px;width:140px;margin-left:10px;text-align:center;font-family:"LatoRegular",arial,sans-serif}.profil .log:hover{background-color:#333}.profil .deconnexion{margin:20px 0 0 80px}.profil .edit{margin-top:20px;color:#fff}.profil .edit h5{text-align:center;font-size:0.8em;color:#fff;font-family:"LatoRegular",arial,sans-serif;list-style-type:none}.profil .edit h5:hover{color:#333}.profil .edit:hover{color:#333}.profil .identifiant{background-color:#57a6de;border:none;padding:10px;font-size:0.75em;width:300px;margin-top:5px 0}.profil input::-webkit-input-placeholder{color:#6e7275}.profil input:-moz-placeholder{color:#6e7275}.profil #remember_me{margin:15px 0 25px;font-size:0.9em;color:white}.profil label{font-size:0.9em;color:white}.profil .envoi{float:left;border:none;font-size:1.05em;padding:14px 20px;background-color:#ff9640;color:white;text-decoration:none;width:140px;margin-right:10px;text-align:center;font-family:"LatoRegular",arial,sans-serif;cursor:pointer}.profil .envoi:hover{background-color:#333}#show-reponse h2{font-family:"LatoBlack",arial,sans-serif;font-size:2em;padding:10px 0px 10px}#show-reponse p{font-size:1.25em;color:#333333;font-family:"LatoRegular",arial,sans-serif;font-style:italic;padding-bottom:30px}#show-reponse label .libelleQuestion{font-size:2em}#show-reponse label input+.customRadio{display:inline-block;width:10px;height:10px;margin-right:10px;background:#FF9640;border-radius:50%;box-shadow:0 0 0 2px #FF7400}#show-reponse label input:checked+.customRadio{background:#33CCCC;box-shadow:0 0 0 2px #009999}#show-reponse .questionNumber{font-size:3.2em;font-family:"LatoBold",arial,sans-serif;font-style:italic;float:left;color:#d7d7d7;margin-top:60px}#show-reponse .libelleQuestion{font-size:1.2em;font-family:"LatoBold",arial,sans-serif;margin:10px 10px}#show-reponse .libelleReponse{font-family:"LatoRegular",arial,sans-serif;font-size:1em;margin-left:50px;color:green}#show-reponse #reponsetrue{color:#087700}#show-reponse #reponsefalse{color:#ff0000}#show-reponse input[type="submit"]{padding:14px 20px;margin-top:4%;font-family:'Arial',sans-serif;font-size:0.95em;font-weight:100;color:#fff;background:#ff9640;border:none;cursor:pointer;text-align:center}#show-reponse input[type="submit"]:hover{background:#333}section{max-width:1200px;margin:auto;padding-left:20px;padding-right:20px;padding-top:40px}section .content{display:inline-block;width:66%;padding-left:20px;padding-left:20px}section .content h2{font-family:"LatoLight",arial,sans-serif;font-size:2em;color:#ff9640}section .content .topQuizz ul{margin-left:20px}section .content .lastQuizz ul{padding-right:20px}section .content .lastQuizz,section .content .topQuizz{width:49%;display:inline-block}section .content .lastQuizz h2,section .content .topQuizz h2{margin-right:20px}section .content .lastQuizz li,section .content .topQuizz li{height:70px;background:#e5E5E5;margin-top:15px}section .content .lastQuizz li img,section .content .topQuizz li img{height:100%;display:inline-block}section .content .lastQuizz li div,section .content .topQuizz li div{display:inline-block;vertical-align:top;padding-left:15px;padding-top:15px}section .content .lastQuizz li div .categorieInfo,section .content .topQuizz li div .categorieInfo{font-family:"LatoBlack",arial,sans-serif;color:#333333;text-transform:uppercase;font-size:0.75em}section .content .lastQuizz li div .QuizzName,section .content .topQuizz li div .QuizzName{margin-top:2px;font-size:1.25em;color:#333333;font-family:"LatoRegular",arial,sans-serif}section .content .lastQuizz li:first-child,section .content .topQuizz li:first-child{height:210px;overflow:hidden;position:relative}section .content .lastQuizz li:first-child div,section .content .topQuizz li:first-child div{z-index:10;position:absolute;bottom:0;height:70px;background:rgba(0,0,0,0.65);width:100%}section .content .lastQuizz li:first-child div .QuizzName,section .content .lastQuizz li:first-child div .categorieInfo,section .content .topQuizz li:first-child div .QuizzName,section .content .topQuizz li:first-child div .categorieInfo{color:#ffffff}section .content .topQuizz{width:49%;display:inline-block;vertical-align:top}section .content .topQuizz h2{margin-left:20px}section .content .listCategory li{height:70px;background:#dce0e3;margin-top:15px}section .content .listCategory li a{text-decoration:none}section .content .listCategory li div{display:inline-block;padding-left:15px;padding-top:15px;vertical-align:top}section .content .listCategory li img{height:100%}section .content .listCategory li .categorieInfo{font-family:"LatoBlack",arial,sans-serif;color:#333333;text-transform:uppercase;font-size:0.75em}section .content .listCategory li .QuizzName{margin-top:2px;font-size:1.25em;color:#333333;font-family:"LatoRegular",arial,sans-serif}section .content .listCategory .headlines{margin-top:20px}section .content .listCategory .headlines .first{width:67.4%;padding-right:5px;display:inline-block}section .content .listCategory .headlines .first div{width:100%;height:auto;position:relative;display:inline-block}section .content .listCategory .headlines .first div img{width:100%;height:auto}section .content .listCategory .headlines .first div div{position:absolute;bottom:4px;height:70px;background:rgba(0,0,0,0.65);padding-left:15px;width:100%;z-index:4}section .content .listCategory .headlines .side{width:31.6%;padding-left:5px;display:inline-block;vertical-align:top}section .content .listCategory .headlines .side div div{width:100%;height:auto;position:relative}section .content .listCategory .headlines .side div div img{width:100%;height:auto}section .content .listCategory .headlines .side div div div{position:absolute;bottom:4px;height:70px;background:rgba(0,0,0,0.65);padding-left:15px;width:100%;z-index:4}section .content .listCategory .headlines .side div:first-child{padding-bottom:7px}section .content .listCategory .headlines .side div:first-child div{padding-bottom:0;padding-top:0}section .content .listCategory .headlines .side div:nth-child(2){padding-top:7px}section .content .listCategory .headlines .side div:nth-child(2) div{padding-top:0;padding-bottom:0}section .content .listCategory .headlines .categorieInfo{font-family:"LatoBlack",arial,sans-serif;color:#fff;text-transform:uppercase;font-size:0.75em;margin-top:15px}section .content .listCategory .headlines .QuizzName{margin-top:2px;font-size:1.25em;color:#fff;font-family:"LatoRegular",arial,sans-serif}section .content .intro{margin-top:20px}section .content .intro img{width:49%;padding-right:20px;display:inline-block}section .content .intro p{vertical-align:top;padding-left:20px;display:inline-block;width:49%;color:#ff9640;font-family:"LatoRegular",arial,sans-serif;padding-right:20px}section .content .wrapper{width:95%;padding:6%;margin-top:6% auto;background:#fff}section .content .wrapper input[type="radio"]{display:none}section .content .wrapper label .libelleQuestion{font-size:2em}section .content .wrapper label input+.customRadio{display:inline-block;width:10px;height:10px;margin-right:10px;background:#FF9640;border-radius:50%;box-shadow:0 0 0 2px #FF7400}section .content .wrapper label input:checked+.customRadio{background:#33CCCC;box-shadow:0 0 0 2px #009999}section .content .wrapper .questionNumber{font-size:3.2em;font-family:"LatoBold",arial,sans-serif;font-style:italic;float:left;color:#d7d7d7;margin-top:60px}section .content .wrapper .libelleQuestion{font-size:1.2em;font-family:"LatoBold",arial,sans-serif;margin:10px 10px}section .content .wrapper .libelleReponse{font-family:"LatoRegular",arial,sans-serif;font-size:1em;margin-left:50px}section .content .wrapper input[type="submit"]{padding:14px 20px;margin-top:4%;font-family:'Arial',sans-serif;font-size:0.95em;font-weight:100;color:#fff;background:#ff9640;border:none;cursor:pointer;text-align:center}section .content .wrapper input[type="submit"]:hover{background:#333}section .sideBar{display:inline-block;width:33%;vertical-align:top;background:#0f80cf;padding:0px 20px 20px}section .sideBar .userBloc{padding-left:20px;padding-right:20px;background:#0f80cf}section .addQuizz{margin-top:40px}section .addQuizz input[type="text"]{min-height:45px;background:#fff;border:2px solid #e3e3e3;color:#333333;font-size:1.25em;font-family:"LatoRegular",arial,sans-serif;padding-left:20px;width:100%}section .addQuizz input[type="text"]::-webkit-input-placeholder{font-family:"LatoLight",arial,sans-serif;color:#b7b7b7}section .addQuizz textarea{background:#fff;border:2px solid #e3e3e3;min-height:120px;width:100%;margin-top:20px;color:#333333;font-size:1.25em;font-family:"LatoRegular",arial,sans-serif;padding-left:20px}section .addQuizz textarea::-webkit-input-placeholder{font-family:"LatoLight",arial,sans-serif;color:#b7b7b7}section .addQuizz #add_quizz_type_categorie{background:#fff;border:2px solid #e3e3e3;min-height:30px;font-family:"LatoRegular",arial,sans-serif;padding-left:10px;margin-left:10px}section .addQuizz input[type="checkbox"]{display:inline-block;width:10%}section .addQuizz input[class="addReponse"]{display:inline-block;width:100%}section .addQuizz input[type="submit"]{border:none;background-color:#ff9640;color:#fff;text-decoration:none;font-size:0.95em;padding:15px 15px;width:140px;text-align:center;font-family:"LatoRegular",arial,sans-serif}section .addQuizz div[class^="add_quizz_type_questions"]{margin-top:30px}section .addQuizz #add_quizz_type_questions>div{margin-top:40px}section .addQuizz #add_quizz_type_questions>div>div>div{margin-bottom:20px}section .addQuizz .numberAddQuestion{color:#d8d8d8;font-size:4.688em;display:inline-block;width:8%;font-family:"LatoBoldItalic",arial,sans-serif;vertical-align:top;line-height:2.2em}section .addQuizz #add_quizz_type_questions>div>div>div:nth-child(3){display:inline-block;padding-left:35px;width:92%}section .addQuizz #add_quizz_type_questions>div>div>div:nth-child(3)>div>div>div>div{display:inline-block}section .addQuizz #add_quizz_type_questions>div>div>div:nth-child(3)>div>div>div>div:nth-child(1){width:92%}section .addQuizz #add_quizz_type_questions>div>div>div:nth-child(3)>div>div>div{margin-bottom:8px}section .addQuizz #add_quizz_type_questions>div>div>div:nth-child(3)>div>div>div>div:nth-child(2){width:8%}section .addQuizz #add_quizz_type_questions>div>div>div:nth-child(3)>div>div>div>div:nth-child(2) input{width:15px;float:right}section .addQuizz hr{display:block;height:2px;opacity:0.1;background:#333;margin-top:30px;border:none}section .addQuizz select{margin-top:15px;margin-bottom:20px}section .addQuizz label{font-family:"LatoRegular",arial,sans-serif;color:#333;font-size:0.85em}section .edit_profil p{font-size:0.9em;margin:0}section .edit_profil #fos_user_profile_form div,section .edit_profil #QuizzBundle_addpicturetype div:nth-child(-n+3){margin-bottom:20px}section .edit_profil #fos_user_profile_form div label,section .edit_profil #QuizzBundle_addpicturetype div:nth-child(-n+3) label{width:160px;display:block;float:left;margin-top:10px;font-size:0.9em}section .edit_profil #fos_user_profile_form div input,section .edit_profil #QuizzBundle_addpicturetype div:nth-child(-n+3) input{min-height:35px;background:#fff;border:2px solid #e3e3e3;font-family:"LatoRegular",arial,sans-serif;padding-left:10px;width:300px}section .edit_profil #QuizzBundle_addpicturetype div:nth-child(4) input{margin-left:135px}section .edit_profil input[type="submit"]{border:none;padding:14px 20px;background-color:#ff9640;color:#fff;text-decoration:none;width:140px;margin:30px 0 0;text-align:center;font-family:"LatoRegular",arial,sans-serif;font-size:0.95em}section .edit_profil input[type="submit"]:hover{background-color:#333;cursor:pointer}section h1{font-size:2em;font-family:"LatoLight",arial,sans-serif;margin-bottom:20px}section #fos_user_registration_form div{margin-bottom:20px}section #fos_user_registration_form div label{width:130px;display:block;float:left;margin-top:10px;font-size:0.9em}section #fos_user_registration_form div input{min-height:35px;background:#fff;border:2px solid #e3e3e3;font-family:"LatoRegular",arial,sans-serif;padding-left:10px;width:300px}section .fos_user_registration_register input[type="submit"]{border:none;padding:14px 20px;background-color:#ff9640;color:#fff;text-decoration:none;width:140px;margin:30px 0 0;text-align:center;font-family:"LatoRegular",arial,sans-serif;font-size:0.95em}section .fos_user_registration_register input[type="submit"]:hover{background-color:#333;cursor:pointer}@media screen and (max-width: 1191px){section .sideBar{padding:0}.profil .envoi{margin:0}header .nav .liens_menu{max-width:780px}header .topBar .search{margin:20px 0px 0px 0px}}@media screen and (max-width: 1038px){.profil .envoi{float:none;margin:0 auto 10px;border:none;font-size:1.05em;padding:14px 20px;background-color:#ff9640;color:white;text-decoration:none;width:140px;text-align:center;font-family:"LatoRegular",arial,sans-serif;cursor:pointer}.profil .log{display:block;border:none;background-color:#ff9640;color:white;text-decoration:none;font-size:1.05em;padding:16px 20px;margin:3px auto 10px;width:140px;text-align:center;font-family:"LatoRegular",arial,sans-serif}.profil .identifiant{width:80%}header .topBar .head{max-width:400px}.QuizzName{display:none}}@media screen and (min-width: 780px){#footer{margin:0;height:5.2em;background-color:#e5e5e5;clear:both;margin-top:50px}.facebook{display:inline-block;width:84px;height:84px;background-image:url("../images/sprite.png");background-position:0px 0px}.facebook:hover{background-position:0px -84px}.twitter{display:inline-block;width:84px;height:84px;background-image:url("../images/sprite.png");background-position:-672px 0px}.twitter:hover{background-position:-672px -84px}.categorieInfo{display:none}}@media screen and (max-width: 780px){.reseaux_sociaux a{display:inline-block;margin-left:auto}#footer{margin:0;height:5.2em;background-color:#e3e3e3;clear:both;margin-top:0px}.facebook{display:inline-block;width:84px;height:84px;background-image:url("../images/sprite.png");background-position:0px 0px}.facebook:hover{background-position:0px -84px}.twitter{display:inline-block;width:84px;height:84px;background-image:url("../images/sprite.png");background-position:-672px 0px}.twitter:hover{background-position:-672px -84px}section .content .lastQuizz li{background:none}.content .lastQuizz li div .categorieInfo{display:none}section .content .topQuizz li{background:none}.content .topQuizz li div .categorieInfo{display:none}}.reseaux_sociaux{padding:0;margin:0;text-align:center;margin-right:auto;margin-left:auto;width:100%}.reseaux_sociaux li{display:inline-block;list-style:none}.reseaux_sociaux a{display:inline-block;margin:0 34px}@media screen and (max-width: 860px){section .content .topQuizz li div .categorieInfo{font-size:0.6em}section .content .lastQuizz li div .categorieInfo{font-size:0.6em}}@media screen and (max-width: 780px){.sideBar{float:none;width:80%;margin:auto auto 25px;vertical-align:top;background:#0f80cf;padding:0px 20px 20px}.sideBar .userBloc{padding-left:20px;padding-right:20px;background:#0f80cf}.sideBar form{text-align:center}.sideBar form .envoi{float:left;border:none;font-size:1.05em;padding:14px 20px;background-color:#ff9640;color:white;text-decoration:none;width:140px;margin-right:10px;text-align:center;font-family:"LatoRegular",arial,sans-serif;cursor:pointer}.sideBar .log{float:left;border:none;background-color:#ff9640;color:white;text-decoration:none;font-size:1.05em;padding:16px 20px;width:140px;margin-left:10px;text-align:center;font-family:"LatoRegular",arial,sans-serif}section .content{width:100%}}
-=======
 /* line 13, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
@@ -72,32 +69,31 @@ header {
   background: #0f80cf; }
   /* line 87, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
   header .topBar {
-    height: 75px;
-    max-width: 1200px;
+    height: 105px;
     margin: 0 auto; }
-    /* line 91, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+    /* line 90, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
     header .topBar .head {
-      max-width: 700px;
+      float: left;
+      max-width: 975px;
       margin: 20px 0 0;
-      padding-left: 40px;
-      padding-right: 40px;
-      float: left; }
-      /* line 98, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+      padding-left: 155px;
+      padding-right: 40px; }
+      /* line 97, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
       header .topBar .head h1 {
         float: left; }
-      /* line 102, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+      /* line 101, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
       header .topBar .head p {
         width: 800px;
-        margin-top: 10px;
+        margin-top: 30px;
         padding-left: 110px;
         font-size: 0.9em;
-        color: white; }
+        color: white;
+        font-family: "LatoRegular", arial, sans-serif; }
     /* line 112, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
     header .topBar .search {
-      max-width: 1200px;
+      /*max-width: 1200px;*/
       margin: 20px 0 0;
-      padding-left: 40px;
-      padding-right: 40px;
+      margin-left: 15px;
       float: left; }
       /* line 119, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
       header .topBar .search .form-group {
@@ -106,61 +102,66 @@ header {
         header .topBar .search .form-group input {
           background-color: #57a6de;
           padding: 7px 10px;
-          border: none; }
-        /* line 128, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+          border: none;
+          width: 100%; }
+        /* line 129, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
         header .topBar .search .form-group input::-webkit-input-placeholder {
           color: #6e7275; }
-        /* line 132, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+        /* line 133, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
         header .topBar .search .form-group input:-moz-placeholder {
           color: #6e7275; }
-      /* line 137, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+      /* line 138, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
       header .topBar .search button {
         background-color: #ff9640;
         color: #fff;
         border: none;
         padding: 7px 10px;
         font-weight: bold; }
-      /* line 144, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+      /* line 145, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
       header .topBar .search button:hover {
         background-color: #333;
         cursor: pointer; }
-  /* line 153, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  /* line 154, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
   header .row h3 {
     font-family: "LatoBlack", arial, sans-serif;
     color: #6f7376;
     font-size: 1em; }
-  /* line 159, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  /* line 160, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
   header .nav {
-    background: #cbd2d7; }
-    /* line 161, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+    background: #E5E5E5; }
+    /* line 162, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
     header .nav .liens_menu {
       max-width: 1200px;
       margin: auto;
       padding-left: 40px;
       padding-right: 40px; }
-    /* line 167, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+    /* line 168, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
     header .nav a {
       display: inline-block;
       font-family: "LatoBlack", arial, sans-serif;
-      color: #6f7376;
+      color: #454545;
       font-size: 1em;
       text-decoration: none;
       height: 65px;
       line-height: 65px;
       margin-right: 25px; }
-      /* line 176, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+      /* line 177, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
       header .nav a:hover {
-        text-decoration: underline; }
+        color: #ff9640; }
 
-/* line 183, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+/* line 184, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+.caption h3 {
+  font-family: "LatoBlack", arial, sans-serif; }
+
+/* line 188, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
 .profil {
   background-color: #0f80cf;
   padding-top: 0; }
-  /* line 187, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  /* line 192, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
   .profil img {
     width: 90px;
     height: 90px; }
-  /* line 191, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  /* line 196, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
   .profil .roundedImage {
     overflow: hidden;
     -webkit-border-radius: 50px;
@@ -169,18 +170,18 @@ header {
     width: 100px;
     height: 100px;
     margin: 10px auto; }
-  /* line 200, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  /* line 205, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
   .profil .roundedImage img {
     width: 100px;
     height: 100px; }
-  /* line 205, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  /* line 210, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
   .profil h3 {
     text-align: center;
     padding: 15px;
     color: white;
     font-size: 1.4em;
     font-family: "LatoLight", arial, sans-serif; }
-  /* line 213, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  /* line 218, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
   .profil h2 {
     text-align: center;
     margin-top: 20px;
@@ -190,17 +191,17 @@ header {
     text-transform: uppercase;
     border-bottom: 1px solid #FFFFFF;
     padding: 5px; }
-  /* line 225, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  /* line 230, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
   .profil p {
     font-family: "LatoRegular", arial, sans-serif;
     font-size: 16px;
     color: #FFFFFF;
     padding: 10px; }
-  /* line 232, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  /* line 237, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
   .profil p .bold {
     font-family: "LatoBold", arial, sans-serif;
     color: #ff9640; }
-  /* line 236, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  /* line 241, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
   .profil .log {
     float: left;
     border: none;
@@ -213,30 +214,30 @@ header {
     margin-left: 10px;
     text-align: center;
     font-family: "LatoRegular", arial, sans-serif; }
-  /* line 249, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  /* line 254, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
   .profil .log:hover {
     background-color: #333; }
-  /* line 252, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  /* line 257, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
   .profil .deconnexion {
     margin: 20px 0 0 80px; }
-  /* line 255, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  /* line 260, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
   .profil .edit {
     margin-top: 20px;
     color: #fff; }
-    /* line 258, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+    /* line 263, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
     .profil .edit h5 {
       text-align: center;
       font-size: 0.8em;
       color: #fff;
       font-family: "LatoRegular", arial, sans-serif;
       list-style-type: none; }
-    /* line 266, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+    /* line 271, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
     .profil .edit h5:hover {
       color: #333; }
-  /* line 270, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  /* line 275, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
   .profil .edit:hover {
     color: #333; }
-  /* line 273, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  /* line 278, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
   .profil .identifiant {
     background-color: #57a6de;
     border: none;
@@ -244,22 +245,22 @@ header {
     font-size: 0.75em;
     width: 300px;
     margin-top: 5px 0; }
-  /* line 281, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  /* line 286, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
   .profil input::-webkit-input-placeholder {
     color: #6e7275; }
-  /* line 284, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  /* line 289, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
   .profil input:-moz-placeholder {
     color: #6e7275; }
-  /* line 287, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  /* line 292, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
   .profil #remember_me {
     margin: 15px 0 25px;
     font-size: 0.9em;
     color: white; }
-  /* line 292, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  /* line 297, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
   .profil label {
     font-size: 0.9em;
     color: white; }
-  /* line 296, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  /* line 301, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
   .profil .envoi {
     float: left;
     border: none;
@@ -273,27 +274,27 @@ header {
     text-align: center;
     font-family: "LatoRegular", arial, sans-serif;
     cursor: pointer; }
-  /* line 310, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  /* line 315, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
   .profil .envoi:hover {
     background-color: #333; }
 
 /*** VALIDATE QUIZZ ***/
-/* line 319, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+/* line 324, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
 #show-reponse h2 {
   font-family: "LatoBlack", arial, sans-serif;
   font-size: 2em;
   padding: 10px 0px 10px; }
-/* line 324, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+/* line 329, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
 #show-reponse p {
   font-size: 1.25em;
   color: #333333;
   font-family: "LatoRegular", arial, sans-serif;
   font-style: italic;
   padding-bottom: 30px; }
-/* line 333, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+/* line 338, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
 #show-reponse label .libelleQuestion {
   font-size: 2em; }
-/* line 336, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+/* line 341, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
 #show-reponse label input + .customRadio {
   display: inline-block;
   width: 10px;
@@ -302,11 +303,11 @@ header {
   background: #FF9640;
   border-radius: 50%;
   box-shadow: 0 0 0 2px #FF7400; }
-/* line 346, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+/* line 351, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
 #show-reponse label input:checked + .customRadio {
   background: #33CCCC;
   box-shadow: 0 0 0 2px #009999; }
-/* line 350, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+/* line 355, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
 #show-reponse .questionNumber {
   font-size: 3.2em;
   font-family: "LatoBold", arial, sans-serif;
@@ -314,24 +315,24 @@ header {
   float: left;
   color: #d7d7d7;
   margin-top: 60px; }
-/* line 358, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+/* line 363, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
 #show-reponse .libelleQuestion {
   font-size: 1.2em;
   font-family: "LatoBold", arial, sans-serif;
   margin: 10px 10px; }
-/* line 363, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+/* line 368, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
 #show-reponse .libelleReponse {
   font-family: "LatoRegular", arial, sans-serif;
   font-size: 1em;
   margin-left: 50px;
   color: green; }
-/* line 370, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+/* line 375, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
 #show-reponse #reponsetrue {
   color: #087700; }
-/* line 374, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+/* line 379, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
 #show-reponse #reponsefalse {
   color: #ff0000; }
-/* line 377, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+/* line 382, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
 #show-reponse input[type="submit"] {
   padding: 14px 20px;
   margin-top: 4%;
@@ -343,75 +344,75 @@ header {
   border: none;
   cursor: pointer;
   text-align: center; }
-/* line 390, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+/* line 395, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
 #show-reponse input[type="submit"]:hover {
   background: #333; }
 
-/* line 395, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+/* line 400, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
 section {
   max-width: 1200px;
   margin: auto;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 40px; }
-  /* line 401, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  /* line 406, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
   section .content {
     display: inline-block;
     width: 66%;
     padding-left: 20px;
     padding-left: 20px;
-    /** CSS **/
-    /** END CSS **/ }
-    /* line 406, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+    /** CSS **/ }
+    /* line 411, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
     section .content h2 {
       font-family: "LatoLight", arial, sans-serif;
-      font-size: 2em; }
-    /* line 410, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+      font-size: 2em;
+      color: #ff9640; }
+    /* line 416, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
     section .content .topQuizz ul {
       margin-left: 20px; }
-    /* line 413, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+    /* line 419, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
     section .content .lastQuizz ul {
       padding-right: 20px; }
-    /* line 417, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+    /* line 423, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
     section .content .lastQuizz, section .content .topQuizz {
       width: 49%;
       display: inline-block; }
-      /* line 420, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+      /* line 426, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
       section .content .lastQuizz h2, section .content .topQuizz h2 {
         margin-right: 20px; }
-      /* line 423, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+      /* line 429, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
       section .content .lastQuizz li, section .content .topQuizz li {
         height: 70px;
-        background: #dce0e3;
+        background: #e5E5E5;
         margin-top: 15px; }
-        /* line 427, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+        /* line 433, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
         section .content .lastQuizz li img, section .content .topQuizz li img {
           height: 100%;
           display: inline-block; }
-        /* line 431, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+        /* line 437, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
         section .content .lastQuizz li div, section .content .topQuizz li div {
           display: inline-block;
           vertical-align: top;
           padding-left: 15px;
           padding-top: 15px; }
-          /* line 436, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+          /* line 442, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
           section .content .lastQuizz li div .categorieInfo, section .content .topQuizz li div .categorieInfo {
             font-family: "LatoBlack", arial, sans-serif;
             color: #333333;
             text-transform: uppercase;
             font-size: 0.75em; }
-          /* line 442, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+          /* line 448, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
           section .content .lastQuizz li div .QuizzName, section .content .topQuizz li div .QuizzName {
             margin-top: 2px;
             font-size: 1.25em;
             color: #333333;
             font-family: "LatoRegular", arial, sans-serif; }
-        /* line 449, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+        /* line 455, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
         section .content .lastQuizz li:first-child, section .content .topQuizz li:first-child {
           height: 210px;
           overflow: hidden;
           position: relative; }
-          /* line 453, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+          /* line 459, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
           section .content .lastQuizz li:first-child div, section .content .topQuizz li:first-child div {
             z-index: 10;
             position: absolute;
@@ -419,65 +420,65 @@ section {
             height: 70px;
             background: rgba(0, 0, 0, 0.65);
             width: 100%; }
-            /* line 460, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+            /* line 466, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
             section .content .lastQuizz li:first-child div .QuizzName, section .content .lastQuizz li:first-child div .categorieInfo, section .content .topQuizz li:first-child div .QuizzName, section .content .topQuizz li:first-child div .categorieInfo {
               color: #ffffff; }
-    /* line 467, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+    /* line 473, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
     section .content .topQuizz {
       width: 49%;
       display: inline-block;
       vertical-align: top; }
-      /* line 471, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+      /* line 477, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
       section .content .topQuizz h2 {
         margin-left: 20px; }
-    /* line 477, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+    /* line 483, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
     section .content .listCategory li {
       height: 70px;
       background: #dce0e3;
       margin-top: 15px; }
-      /* line 478, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+      /* line 484, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
       section .content .listCategory li a {
         text-decoration: none; }
-      /* line 481, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+      /* line 487, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
       section .content .listCategory li div {
         display: inline-block;
         padding-left: 15px;
         padding-top: 15px;
         vertical-align: top; }
-      /* line 487, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+      /* line 493, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
       section .content .listCategory li img {
         height: 100%; }
-      /* line 493, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+      /* line 499, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
       section .content .listCategory li .categorieInfo {
         font-family: "LatoBlack", arial, sans-serif;
         color: #333333;
         text-transform: uppercase;
         font-size: 0.75em; }
-      /* line 499, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+      /* line 505, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
       section .content .listCategory li .QuizzName {
         margin-top: 2px;
         font-size: 1.25em;
         color: #333333;
         font-family: "LatoRegular", arial, sans-serif; }
-    /* line 506, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+    /* line 512, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
     section .content .listCategory .headlines {
       margin-top: 20px; }
-      /* line 508, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+      /* line 514, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
       section .content .listCategory .headlines .first {
         width: 67.4%;
         padding-right: 5px;
         display: inline-block; }
-        /* line 512, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+        /* line 518, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
         section .content .listCategory .headlines .first div {
           width: 100%;
           height: auto;
           position: relative;
           display: inline-block; }
-          /* line 517, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+          /* line 523, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
           section .content .listCategory .headlines .first div img {
             width: 100%;
             height: auto; }
-          /* line 521, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+          /* line 527, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
           section .content .listCategory .headlines .first div div {
             position: absolute;
             bottom: 4px;
@@ -486,22 +487,22 @@ section {
             padding-left: 15px;
             width: 100%;
             z-index: 4; }
-      /* line 532, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+      /* line 538, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
       section .content .listCategory .headlines .side {
         width: 31.6%;
         padding-left: 5px;
         display: inline-block;
         vertical-align: top; }
-        /* line 538, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+        /* line 544, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
         section .content .listCategory .headlines .side div div {
           width: 100%;
           height: auto;
           position: relative; }
-          /* line 542, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+          /* line 548, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
           section .content .listCategory .headlines .side div div img {
             width: 100%;
             height: auto; }
-          /* line 546, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+          /* line 552, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
           section .content .listCategory .headlines .side div div div {
             position: absolute;
             bottom: 4px;
@@ -510,63 +511,63 @@ section {
             padding-left: 15px;
             width: 100%;
             z-index: 4; }
-        /* line 556, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+        /* line 562, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
         section .content .listCategory .headlines .side div:first-child {
           padding-bottom: 7px; }
-          /* line 558, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+          /* line 564, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
           section .content .listCategory .headlines .side div:first-child div {
             padding-bottom: 0;
             padding-top: 0; }
-        /* line 563, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+        /* line 569, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
         section .content .listCategory .headlines .side div:nth-child(2) {
           padding-top: 7px; }
-          /* line 565, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+          /* line 571, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
           section .content .listCategory .headlines .side div:nth-child(2) div {
             padding-top: 0;
             padding-bottom: 0; }
-      /* line 573, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+      /* line 579, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
       section .content .listCategory .headlines .categorieInfo {
         font-family: "LatoBlack", arial, sans-serif;
         color: #fff;
         text-transform: uppercase;
         font-size: 0.75em;
         margin-top: 15px; }
-      /* line 580, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+      /* line 586, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
       section .content .listCategory .headlines .QuizzName {
         margin-top: 2px;
         font-size: 1.25em;
         color: #fff;
         font-family: "LatoRegular", arial, sans-serif; }
-    /* line 589, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+    /* line 595, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
     section .content .intro {
       margin-top: 20px; }
-      /* line 591, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+      /* line 597, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
       section .content .intro img {
         width: 49%;
         padding-right: 20px;
         display: inline-block; }
-      /* line 596, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+      /* line 602, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
       section .content .intro p {
         vertical-align: top;
         padding-left: 20px;
         display: inline-block;
         width: 49%;
-        color: #333;
+        color: #ff9640;
         font-family: "LatoRegular", arial, sans-serif;
         padding-right: 20px; }
-    /* line 609, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+    /* line 615, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
     section .content .wrapper {
       width: 95%;
       padding: 6%;
       margin-top: 6% auto;
       background: #fff; }
-      /* line 615, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+      /* line 621, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
       section .content .wrapper input[type="radio"] {
         display: none; }
-      /* line 618, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+      /* line 624, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
       section .content .wrapper label .libelleQuestion {
         font-size: 2em; }
-      /* line 621, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+      /* line 627, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
       section .content .wrapper label input + .customRadio {
         display: inline-block;
         width: 10px;
@@ -575,11 +576,11 @@ section {
         background: #FF9640;
         border-radius: 50%;
         box-shadow: 0 0 0 2px #FF7400; }
-      /* line 631, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+      /* line 637, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
       section .content .wrapper label input:checked + .customRadio {
         background: #33CCCC;
         box-shadow: 0 0 0 2px #009999; }
-      /* line 635, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+      /* line 641, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
       section .content .wrapper .questionNumber {
         font-size: 3.2em;
         font-family: "LatoBold", arial, sans-serif;
@@ -587,17 +588,17 @@ section {
         float: left;
         color: #d7d7d7;
         margin-top: 60px; }
-      /* line 643, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+      /* line 649, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
       section .content .wrapper .libelleQuestion {
         font-size: 1.2em;
         font-family: "LatoBold", arial, sans-serif;
         margin: 10px 10px; }
-      /* line 648, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+      /* line 654, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
       section .content .wrapper .libelleReponse {
         font-family: "LatoRegular", arial, sans-serif;
         font-size: 1em;
         margin-left: 50px; }
-      /* line 654, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+      /* line 660, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
       section .content .wrapper input[type="submit"] {
         padding: 14px 20px;
         margin-top: 4%;
@@ -609,25 +610,25 @@ section {
         border: none;
         cursor: pointer;
         text-align: center; }
-      /* line 667, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+      /* line 673, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
       section .content .wrapper input[type="submit"]:hover {
         background: #333; }
-  /* line 674, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  /* line 680, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
   section .sideBar {
     display: inline-block;
     width: 33%;
     vertical-align: top;
     background: #0f80cf;
     padding: 0px 20px 20px; }
-    /* line 680, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+    /* line 686, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
     section .sideBar .userBloc {
       padding-left: 20px;
       padding-right: 20px;
       background: #0f80cf; }
-  /* line 687, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  /* line 693, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
   section .addQuizz {
     margin-top: 40px; }
-    /* line 689, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+    /* line 695, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
     section .addQuizz input[type="text"] {
       min-height: 45px;
       background: #fff;
@@ -637,11 +638,11 @@ section {
       font-family: "LatoRegular", arial, sans-serif;
       padding-left: 20px;
       width: 100%; }
-    /* line 699, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+    /* line 705, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
     section .addQuizz input[type="text"]::-webkit-input-placeholder {
       font-family: "LatoLight", arial, sans-serif;
       color: #b7b7b7; }
-    /* line 703, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+    /* line 709, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
     section .addQuizz textarea {
       background: #fff;
       border: 2px solid #e3e3e3;
@@ -652,11 +653,11 @@ section {
       font-size: 1.25em;
       font-family: "LatoRegular", arial, sans-serif;
       padding-left: 20px; }
-    /* line 714, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+    /* line 720, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
     section .addQuizz textarea::-webkit-input-placeholder {
       font-family: "LatoLight", arial, sans-serif;
       color: #b7b7b7; }
-    /* line 718, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+    /* line 724, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
     section .addQuizz #add_quizz_type_categorie {
       background: #fff;
       border: 2px solid #e3e3e3;
@@ -664,15 +665,15 @@ section {
       font-family: "LatoRegular", arial, sans-serif;
       padding-left: 10px;
       margin-left: 10px; }
-    /* line 726, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+    /* line 732, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
     section .addQuizz input[type="checkbox"] {
       display: inline-block;
       width: 10%; }
-    /* line 730, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+    /* line 736, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
     section .addQuizz input[class="addReponse"] {
       display: inline-block;
       width: 100%; }
-    /* line 734, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+    /* line 740, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
     section .addQuizz input[type="submit"] {
       border: none;
       background-color: #ff9640;
@@ -683,16 +684,16 @@ section {
       width: 140px;
       text-align: center;
       font-family: "LatoRegular", arial, sans-serif; }
-    /* line 745, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+    /* line 751, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
     section .addQuizz div[class^="add_quizz_type_questions"] {
       margin-top: 30px; }
-    /* line 748, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+    /* line 754, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
     section .addQuizz #add_quizz_type_questions > div {
       margin-top: 40px; }
-    /* line 751, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+    /* line 757, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
     section .addQuizz #add_quizz_type_questions > div > div > div {
       margin-bottom: 20px; }
-    /* line 754, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+    /* line 760, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
     section .addQuizz .numberAddQuestion {
       color: #d8d8d8;
       font-size: 4.688em;
@@ -701,28 +702,28 @@ section {
       font-family: "LatoBoldItalic", arial, sans-serif;
       vertical-align: top;
       line-height: 2.2em; }
-    /* line 763, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+    /* line 769, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
     section .addQuizz #add_quizz_type_questions > div > div > div:nth-child(3) {
       display: inline-block;
       padding-left: 35px;
       width: 92%; }
-    /* line 768, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+    /* line 774, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
     section .addQuizz #add_quizz_type_questions > div > div > div:nth-child(3) > div > div > div > div {
       display: inline-block; }
-    /* line 771, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+    /* line 777, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
     section .addQuizz #add_quizz_type_questions > div > div > div:nth-child(3) > div > div > div > div:nth-child(1) {
       width: 92%; }
-    /* line 774, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+    /* line 780, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
     section .addQuizz #add_quizz_type_questions > div > div > div:nth-child(3) > div > div > div {
       margin-bottom: 8px; }
-    /* line 777, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+    /* line 783, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
     section .addQuizz #add_quizz_type_questions > div > div > div:nth-child(3) > div > div > div > div:nth-child(2) {
       width: 8%; }
-    /* line 780, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+    /* line 786, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
     section .addQuizz #add_quizz_type_questions > div > div > div:nth-child(3) > div > div > div > div:nth-child(2) input {
       width: 15px;
       float: right; }
-    /* line 785, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+    /* line 791, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
     section .addQuizz hr {
       display: block;
       height: 2px;
@@ -730,30 +731,30 @@ section {
       background: #333;
       margin-top: 30px;
       border: none; }
-    /* line 793, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+    /* line 799, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
     section .addQuizz select {
       margin-top: 15px;
       margin-bottom: 20px; }
-    /* line 797, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+    /* line 803, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
     section .addQuizz label {
       font-family: "LatoRegular", arial, sans-serif;
       color: #333;
       font-size: 0.85em; }
-  /* line 805, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  /* line 811, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
   section .edit_profil p {
     font-size: 0.9em;
     margin: 0; }
-  /* line 809, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  /* line 815, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
   section .edit_profil #fos_user_profile_form div, section .edit_profil #QuizzBundle_addpicturetype div:nth-child(-n+3) {
     margin-bottom: 20px; }
-    /* line 811, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+    /* line 817, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
     section .edit_profil #fos_user_profile_form div label, section .edit_profil #QuizzBundle_addpicturetype div:nth-child(-n+3) label {
       width: 160px;
       display: block;
       float: left;
       margin-top: 10px;
       font-size: 0.9em; }
-    /* line 818, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+    /* line 824, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
     section .edit_profil #fos_user_profile_form div input, section .edit_profil #QuizzBundle_addpicturetype div:nth-child(-n+3) input {
       min-height: 35px;
       background: #fff;
@@ -761,10 +762,10 @@ section {
       font-family: "LatoRegular", arial, sans-serif;
       padding-left: 10px;
       width: 300px; }
-  /* line 828, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  /* line 834, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
   section .edit_profil #QuizzBundle_addpicturetype div:nth-child(4) input {
     margin-left: 135px; }
-  /* line 832, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  /* line 838, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
   section .edit_profil input[type="submit"] {
     border: none;
     padding: 14px 20px;
@@ -776,26 +777,26 @@ section {
     text-align: center;
     font-family: "LatoRegular", arial, sans-serif;
     font-size: 0.95em; }
-  /* line 844, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  /* line 850, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
   section .edit_profil input[type="submit"]:hover {
     background-color: #333;
     cursor: pointer; }
-  /* line 849, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  /* line 855, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
   section h1 {
     font-size: 2em;
     font-family: "LatoLight", arial, sans-serif;
     margin-bottom: 20px; }
-  /* line 855, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  /* line 861, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
   section #fos_user_registration_form div {
     margin-bottom: 20px; }
-    /* line 857, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+    /* line 863, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
     section #fos_user_registration_form div label {
       width: 130px;
       display: block;
       float: left;
       margin-top: 10px;
       font-size: 0.9em; }
-    /* line 864, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+    /* line 870, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
     section #fos_user_registration_form div input {
       min-height: 35px;
       background: #fff;
@@ -803,7 +804,7 @@ section {
       font-family: "LatoRegular", arial, sans-serif;
       padding-left: 10px;
       width: 300px; }
-  /* line 874, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  /* line 880, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
   section .fos_user_registration_register input[type="submit"] {
     border: none;
     padding: 14px 20px;
@@ -815,8 +816,237 @@ section {
     text-align: center;
     font-family: "LatoRegular", arial, sans-serif;
     font-size: 0.95em; }
-  /* line 886, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  /* line 892, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
   section .fos_user_registration_register input[type="submit"]:hover {
     background-color: #333;
     cursor: pointer; }
->>>>>>> origin/master
+
+@media screen and (max-width: 1191px) {
+  /* line 901, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  section .sideBar {
+    padding: 0; }
+
+  /* line 905, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  .profil .envoi {
+    margin: 0; }
+
+  /* line 909, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  header .nav .liens_menu {
+    max-width: 780px; }
+
+  /* line 913, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  header .topBar .search {
+    margin: 20px 0px 0px 0px; }
+ }
+
+@media screen and (max-width: 1038px) {
+  /* line 920, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  .profil .envoi {
+    float: none;
+    margin: 0 auto 10px;
+    border: none;
+    font-size: 1.05em;
+    padding: 14px 20px;
+    background-color: #ff9640;
+    color: white;
+    text-decoration: none;
+    width: 140px;
+    text-align: center;
+    font-family: "LatoRegular", arial, sans-serif;
+    cursor: pointer; }
+  /* line 934, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  .profil .log {
+    display: block;
+    border: none;
+    background-color: #ff9640;
+    color: white;
+    text-decoration: none;
+    font-size: 1.05em;
+    padding: 16px 20px;
+    margin: 3px auto 10px;
+    width: 140px;
+    text-align: center;
+    font-family: "LatoRegular", arial, sans-serif; }
+
+  /* line 948, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  .profil .identifiant {
+    width: 80%; }
+
+  /* line 952, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  header .topBar .head {
+    max-width: 400px; }
+
+  /* line 955, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  .QuizzName {
+    display: none; }
+ }
+
+@media screen and (min-width: 780px) {
+  /* line 960, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  #footer {
+    margin: 0;
+    height: 5.2em;
+    background-color: #e5e5e5;
+    clear: both;
+    margin-top: 50px; }
+
+  /* line 968, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  .facebook {
+    display: inline-block;
+    width: 84px;
+    height: 84px;
+    background-image: url("../images/sprite.png");
+    background-position: 0px 0px; }
+
+  /* line 975, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  .facebook:hover {
+    background-position: 0px -84px; }
+
+  /* line 978, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  .twitter {
+    display: inline-block;
+    width: 84px;
+    height: 84px;
+    background-image: url("../images/sprite.png");
+    background-position: -672px 0px; }
+
+  /* line 985, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  .twitter:hover {
+    background-position: -672px -84px; }
+
+ }
+
+@media screen and (max-width: 780px) {
+  /* line 995, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  .reseaux_sociaux a {
+    display: inline-block;
+    margin-left: auto; }
+
+  /* line 999, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  #footer {
+    margin: 0;
+    height: 5.2em;
+    background-color: #e3e3e3;
+    clear: both;
+    margin-top: 0px; }
+
+  /* line 1006, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  .facebook {
+    display: inline-block;
+    width: 84px;
+    height: 84px;
+    background-image: url("../images/sprite.png");
+    background-position: 0px 0px; }
+
+  /* line 1013, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  .facebook:hover {
+    background-position: 0px -84px; }
+
+  /* line 1016, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  .twitter {
+    display: inline-block;
+    width: 84px;
+    height: 84px;
+    background-image: url("../images/sprite.png");
+    background-position: -672px 0px; }
+
+  /* line 1023, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  .twitter:hover {
+    background-position: -672px -84px; }
+
+  /* line 1026, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  section .content .lastQuizz li {
+    background: none; }
+
+  /* line 1029, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  .content .lastQuizz li div .categorieInfo {
+    display: none; }
+
+  /* line 1032, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  section .content .topQuizz li {
+    background: none; }
+
+  /* line 1035, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  .content .topQuizz li div .categorieInfo {
+    display: none; }
+ }
+
+/* line 1040, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+.reseaux_sociaux {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  /* centrer le texte */
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%; }
+
+/* line 1048, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+.reseaux_sociaux li {
+  display: inline-block;
+  list-style: none; }
+
+/* line 1052, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+.reseaux_sociaux a {
+  display: inline-block;
+  margin: 0 34px; }
+
+@media screen and (max-width: 860px) {
+  /* line 1059, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  section .content .topQuizz li div .categorieInfo {
+    font-size: 0.6em; }
+
+  /* line 1063, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  section .content .lastQuizz li div .categorieInfo {
+    font-size: 0.6em; }
+ }
+
+@media screen and (max-width: 780px) {
+  /* line 1072, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  .sideBar {
+    float: none;
+    width: 80%;
+    margin: auto auto 25px;
+    vertical-align: top;
+    background: #0f80cf;
+    padding: 0px 20px 20px; }
+    /* line 1079, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+    .sideBar .userBloc {
+      padding-left: 20px;
+      padding-right: 20px;
+      background: #0f80cf; }
+    /* line 1084, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+    .sideBar form {
+      text-align: center; }
+      /* line 1086, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+      .sideBar form .envoi {
+        float: left;
+        border: none;
+        font-size: 1.05em;
+        padding: 14px 20px;
+        background-color: #ff9640;
+        color: white;
+        text-decoration: none;
+        width: 140px;
+        margin-right: 10px;
+        text-align: center;
+        font-family: "LatoRegular", arial, sans-serif;
+        cursor: pointer; }
+    /* line 1101, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+    .sideBar .log {
+      float: left;
+      border: none;
+      background-color: #ff9640;
+      color: white;
+      text-decoration: none;
+      font-size: 1.05em;
+      padding: 16px 20px;
+      width: 140px;
+      margin-left: 10px;
+      text-align: center;
+      font-family: "LatoRegular", arial, sans-serif; }
+
+  /* line 1116, /Applications/MAMP/htdocs/iesa/projet_symfony/path/src/Acme/DemoBundle/Resources/public/css/style.scss */
+  section .content {
+    width: 100%; }
+ }
