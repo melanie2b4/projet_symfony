@@ -34,24 +34,41 @@ $(function(){
     $('.addQuizz').submit(function(){
     
         var doreturn = 0;
-        
+        var checked = 0;
         $('section .addQuizz #add_quizz_type_questions > div').each(function(){
             var input = $(this).find('input[type="checkbox"]');
             
-            if (input.prop('checked')==false){
+            var isvalid = 0;
             
-            console.log('ok');
+            input.each(function(){
+                var element = $(this);
+                if(element.prop('checked')==false){
+                isvalid = isvalid +1;
+                }else{
+                isvalid = 0;
+                };
+                
+                if(isvalid != 0){
+                checked = checked;
+                }else{
+                checked = checked + 1;
+                }
+            })
+            
+            if (checked < 10 ){
+            
+            console.log(checked);
             doreturn = 1;
                 
             }else{
             doreturn = 0;
-            console.log('no');    
+            console.log(checked);
             
             }
         
         })
       
-        console.log(doreturn);
+        //console.log(doreturn);
         if(doreturn == 1){
             
             alert("Au moins une question n'a pas de bonne reponse validé ! Merci de lui choisir une bonne reponse")

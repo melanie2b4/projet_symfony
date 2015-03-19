@@ -27,4 +27,4 @@ fos_user_change_password:
     prefix: /profile
 
 QuizzBundle_profile: 
-    path: /
+    path: /    
