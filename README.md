@@ -1,43 +1,51 @@
-# projet_symfony
 
-INSTALLATION MACOS
+##########################    INSTALLATION DU PROJET    ########################## 
 
-Recuperer projet : 
-https://github.com/melanie2b4/projet_symfony.git
+Récupérer le projet sur le Git : https://github.com/melanie2b4/projet_symfony.git
 
-Le placer dans le dossier htdocs de MAMP Pour une instalation en local.
+Placer le dossier dans le Htdocs (ou www pour windows) de MAMP (ou Wamp) pour une installation en local.
 
-Installer symfony :
+Ensuite à l'aide de l'invite de commande procéder à ces étapes pour l'installation de symfony:
+
 $ sudo curl -LsS http://symfony.com/installer -o /usr/local/bin/symfony
-
 $ sudo chmod a+x /usr/local/bin/symfony
 
-Installer composer dans le dossier du projet :
-$ curl -sS https://getcomposer.org/installer | php
+Ensuite Installer Composer dans le dossier du projet.
+(se déplacer dans le dossier de son projet à l'aide de la commande "cd" et "cd.." , 
+cd permettant de rentrer dans un dossier et cd.. de retourner dans le dossier parent.
 
+$ curl -sS https://getcomposer.org/installer | php
 $ php composer.phar install
 
 
-Créer la base de donnée :
-
-database_driver: pdo_mysql
-database_host: 127.0.0.1
-database_port: 8889
-database_name: symfony
-database_user: root
-database_password: root
-
+Toujours dans l'invite de commande créez la base de donnée à l'aide de la commande suivante:
 $ php app/console doctrine:database:create
 
-Importer le fichier "symfony.sql" disponible à la racine du dossier path dans la base "symfony" créé plus haut.
+Attention veuillez rentrez les bons paramètres en fonction de votre configuration actuelle 
+qui peut différer entre différents postes tel que :
+-le numéro de port
+-le nom d'utilisateur 
+-le mot de passe
 
-Puis executer cette commande :
+Une fois cette étape terminée récupérez le fichier de la base de donnée symfony.sql disponible à la racine du dossier path 
+dans le git.
 
+Ouvrir le fichier avec un éditeur de texte, et copiez le tout.
+Accédez ensuite à phpmyadmin et séléctionner votre base de donnée Symfony.
+Collez ensuite le contenu de votre base de donnée dans la partie "SQL" sur phpmyadmin et éxécutez le tout.
+
+Pour finir revenez à l'invite de commande et inserez la commande suivante: 
 $ php app/console doctrine:schema:update --force
 
-Utilisation du site :
+Voilà normalement le site est opérationnel si il n'y a pas eu d'erreurs.
 
-Compte Administrateur : Ce compte donne l'acces au page add/ et listquizz/ qui permettent la gestion des pages quizz(ajout et supression)
 
-Identifiant : admin
-mot de passe : adminadmin
+##########################    UTILISATION DU SITE    ########################## 
+
+Veuillez vous connecter en Administrateur si vous voulez pouvoir ajouter ou supprimer un Quizz.
+
+Identifiant: admin
+Mot de passe : adminadmin
+
+Pour rajouter un Quizz: app_dev.php/add
+Pour supprimer un Quizz: app_dev.php/listquizz   
