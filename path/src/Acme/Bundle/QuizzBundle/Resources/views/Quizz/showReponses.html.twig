@@ -1,7 +1,9 @@
 {% extends 'base.html.twig' %}
 {% block body %}
+	<div id="show-reponse">
 	<h2>Vous avez obtenu un score de {{ score }}/10</h2>
 	<p>Découvrez les bonnes réponses de votre quizz : </p>
+	
 	{% set number = 0 %}
 	{% for Question in Quizz.questions %}
 
@@ -13,10 +15,10 @@
         {% for Reponse in Question.reponses %}
 		
 		    {% if Reponse.isTrue == true  %}
-   				<label style="color:green;" class="libelleReponse">{{ Reponse.libelleReponse }}</label><br><br>
+   				<label id="reponsetrue" class="libelleReponse">{{ Reponse.libelleReponse }}</label><br><br>
     		
     		{% elseif Reponse.isTrue == false %}
-				<label style="color:red;" class="libelleReponse">{{ Reponse.libelleReponse }}</label><br><br>
+				<label id="reponsefalse" class="libelleReponse">{{ Reponse.libelleReponse }}</label><br><br>
 			{% endif %}
 	
         {% endfor %}
@@ -25,5 +27,6 @@
     {% if app.user is empty %}
 		<h3>Attention vos points sont enregistrés une fois connecté.</h3>
   	{% endif %}
+  </div>
 {% endblock %}
 

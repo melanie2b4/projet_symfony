@@ -148,6 +148,14 @@ header{
         }
     }
 
+    .row {
+
+        h3{
+           font-family: $Black;
+            color: #6f7376;
+            font-size: 1em; 
+        }
+    }
    .nav{
         background: #cbd2d7;
         .liens_menu{
@@ -175,8 +183,12 @@ header{
 .profil{
     background-color: $clr1;
     padding-top: 0;
-
-    .roundedImage{
+    
+    img{
+        width: 90px;
+        height: 90px;
+    }
+    .roundedImage {
     overflow:hidden;
     -webkit-border-radius:50px;
     -moz-border-radius:50px;
@@ -185,6 +197,11 @@ header{
     height:100px;
     margin:10px auto;
     }
+    .roundedImage img{
+        width:100px;
+        height:100px;
+    }
+
     h3{
         text-align: center;
         padding: 15px;
@@ -209,7 +226,7 @@ header{
         font-family:$Regular;
         font-size: 16px;
         color: #FFFFFF;
-        padding-top: 15px ;
+        padding: 10px ;
 
     }
     p .bold{
@@ -242,6 +259,9 @@ header{
             text-align: center;
             font-size: 0.8em;
             color: #fff;
+            font-family: $Regular;
+            list-style-type: none;
+
         }
         h5:hover{
             color: $clr6;
@@ -290,6 +310,86 @@ header{
     .envoi:hover{
         background-color: $clr6;
     }
+}
+/*** VALIDATE QUIZZ ***/
+
+
+#show-reponse{
+
+    h2{
+        font-family: $Black;
+        font-size: 2em;
+        padding:10px 0px 10px;
+    }
+    p{
+        
+        font-size: 1.250em;
+        color: #333333;
+        font-family: $Regular;
+        font-style: italic;
+        padding-bottom: 30px;
+    }
+
+    label .libelleQuestion{
+        font-size: 2em;
+    }
+    label input + .customRadio {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      margin-right: 10px;
+      background: #FF9640;
+      border-radius: 50%;
+      box-shadow: 0 0 0 2px #FF7400;
+  }
+
+  label input:checked + .customRadio {
+      background: #33CCCC;
+      box-shadow: 0 0 0 2px #009999;
+  }
+  .questionNumber{
+       font-size: 3.2em;
+       font-family: "LatoBold", arial, sans-serif;
+       font-style: italic;
+       float: left;
+       color: #d7d7d7;
+       margin-top:60px;
+}
+ .libelleQuestion{
+        font-size: 1.2em;
+        font-family: "LatoBold", arial, sans-serif;
+        margin:10px 10px ;
+}
+ .libelleReponse{
+        font-family: "LatoRegular", arial, sans-serif;
+        font-size: 1em;
+        margin-left: 50px;
+        color: green;
+    
+}
+#reponsetrue{
+    color: #087700;
+}
+
+#reponsefalse{
+    color: #ff0000;
+}
+  input[type="submit"] {
+      padding: 14px 20px;
+      margin-top: 4%;
+      font-family: 'Arial', sans-serif;
+      font-size: 0.95em;
+      font-weight: 100;
+      color: #fff;
+      background: $clr2;
+      border: none;
+      cursor: pointer;
+      text-align: center;
+  }
+
+  input[type="submit"]:hover {
+      background: #333;
+  }
 }
 
 section{
