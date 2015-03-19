@@ -21,9 +21,9 @@ $ php composer.phar install
 Créer la base de donnée :
 
 database_driver: pdo_mysql
-    database_host: 127.0.0.1
-    database_port: 8889
-    database_name: symfony
-    database_user: root
-    database_password: root
+database_host: 127.0.0.1
+database_port: 8889
+database_name: symfony
+database_user: root
+database_password: root
 
