@@ -9,10 +9,12 @@ Le placer dans le dossier htdocs de MAMP Pour une instalation en local.
 
 Installer symfony :
 $ sudo curl -LsS http://symfony.com/installer -o /usr/local/bin/symfony
+
 $ sudo chmod a+x /usr/local/bin/symfony
 
 Installer composer dans le dossier du projet :
 $ curl -sS https://getcomposer.org/installer | php
+
 $ php composer.phar install
 
 
